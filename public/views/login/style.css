@@ -16,6 +16,7 @@ main
 {
     display: flex;
     flex-direction: column;
+    
 }
 .login
 {
@@ -28,7 +29,9 @@ main
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 15px;
-
+    background-color: rgb(187, 187, 187);
+    
+    
 }
 header
 {
@@ -191,6 +194,11 @@ header .logo img
     width: 100%;
     padding: 12px 10px;
     cursor: pointer;
+}
+.login .join .social-medias .sm:hover
+{
+    background-color: rgb(65, 63, 63);
+    color: white;
 }
 .login .join .social-medias .sm img
 {
