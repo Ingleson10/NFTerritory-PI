@@ -5,12 +5,35 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  --cor-text : black;
+  --cor-text : #fff;
 }
 body
 {
+    /* background-color: #1c1c1c; */
     background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(194,29,253,1) 50%, rgba(252,69,106,1) 100%);
+    background: linear-gradient(71deg, rgba(131,58,180,1) 0%, rgba(222,10,117,1) 37%, rgba(30,53,116,1) 100%);
+}
+.nav2 ul
+{
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    color: white;
+    padding: 20px;
+
+}
+.nav2 ul li 
+{
+    margin-right: 50px;
+}
+.nav2 ul li i {
+    color: grey;
+}
+.nav2 ul li:hover
+{
+    color: red;
+    cursor: pointer;
 }
 header {
     display: flex;
@@ -134,7 +157,7 @@ header {
       justify-content: center;
       flex-direction: column;
       color: black;
-      width: 20vw;
+      width: 15vw;
       margin: 50px 0px 20px 50px;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -143,15 +166,16 @@ header {
       backdrop-filter: blur( 4px );
       -webkit-backdrop-filter: blur( 4px );
       border: 1px solid rgba(31, 31, 31, 0.18);
-  }
-  main .cards .card .buy
-  {
+      font-size: 1.5vw;
+    }
+    main .cards .card .buy
+    {
       display: flex;
       flex-direction: column;
       align-self: flex-end;
-      position: relative;
-      top: -18vmax;
-      font-size: 15px;
+      position: absolute;
+      top: 15px;
+      
   }
   main .cards .card .buy #valor
   {
@@ -175,7 +199,7 @@ header {
  
   main .cards .card img
   {
-    width: 20vw;
+    width: 15vw;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 40px;
@@ -187,9 +211,7 @@ header {
       display: flex;
       justify-content:space-between;
       align-items: center;
-      font-size: 20px;
-      position: relative;
-      top: -1.5vmax;
+
       margin: 5px;
       color:var(--cor-text);
      
@@ -231,8 +253,9 @@ header {
       ),
       linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
     position: absolute;
-  
-    width: 100%;
+    font-size: 1.3vw;
+
+   
   }
   .subir 
   {
@@ -247,11 +270,10 @@ header {
   }
   
   footer .main {
-    margin: 50px;
+    margin: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.8vw;
     flex-wrap: wrap;
   }
   footer .main .nfterritory {
