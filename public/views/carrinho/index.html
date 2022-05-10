@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav2">
+            <ul>
+                <li>support <i class='bx bxs-chevron-down'></i></li>
+                <li>accessibility <i class='bx bxs-chevron-down'></i></li>
+                <li>login <i class='bx bxs-chevron-down'></i></li>
+                <li>buy <i class='bx bxs-chevron-down'></i></li>
+            </ul>
+        </div>
+           <div class="header-main">
+               <div class="rotas">
+   <!--                 <ul>
+                       <li><a href="/help"><i class='bx bx-question-mark'></i></a></li>
+                       <li><a href="/accessibility"><i class='bx bx-body' ></i></a></li>
+                   </ul> -->
+               </div>
+               <div class="logo">
+                   <img src="../../img/logo.svg" alt="">
+               </div>
+               <!-- <div class="rotas">
+                   <ul>
+                       <li><a href="/profile"><i class='bx bxs-user'></i></a></li>
+                       <li><a href="/cart"><i class='bx bx-cart'></i></a></li>
+                   </ul>
+               </div> -->
+           
+           </div>
+           
+           <div class="search">
+               <input type="text" name="search" id="search" placeholder="Search...">
+           </div>
+       </header>
+
+       <div class="sugerir">
+           <span>Talvez você também goste:</span>
+       </div>
+       <section class="cards-sugeridos">
+        <div class="cards">
+            <div class="arrow" id="left">
+                <i class='bx bxs-left-arrow'></i>
+            </div>
+            <div class="product">
+                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
+                <div class="details">
+                    <p>Name of picture</p>
+                    <p>value: R$?????</p>
+                </div>
+            </div>   
+            <div class="product">
+                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
+                <div class="details">
+                    <p>Name of picture</p>
+                    <p>value: R$?????</p>
+                </div>
+            </div>   
+            <div class="product">
+                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
+                <div class="details">
+                    <p>Name of picture</p>
+                    <p>value: R$?????</p>
+                </div>
+            </div>   
+            <div class="arrow" id="right" >
+                <i class='bx bxs-right-arrow'></i>
+            </div>
+         </div> 
+       </section>
+
+       <section class="carrinho">
+           <div class="sugerir">
+                <span>Você se interessou em:</span>
+           </div>
+           <div class="produtos">
+              <div class="imagem-produto">
+                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e"alt="">
+              </div>
+              <div class="details-buy">
+                  <div class="nome-produto">
+                    LOREM IPSUM DOLOR - by Lorem ipsum
+                  </div>
+                  <div class="resumo-compra">
+                      <div class="resume">
+                        <span>Resumo da compra</span>
+                      </div>
+                      
+                      <div class="preco-produto">
+                        <ul>
+                            <li>Total</li>
+                            <li>R$??????</li>
+                        </ul>
+                      </div>
+                      <div class="parcelas">
+                          <span>em 1x no cartão</span>
+                            <span>ou em 12x de R$???</span>
+                      </div>
+                      <div class="buttons">
+                          <div id="finalizar" class ='btn'>
+                              Finalizar
+                          </div>
+                          <div id="remover" class ='btn'>
+                              remover
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           </div>
+           <div class="produtos">
+              <div class="imagem-produto">
+                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e"alt="">
+              </div>
+              <div class="details-buy">
+                  <div class="nome-produto">
+                    LOREM IPSUM DOLOR - by Lorem ipsum
+                  </div>
+                  <div class="resumo-compra">
+                      <div class="resume">
+                        <span>Resumo da compra</span>
+                      </div>
+                      
+                      <div class="preco-produto">
+                        <ul>
+                            <li>Total</li>
+                            <li>R$??????</li>
+                        </ul>
+                      </div>
+                      <div class="parcelas">
+                          <span>em 1x no cartão</span>
+                            <span>ou em 12x de R$???</span>
+                      </div>
+                      <div class="buttons">
+                          <div id="finalizar" class ='btn'>
+                              Finalizar
+                          </div>
+                          <div id="remover" class ='btn'>
+                              remover
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           </div>
+           <div class="produtos">
+              <div class="imagem-produto">
+                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e"alt="">
+              </div>
+              <div class="details-buy">
+                  <div class="nome-produto">
+                    LOREM IPSUM DOLOR - by Lorem ipsum
+                  </div>
+                  <div class="resumo-compra">
+                      <div class="resume">
+                        <span>Resumo da compra</span>
+                      </div>
+                      
+                      <div class="preco-produto">
+                        <ul>
+                            <li>Total</li>
+                            <li>R$??????</li>
+                        </ul>
+                      </div>
+                      <div class="parcelas">
+                          <span>em 1x no cartão</span>
+                            <span>ou em 12x de R$???</span>
+                      </div>
+                      <div class="buttons">
+                          <div id="finalizar" class ='btn'>
+                              Finalizar
+                          </div>
+                          <div id="remover" class ='btn'>
+                              remover
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           </div>
+           <div class="produtos">
+              <div class="imagem-produto">
+                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e"alt="">
+              </div>
+              <div class="details-buy">
+                  <div class="nome-produto">
+                    LOREM IPSUM DOLOR - by Lorem ipsum
+                  </div>
+                  <div class="resumo-compra">
+                      <div class="resume">
+                        <span>Resumo da compra</span>
+                      </div>
+                      
+                      <div class="preco-produto">
+                        <ul>
+                            <li>Total</li>
+                            <li>R$??????</li>
+                        </ul>
+                      </div>
+                      <div class="parcelas">
+                          <span>em 1x no cartão</span>
+                            <span>ou em 12x de R$???</span>
+                      </div>
+                      <div class="buttons">
+                          <div id="finalizar" class ='btn'>
+                              Finalizar
+                          </div>
+                          <div id="remover" class ='btn'>
+                              remover
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           </div>
+       </section>
+
+       <footer>
+        <div class="main">
+            <div class="nfterritory">
+                <div class="logo">
+                    <img src="../../img/logo.svg" alt="logo">
+                </div>
+                <div class="description">
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dignissimos, ipsa sunt ea accusantium, cumque illo 
+                    </span>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem veritatis nisi. Aliquid harum quidem temporibu!</span>
+                    <span>Lorem ipsum dolor sit amet consectetur a.</span>
+                </div>
+            </div>
+            <div class="social-medias">
+                <div class="text">
+                    <span>Continue por dentro de tudo</span>
+                    <span>Cadastre seu e-mail e receba</span>
+                    <span>novidades e ofertas da NFTerritory</span>
+                </div>
+                <div class="search">
+                    <div class="sh">
+                        <input type="text" placeholder="Digite aqui seu e-mail">
+                    <button><i class='bx bxs-paper-plane'></i></button>
+                    </div>
+                    
+                </div>
+                <div class="sm">
+                    <span>Faça parte da comunidade</span>
+                    <ul>
+                        <li><a href="https://www.instagram.com"><i class='bx bxl-instagram' ></i></a></li>
+                        <li><a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.reddit.com"><i class='bx bxl-reddit'></i></a></li>
+                        <li><a href="https://www.facebook.com"><i class='bx bxl-facebook-square'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lista">
+                <ul>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Perguntas Frequentes</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos e condições</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cop">
+            <i class='bx bx-copyright' ></i> 
+            2022 Urban Tech Solutions
+
+        </div>
+        
+    </footer>
+</body>
+</html>
