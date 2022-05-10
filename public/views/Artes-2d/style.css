@@ -9,9 +9,9 @@
 }
 body
 {
-    /* background-color: #1c1c1c; */
-    background: rgb(131,58,180);
-    background: linear-gradient(71deg, rgba(131,58,180,1) 0%, rgba(222,10,117,1) 37%, rgba(30,53,116,1) 100%);
+    background-color: #1c1c1c;
+    /* background: rgb(131,58,180);
+    background: linear-gradient(71deg, rgba(131,58,180,1) 0%, rgba(222,10,117,1) 37%, rgba(30,53,116,1) 100%); */
 }
 .nav2 ul
 {
@@ -43,7 +43,7 @@ header {
   header .header-main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   .header-main .rotas ul {
     display: flex;
@@ -156,8 +156,9 @@ header {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      align-items: center;
       color: black;
-      width: 15vw;
+      width: 20vw;
       margin: 50px 0px 20px 50px;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -199,7 +200,7 @@ header {
  
   main .cards .card img
   {
-    width: 15vw;
+    width: 20vw;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 40px;
@@ -210,15 +211,15 @@ header {
   {
       display: flex;
       justify-content:space-between;
-      align-items: center;
-
-      margin: 5px;
       color:var(--cor-text);
      
   }
   main .cards .card ul
   {
+
       display: flex;
+      margin-left: 30px;
+      
      
   }
   main .cards .card ul li
@@ -264,9 +265,10 @@ header {
       font-size: 50px;
       position: fixed;
       z-index:100;
-      bottom: 50%;
-      color: white;
+      bottom: 20%;
+      color: rgba(255, 255, 255, 0.342);
       left: 20px;
+      cursor:pointer;
   }
   
   footer .main {
@@ -388,4 +390,11 @@ header {
   footer .cop i {
     padding-right: 10px;
   }
+  #like {
+    background-color: #2a756900;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.8vw;
   
+  }

@@ -31,7 +31,7 @@ function Chevleft(){
     currentimage.setAttribute("src",itens[counter].url.toString())
 }
 
-function  Chevright(){
+function Chevright(){
     if(counter>=itens.length-1){
         counter=0
     }else{

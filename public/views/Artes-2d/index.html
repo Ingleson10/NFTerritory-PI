@@ -20,20 +20,20 @@
      </div>
         <div class="header-main">
             <div class="rotas">
-                <ul>
+<!--                 <ul>
                     <li><a href="/help"><i class='bx bx-question-mark'></i></a></li>
                     <li><a href="/accessibility"><i class='bx bx-body' ></i></a></li>
-                </ul>
+                </ul> -->
             </div>
             <div class="logo">
                 <img src="../../img/logo.svg" alt="">
             </div>
-            <div class="rotas">
+            <!-- <div class="rotas">
                 <ul>
                     <li><a href="/profile"><i class='bx bxs-user'></i></a></li>
                     <li><a href="/cart"><i class='bx bx-cart'></i></a></li>
                 </ul>
-            </div>
+            </div> -->
         
         </div>
         <div class="description">
@@ -77,7 +77,7 @@
                     <p>lorem ipsun</p>
                     <ul>
                         <li>30</li>
-                        <li><i class='bx bx-heart'></i></li>
+                        <li onclick=noTroll(mudarHeart(0)) id ='like'><i class='bx bx-heart'></i></button></li>
                     </ul>
                 </div>
                 <!-- <div class="comprar">
@@ -97,7 +97,7 @@
                     <p>lorem ipsun</p>
                     <ul>
                         <li>30</li>
-                        <li><i class='bx bx-heart'></i></li>
+                        <li onclick=noTroll(mudarHeart(1)) id ='like'><i class='bx bx-heart'></i></li>
                     </ul>
                 </div>
                 <!-- <div class="comprar">
@@ -117,7 +117,7 @@
                     <p>lorem ipsun</p>
                     <ul>
                         <li>30</li>
-                        <li><i class='bx bx-heart'></i></li>
+                        <li onclick=mudarHeart(2) id ='like'><i class='bx bx-heart'></i></li>
                     </ul>
                 </div>
                 <!-- <div class="comprar">
@@ -137,7 +137,7 @@
                     <p>lorem ipsun</p>
                     <ul>
                         <li>30</li>
-                        <li><i class='bx bx-heart'></i></li>
+                        <li onclick=mudarHeart(3) id ='like'><i class='bx bx-heart'></i></li>
                     </ul>
                 </div>
                 <!-- <div class="comprar">
@@ -157,7 +157,7 @@
                     <p>lorem ipsun</p>
                     <ul>
                         <li>30</li>
-                        <li><i class='bx bx-heart'></i></li>
+                        <li onclick=mudarHeart(4) id ='like'> <i class='bx bx-heart'></i></li>
                     </ul>
                 </div>
                 <!-- <div class="comprar">
@@ -177,7 +177,7 @@
                     <p>lorem ipsun</p>
                     <ul>
                         <li>30</li>
-                        <li><i class='bx bx-heart'></i></li>
+                        <li onclick=mudarHeart(5) id ='like'><i class='bx bx-heart'></i></li>
                     </ul>
                 </div>
                 <!-- <div class="comprar">
@@ -197,7 +197,7 @@
                     <p>lorem ipsun</p>
                     <ul>
                         <li>30</li>
-                        <li><i class='bx bx-heart'></i></li>
+                        <li onclick=mudarHeart(6) id ='like'><i class='bx bx-heart'></i></li>
                     </ul>
                 </div>
                 <!-- <div class="comprar">
@@ -217,14 +217,8 @@
                     <p>lorem ipsun</p>
                     <ul>
                         <li>30</li>
-                        <li><i class='bx bx-heart'></i></li>
-                    </ul>
+                        <li onclick=mudarHeart(7) id ='like'><i class='bx bx-heart'></i></li>
                 </div>
-                <!-- <div class="comprar">
-                    <button>Comprar</button>
-                    <span><i class='bx bxs-cart-add'></i></span>
-                    
-                </div> -->
             </div>
             <div class="card">
                 <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
@@ -237,14 +231,8 @@
                     <p>lorem ipsun</p>
                     <ul>
                         <li>30</li>
-                        <li><i class='bx bx-heart'></i></li>
-                    </ul>
+                        <li onclick=mudarHeart(8) id ='like'><i class='bx bx-heart'></i></li>
                 </div>
-                <!-- <div class="comprar">
-                    <button>Comprar</button>
-                    <span><i class='bx bxs-cart-add'></i></span>
-                    
-                </div> -->
             </div>
             <div class="card">
                 <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
@@ -257,19 +245,42 @@
                     <p>lorem ipsun</p>
                     <ul>
                         <li>30</li>
-                        <li><i class='bx bx-heart'></i></li>
-                    </ul>
+                        <li onclick=mudarHeart(9) id ='like'><i class='bx bx-heart'></i></li>
                 </div>
-                <!-- <div class="comprar">
-                    <button>Comprar</button>
-                    <span><i class='bx bxs-cart-add'></i></span>
-                    
-                </div> -->
             </div>
+            <div class="card">
+                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
+                <ul class="buy">
+                    <li id="valor">
+                        <span>R$9999999</span>
+                    </li>
+                </ul>
+                <div class="details-card">
+                    <p>lorem ipsun</p>
+                    <ul>
+                        <li>30</li>
+                        <li onclick=mudarHeart(10) id ='like'><i class='bx bx-heart'></i></li>
+                </div>
+            </div>
+                        <div class="card">
+                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
+                <ul class="buy">
+                    <li id="valor">
+                        <span>R$9999999</span>
+                    </li>
+                </ul>
+                <div class="details-card">
+                    <p>lorem ipsun</p>
+                    <ul>
+                        <li>30</li>
+                        <li onclick=mudarHeart(7) id ='like'><i class='bx bx-heart'></i></li>
+                </div>
+            </div>
+           
         </div>
     </main>
 
-    <div class="subir"><i class='bx bxs-up-arrow-circle'></i></div>
+    <div class="subir" onclick = subir()><i class='bx bxs-chevrons-up'></i></div>
     <footer>
         <div class="main">
             <div class="nfterritory">
@@ -325,6 +336,7 @@
         </div>
         
     </footer>
-    
+    <script src="../../scripts/like.js"></script>
+    <script src="../../scripts/subir.js"></script>
 </body>
 </html>
