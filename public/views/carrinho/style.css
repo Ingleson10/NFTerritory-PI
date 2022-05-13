@@ -7,6 +7,7 @@
   font-family: 'Roboto', sans-serif;
   --cor-text : #fff;
   --border-color : #fff
+  --cor-do-arrow :#1c1c1c;
 }
 
 body
@@ -164,7 +165,7 @@ header {
     align-self: center;
     align-items: center;
     color: var(--cor-text);
-    font-weight: normal;
+    font-weight: 600;
     font-size: 1.8vw;
     align-items: center;
     margin-top: 100px;
@@ -174,7 +175,7 @@ header {
 .cards-sugeridos 
 {
   width: 95%;
-  border-bottom: #fff 1px solid;
+  border-bottom: var(--border-color) 1px solid;
   align-self: center;
 }
 .cards-sugeridos .cards
@@ -189,8 +190,9 @@ header {
     display: flex;
     
     font-size: 3vw;
-    color: #fffdfd79;
+    color: #1c1c1c;
     border-radius: 50%;
+    background-color: #f3f0f0ad;
     width: 70px;
     height: 70px;
     justify-content: center;
@@ -222,7 +224,7 @@ header {
         justify-content: space-between;
         padding: 4px;
         font-weight: 100;
-        color: var(--cor-text);
+        color: #fff;
        
       }
       .cards-sugeridos .cards .product img {
@@ -280,6 +282,7 @@ header {
       .carrinho .produtos .details-buy .resumo-compra
       {
           color: var(--cor-text);
+          font-weight: bolder;
           display: flex;
           justify-self: center;
           flex-direction: column;
@@ -289,7 +292,12 @@ header {
           padding: 20px;
           border: 1px solid #1c1c1c;
           border-radius: 10px;
-          background-color: rgb(221, 93, 93);
+          background: rgba( 66, 60, 60, 0.25 );
+          box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 1px );
+          -webkit-backdrop-filter: blur( 1px );
+          border-radius: 10px;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );
           font-size:1.8vw;
           font-weight: 100;
           width: 40vw;
@@ -301,12 +309,14 @@ header {
           display: flex;
           justify-content: center;
           padding-bottom: 5px;
+          
       }
       .carrinho .produtos .details-buy .resumo-compra .preco-produto
       {
           display: flex;
           border-bottom: #1c1c1c 1px solid;
           width: 100%;
+          
       }
       .carrinho .produtos .details-buy .resumo-compra .preco-produto ul
       {
@@ -319,6 +329,7 @@ header {
       }
       .carrinho .produtos .details-buy .resumo-compra .parcelas
       {
+        
           font-size: 1vw;
           display: flex;
           flex-direction: column;
@@ -328,31 +339,35 @@ header {
       {
           display: flex;
           
+          
       }
       .carrinho .produtos .details-buy .resumo-compra .buttons .btn 
       {
           display: flex;
+          font-family: Arial, Helvetica, sans-serif;
           margin: 10px;
           padding:8px;
           border-radius: 15px;
           cursor: pointer;
+          color: white;
+
           
 
       }
       .carrinho .produtos .details-buy .resumo-compra .buttons  #finalizar
       {
-          background: linear-gradient(to left, rgb(116, 146, 226) 50%, rgb(118, 240, 128) 50%) right;
+          background: linear-gradient(to left, rgb(4, 71, 255) 50%, rgb(118, 240, 128) 50%) right;
           background-size: 200%;
-          transition: .5s ease-out;
+          transition: .10s ease-out;
       }
       .carrinho .produtos .details-buy .resumo-compra .buttons #finalizar:hover {
         background-position: left;
     }
       .carrinho .produtos .details-buy .resumo-compra .buttons  #remover
       {
-          background: linear-gradient(to left, rgb(116, 146, 226) 50%, rgb(255, 60, 0) 50%) right;
+          background: linear-gradient(to left, rgb(70, 4, 252) 50%, rgb(255, 60, 0) 50%) right;
           background-size: 200%;
-          transition: .5s ease-out;
+          transition: .10s ease-out;
       }
       .carrinho .produtos .details-buy .resumo-compra .buttons #remover:hover {
         background-position: left;
