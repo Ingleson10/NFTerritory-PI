@@ -12,9 +12,9 @@ body
     background-color: #1c1c1c;
     min-height: 100vh;
     min-width: 100vw;
-    background: rgb(131,58,180);
+    /* background: rgb(131,58,180);
     background: linear-gradient(190deg, rgba(131,58,180,1) 0%, rgba(10,53,222,1) 0%, rgb(245, 13, 44) 100%);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     font-family: Arial, Helvetica, sans-serif;
 }
 .sign-in
@@ -49,6 +49,7 @@ body
     align-items: center;
     width: 25vw;
     color: white;
+    border-radius: 10px;
     border-right: 1px solid rgba(24, 24, 24, 0.623);
     padding: 20px;
     background: rgb(131,58,180);
@@ -114,6 +115,16 @@ body
 .login .information input
 {
     width: 20vw;
+    border: none;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.login .information input:focus
+{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
 }
 .login .information .email
 {
@@ -144,7 +155,10 @@ body
 }
 .login .sign-up
 {
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
+    align-items: center;
 }
 .login .sign-up a
 {
@@ -155,4 +169,48 @@ body
 {
     text-decoration: underline;
     color: rgb(37, 2, 2);
+}
+.login .sign-up .google
+{
+    display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 22vw;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.5vw;
+}
+.login .sign-up .google:hover
+{
+    background-color: #1c1c1c;
+    cursor: pointer;
+    color: wheat;
+}
+.login .sign-up .facebook
+{
+    display: flex;
+    background-color: white;
+    width: 22vw;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+.login .sign-up .facebook:hover
+{
+    background-color: #1c1c1c;
+    cursor: pointer;
+    color: wheat;
+}
+.login .sign-up .facebook img
+{
+    width: 2vw;
+    margin-right: 5px;
+}
+.login .sign-up .google img
+{
+    width: 2vw;
+    margin-right: 5px;
 }
