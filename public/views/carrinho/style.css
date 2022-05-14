@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   --cor-text : #fff;
-  --border-color : #fff
+  --border-color : #fff;
   --cor-do-arrow :#1c1c1c;
 }
 
@@ -42,7 +42,7 @@ body
     display: flex;
     justify-content: space-between;
     color: black;
-    border-bottom: red 2px solid;
+    border-bottom: rgb(0, 255, 149) 3px solid;
 }
 .nav2 ul li:hover 
 {
@@ -471,12 +471,15 @@ footer .comunidade .search-comunidade div
   display: flex;
   justify-content: center;
   text-align: center;
-  
-  
   border-radius: 50%;
   cursor: pointer;
 
 }
+footer .comunidade .search-comunidade div i:hover
+{
+    color: black;
+}
+
 footer .comunidade .search-comunidade button i
 {
   font-size: 3vw;

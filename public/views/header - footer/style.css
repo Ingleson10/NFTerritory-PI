@@ -41,7 +41,7 @@ body
     display: flex;
     justify-content: space-between;
     color: black;
-    border-bottom: red 2px solid;
+    border-bottom: rgb(0, 238, 167) 2px solid;
 }
 .nav2 ul li:hover 
 {
@@ -246,18 +246,23 @@ footer .comunidade .search-comunidade div
   display: flex;
   justify-content: center;
   text-align: center;
-  
-  
+  color: white;
   border-radius: 50%;
   cursor: pointer;
 
 }
-footer .comunidade .search-comunidade button i
+footer .comunidade .search-comunidade div i:hover
+{
+    color: black;
+}
+
+footer .comunidade .search-comunidade  i
 {
   font-size: 3vw;
   color: white;
-  background-color: #1c1c1c;
+  
 }
+
 .comunidade span
 {
   margin-top: 20px;
