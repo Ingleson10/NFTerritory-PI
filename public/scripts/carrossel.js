@@ -6,19 +6,19 @@ let counter = 0
 
 const itens = [{
     "idItem":1,
-    "url":"https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2022/01/nftbieber.jpg",
+    "url":"https://www.arweave.net/CjuT_NysA-SR5KFYX6wGE6LQDxrG_oZ0W9QSUlb8LRM?ext=png",
     
 },
 {
     "idItem":2,
-    "url":"https://s2.glbimg.com/6fLjMPYo50gB1llNwE11EVXdf8w=/620x430/e.glbimg.com/og/ed/f/original/2022/02/21/https___hypebeast.com_image_2021_10_bored-ape-yacht-club-nft-3-4-million-record-sothebys-metaverse-0.jpg",
+    "url":"https://img.freepik.com/vetores-gratis/infograficos-de-token-nao-fungiveis-nft-com-tokens-e-moedas-exclusivos-de-ouro-voador-em-fundo-escuro-pague-por-colecionaveis-exclusivos-em-jogos-ou-arte-banner-ou-cabecalho-para-ilustracao-vetorial-de-site_337410-1441.jpg?w=2000",
 }, {
     "idItem":3,
-    "url":"https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3170953:1639513060/image.jpg?h=630&q=0.6&w=1200&$p$h$q$w=f76cc5e",
+    "url":"https://www.arweave.net/H2mBNPdKNsHGH6WZNf7aUY_lh8KLJBxLvOwp3rfyDP0?ext=png",
 },
 {
     "idItem":4,
-    "url":"https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3170953:1639513060/image.jpg?h=630&q=0.6&w=1200&$p$h$q$w=f76cc5e",
+    "url":"https://c.gitcoin.co/grants/64fefc43818579058071695cc704289c/r.NFT_Banner.jpg",
     
 }
 ]

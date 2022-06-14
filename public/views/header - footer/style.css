@@ -15,47 +15,7 @@ body
     flex-direction: column;
     background-color: #1c1c1c;
 }
-.nav2
-{
-  display: flex;
-  background-color: #f3f0f0;
-  width: 100%;
-  justify-content: flex-end;
-  height: 5vh;
-  align-items: flex-end;
-  margin-bottom: 20px;
-}
-.nav2 ul
-{
 
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    color: white;
-    width: 50%;
-    
-
-}
-.nav2 ul li 
-{
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    border-bottom: rgb(0, 238, 167) 2px solid;
-}
-.nav2 ul li:hover 
-{
-  border-bottom: red 5px solid;
-
-}
-.nav2 ul li i {
-    color: grey;
-}
-.nav2 ul li:hover
-{
-    color: red;
-    cursor: pointer;
-}
 header {
     display: flex;
     justify-self: flex-start;
@@ -67,8 +27,8 @@ header {
   }
   header .header-main {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
   }
   .header-main .rotas ul {
     display: flex;

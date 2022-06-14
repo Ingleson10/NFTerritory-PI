@@ -9,59 +9,53 @@
 </head>
 <body>
     <header>
-        <div class="nav2">
-            <ul>
-                <li>support <i class='bx bxs-chevron-down'></i></li>
-                <li>accessibility <i class='bx bxs-chevron-down'></i></li>
-                <li>login <i class='bx bxs-chevron-down'></i></li>
-                <li>buy <i class='bx bxs-chevron-down'></i></li>
-            </ul>
+  
+        <div class="header-main">
+            <div class="rotas">
+                <ul>
+                    <li><a href="/help"><i class='bx bx-question-mark'></i></a></li>
+                    <li><a href="/accessibility"><i class='bx bx-body' ></i></a></li>
+                </ul>
+            </div>
+            
+            <div class="logo">
+                <img src="../../img/logo.png" alt="">
+            </div>
+            <div class="rotas">
+                <ul>
+                    <li><a href="/profile"><i class='bx bxs-user'></i></a></li>
+                    <li><a href="/cart"><i class='bx bx-cart'></i></a></li>
+                </ul>
+            </div>
+        
         </div>
-           <div class="header-main">
-               <div class="rotas">
-   <!--                 <ul>
-                       <li><a href="/help"><i class='bx bx-question-mark'></i></a></li>
-                       <li><a href="/accessibility"><i class='bx bx-body' ></i></a></li>
-                   </ul> -->
-               </div>
-               <div class="logo">
-                   <img src="../../img/logo.svg" alt="">
-               </div>
-               <!-- <div class="rotas">
-                   <ul>
-                       <li><a href="/profile"><i class='bx bxs-user'></i></a></li>
-                       <li><a href="/cart"><i class='bx bx-cart'></i></a></li>
-                   </ul>
-               </div> -->
-           
-           </div>
-           <div class="description">
-            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae hic itaque perferendis consequuntur porro, minima libero tempora, ratione voluptates quo maxime voluptas omnis incidunt. Recusandae sequi corporis laudantium ea enim!</span>
+        <div class="description">
+         <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae hic itaque perferendis consequuntur porro, minima libero tempora, ratione voluptates quo maxime voluptas omnis incidunt. Recusandae sequi corporis laudantium ea enim!</span>
+     </div>
+        <div class="search">
+            <input type="text" name="search" id="search" placeholder="Search...">
         </div>
-           <div class="search">
-               <input type="text" name="search" id="search" placeholder="Search...">
-           </div>
-           <div class="nav">
-            <ul>
-                <li><a href="#">Artes 2D</a> </li>
-                <li><a href="#">Artes 3D</a></li>
-                <li><a href="#">Fotografias</a></li>
-                <li><a href="#">Colecionáveis</a></li>
-            </ul>
-        </div>
-       </header>   
+        <div class="nav">
+         <ul>
+             <li><a href="#">Artes 2D</a> </li>
+             <li><a href="#">Artes 3D</a></li>
+             <li><a href="#">Fotografias</a></li>
+             <li><a href="#">Colecionáveis</a></li>
+         </ul>
+     </div>
+    </header>
 
     <section class="car">
         <div class="carrossel" id="carrossel">
-            <button type="button" onclick="Chevleft()" class="btn-carrossel">
+            <span type="button" onclick="Chevleft()" class="btn-carrossel">
                 <i class='bx bxs-left-arrow'></i>
-            </button>
+            </span>
             <div class="carrosel-img">
-                <img src="https://s2.glbimg.com/6fLjMPYo50gB1llNwE11EVXdf8w=/620x430/e.glbimg.com/og/ed/f/original/2022/02/21/https___hypebeast.com_image_2021_10_bored-ape-yacht-club-nft-3-4-million-record-sothebys-metaverse-0.jpg" class="currentimage" id="currentimage">
+                <img src="https://media.istockphoto.com/photos/non-fungible-token-golden-coins-falling-trendy-cryptocurrencies-and-picture-id1367699775?s=612x612" class="currentimage" id="currentimage">
             </div>
-            <button type="button" onclick="Chevright()" class="btn-carrossel">
+            <span type="button" onclick="Chevright()" class="btn-carrossel">
                 <i class='bx bxs-right-arrow'></i>
-            </button>
+            </span>
         </div>
     </section>
 
