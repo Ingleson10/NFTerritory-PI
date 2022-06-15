@@ -255,10 +255,11 @@
 }
 
 @media(min-width: 1024px){
+
     .user-cover{
-        height: 30vh;
+        height: 25vw;
     }
-    
+
     .text{
         width: 25vw;
     }
