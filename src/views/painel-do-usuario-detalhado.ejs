@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/painel-do-usuario-detalhado.css">
+    <link rel="stylesheet" href="/css/painel-do-usuario-responsividade.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <div class="nav2">
+            <ul>
+                <li>support <i class='bx bxs-chevron-down'></i></li>
+                <li>accessibility <i class='bx bxs-chevron-down'></i></li>
+                <li>login <i class='bx bxs-chevron-down'></i></li>
+                <li>buy <i class='bx bxs-chevron-down'></i></li>
+            </ul>
+        </div>
+           <div class="header-main">
+               <div class="rotas">
+   <!--                 <ul>
+                       <li><a href="/help"><i class='bx bx-question-mark'></i></a></li>
+                       <li><a href="/accessibility"><i class='bx bx-body' ></i></a></li>
+                   </ul> -->
+               </div>
+               <div class="logo">
+                   <img src="/img/logo.png" alt="Logo">
+               </div>
+               <!-- <div class="rotas">
+                   <ul>
+                       <li><a href="/profile"><i class='bx bxs-user'></i></a></li>
+                       <li><a href="/cart"><i class='bx bx-cart'></i></a></li>
+                   </ul>
+               </div> -->
+           
+           </div>
+           <div class="description">
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae hic itaque perferendis consequuntur porro, minima libero tempora, ratione voluptates quo maxime voluptas omnis incidunt. Recusandae sequi corporis laudantium ea enim!</span>
+        </div>
+           <div class="search">
+               <input type="text" name="search" id="search" placeholder="Search...">
+           </div>
+           <div class="nav">
+            <ul>
+                <li><a href="#">Artes 2D</a> </li>
+                <li><a href="#">Artes 3D</a></li>
+                <li><a href="#">Fotografias</a></li>
+                <li><a href="#">Colecionáveis</a></li>
+            </ul>
+        </div>
+       </header>
+    <main>
+       <section class="user-cover">
+        <i class='bx bx-cog'></i>
+    </section>
+    <div id="bgd-image"></div>
+    <div class="user-info-and-user-data-container">
+    <section class="user-info-container">
+        <article class="user-avatar">
+            <i class='bx bx-user'></i>
+        </article>
+        <article class="name-edit-city-country-network-container">
+            <article class="name-and-edit-icon-container">
+                <p>SEU NOME AQUI</p>
+                <i class='bx bx-edit-alt'></i>
+            </article>
+            <article class="city-country-network">
+                <p id="city">CIDADE - ESTADO</p>
+                <p>www.twitter.com/joazinho</p>
+            </article>
+        </article>
+        <form action="/profile" method="POST">
+        <div class="about-container">
+            <textarea id="about" name="about" id="about" placeholder="Conte-nos um pouco sobre você!"></textarea>
+            <button id="edit-bio-button"><i class='bx bx-check'></i></button>
+        </div>
+            <ul type='none' class="buttons-container">
+                <li id="my-info" class="size"><button class="info-button">Meus dados</button></li>
+                <li id="safety" class="size"><button class="safety-button">Segurança</button></li>
+                <li id="cards" class="size"><button class="cards-button">Cartões</button></li>
+            </ul>
+        </form>
+    </section>
+    <section class="user-data-container">
+        <article class="user-data-tittle"><h1>Seus dados</h1></article>
+        <article class="personal-data-container">
+            <h3>Dados pessoais</h3>
+            <form action="/profile/user-data" method="GET">
+            <ul type="none">
+                <div class="li-explanatory-container">
+                <li class="name li-style"><i class='bx bx-user'></i><input type="text" name="name" id="name" placeholder="joao da silva"/><i class='bx bx-check config'></i></li>
+                <p class="explanatory">nome completo</p>
+                </div>
+                <div class="li-explanatory-container">
+                <li class="network li-style"><i class='bx bx-network-chart'></i><input type="text" name="network" id="network" placeholder="www.twitter.com/seuperfil"/><i class='bx bx-check config'></i></li>
+                <p class="explanatory">site</p>
+                </div>
+                <div class="li-explanatory-container">
+                <li class="phone li-style"><i class='bx bx-mobile'></i><input type="text" name="phone" id="phone" placeholder="(XX)XXXXX-XXXX"/><i class='bx bx-check config'></i></li>
+                <p class="explanatory">telefone</p>
+                </div>
+                <div class="li-explanatory-container">
+                <li class="cpf li-style"><i class='bx bx-id-card'></i><input type="text" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX"/><i class='bx bx-check config'></i></li>
+                <p class="explanatory">cpf</p>
+                </div>
+            </ul>
+            </form>
+        </article>
+        <article class="account-data-container">
+            <h3>Dados da conta</h3>
+            <form action="/profile/account-data" method="GET">
+                <ul type="none">
+                    <div class="li-explanatory-container">
+                    <li class="nickname li-style"><i class='bx bx-user'></i><input type="text" name="nickname" id="nickname" placeholder="joaozinho034"/><i class='bx bx-check config'></i></li>
+                    <p class="explanatory">nome de usuário</p>
+                    </div>
+                    <div class="li-explanatory-container">
+                    <li class="email li-style"><i class='bx bx-envelope'></i><input type="text" name="email" id="email" placeholder="seu e-mail"/><i class='bx bx-check config'></i></li>
+                    <p class="explanatory">e-mail</p>
+                    </div>
+        </article>
+    </section>    
+    </div>
+    <section class="cards-whole-container">
+        <h1>Seus cartões</h1>
+        <div class="cards-container">
+        <article class="cards">
+            <div class="card-logo-and-info">
+            <img src="/img/mastercard-logo.png" alt="Logo MasterCard"/>
+            <ul class="card-data" type="none">
+                <li>**** **** **** 0000</li>
+                <li>Nome do banco</li>
+                <li>Vencimento: DD/MM/AAAA</li>
+            </ul>
+            </div>
+            <i class='bx bx-trash'></i>
+        </article>
+        </div>
+        <article class="plus-button">
+            <form action="/profile/cards/add" method="GET">
+                <button class="plus"><i class='bx bx-plus'></i></button>
+        </article>
+    </section>
+    <section class="safety-container">
+        <h1>Segurança</h1>
+        <article class="input-whole-container">
+            <div class="input-container">
+            <form action="/profile/safety" method="GET">
+                <i class='bx bx-lock-alt'></i><input type="text" name="password" id="password" placeholder="********"/><i class='bx bx-check config'></i>
+            </div>
+                <p class="safety-explanatory">senha</p>
+            <div class="checkbox-container">
+                <input class="check" type="checkbox" name="safety" value="on"/>
+                <p class="safety-explanatory-2">Verificação em duas etapas.</p>
+            </div>
+            </form>
+        </article>
+    </section>
+    <section class="back-to-top-container">
+            <button class="back-to-top"><h1>Retornar ao topo</h1></button>
+    </section>
+    </main>
+       <footer>
+        <div class="nfterritory-footer">
+            <div class="logo">
+                <img src="/img/logo.png" alt="" srcset="">
+            </div>
+            <div class="text">
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+            </div>
+        </div>
+        <div class="comunidade">
+            <div class="text-comunidade">
+                <span>Continue por dentro de tudo!</span>
+                <span>Cadastre seu e-mail receba</span>
+                <span>novidades e ofertas da NFTerritory:</span>
+            </div>
+            <div class="search-comunidade">
+                <input type="text" placeholder="Digite aqui seu e-mail">
+                <div><i class='bx bx-check'></i></div>
+            </div>
+            <span> 
+             Faça parte da comunidade:
+            </span>
+            <ul> 
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+            </ul>    
+            <ul> 
+                <li><a href="#"><i class='bx bxl-reddit'></i></a></li>
+                <li><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-clicaveis">
+            <span><a href="#">Fale conosco</a></span>
+            <span><a href="#">Trabalhe conosco</a></span>
+            <span><a href="#">Perguntas Frequentes</a></span>
+            <span><a href="#">Política de privacidade</a></span>
+            <span><a href="#">Termos e condições</a></span>
+        </div>
+     </footer>
+</body>
+</html>

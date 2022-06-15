@@ -1,0 +1,27 @@
+{
+  "name": "nfterritory-pi",
+  "version": "1.0.0",
+  "description": "Projeto Integrador proposto pela Digital House Brasil - Criar/desenvolver um e-commerce.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Urban-Tech-Solution/NFTerritory-PI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Urban-Tech-Solution/NFTerritory-PI/issues"
+  },
+  "homepage": "https://github.com/Urban-Tech-Solution/NFTerritory-PI#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

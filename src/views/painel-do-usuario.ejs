@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/painel-do-usuario.css">
+    <link rel="stylesheet" href="/css/painel-do-usuario-responsividade.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <div class="nav2">
+            <ul>
+                <li>support <i class='bx bxs-chevron-down'></i></li>
+                <li>accessibility <i class='bx bxs-chevron-down'></i></li>
+                <li>login <i class='bx bxs-chevron-down'></i></li>
+                <li>buy <i class='bx bxs-chevron-down'></i></li>
+            </ul>
+        </div>
+           <div class="header-main">
+               <div class="rotas">
+   <!--                 <ul>
+                       <li><a href="/help"><i class='bx bx-question-mark'></i></a></li>
+                       <li><a href="/accessibility"><i class='bx bx-body' ></i></a></li>
+                   </ul> -->
+               </div>
+               <div class="logo">
+                   <img src="/img/logo.png" alt="Logo">
+               </div>
+               <!-- <div class="rotas">
+                   <ul>
+                       <li><a href="/profile"><i class='bx bxs-user'></i></a></li>
+                       <li><a href="/cart"><i class='bx bx-cart'></i></a></li>
+                   </ul>
+               </div> -->
+           
+           </div>
+           <div class="description">
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae hic itaque perferendis consequuntur porro, minima libero tempora, ratione voluptates quo maxime voluptas omnis incidunt. Recusandae sequi corporis laudantium ea enim!</span>
+        </div>
+           <div class="search">
+               <input type="text" name="search" id="search" placeholder="Search...">
+           </div>
+           <div class="nav">
+            <ul>
+                <li><a href="#">Artes 2D</a> </li>
+                <li><a href="#">Artes 3D</a></li>
+                <li><a href="#">Fotografias</a></li>
+                <li><a href="#">Colecionáveis</a></li>
+            </ul>
+        </div>
+       </header>
+       <main>
+        <section class="user-cover">
+            <i class='bx bx-cog'></i>
+        </section>
+        <div id="bgd-image"></div>
+        <div class="user-info-and-art-exhibit-container">
+        <section class="user-info-container">
+            <article class="user-avatar">
+                <i class='bx bx-user'></i>
+            </article>
+            <article class="name-edit-city-country-network-container">
+                <article class="name-and-edit-icon-container">
+                    <p>SEU NOME AQUI</p>
+                    <i class='bx bx-edit-alt'></i>
+                </article>
+                <article class="city-country-network">
+                    <p id="city">CIDADE - ESTADO</p>
+                    <p>www.twitter.com/joazinho</p>
+                </article>
+            </article>
+            <form action="/perfil/editar" method="GET">
+            <div class="about-container">
+                <textarea id="about" name="about" id="about" placeholder="Conte-nos um pouco sobre você!"></textarea>
+                <button id="edit-bio-button"><i class='bx bx-check'></i></button>
+            </div>
+                <ul type='none' class="buttons-container">
+                    <li id="my-info" class="size"><button class="info-button" type="submit">Meus dados</button></li>
+                    <li id="safety" class="size"><button class="safety-button">Segurança</button></li>
+                    <li id="cards" class="size"><button class="cards-button">Cartões</button></li>
+                </ul>
+            </form>
+        </section>
+        <section class="top-art-exhibit-container">
+                <article class="title"><h1>Suas TOP artes adquiridas:</h1></article>
+                <article class="images-container">
+                    <div class="first-row">
+                        <img class="images-left" src="/img/NFT-2.png"/>
+                        <img class="images-right" src="/img/NFT-2.png"/>
+                    </div>
+                    <div class="second-row">
+                        <img class="images-left" src="/img/NFT-2.png"/>
+                        <img class="images-right" src="/img/NFT-2.png"/>
+                    </div>
+                </article>
+        </section>
+        </div>
+        <section class="last-purchase-container">
+            <article class="title-2"><h1>Suas últimas aquisições:</h1></article>
+            <div class="whole-table-container">
+            <div class="info-table-container">
+            <ul type='none' class="last-purchase-row">
+                <li class="miniature-and-name font"><img src="/img/NFT-4.png"/>NOME DA ARTE</li>
+                <li class="purchase-date font"><i class='bx bx-calendar'></i>DD/MM/AAAA</li>
+                <li class="price font">R$9999,99</li>
+            </ul>
+            </div> 
+            <div class="info-table-container">
+                <ul type='none' class="last-purchase-row">
+                    <li class="miniature-and-name font"><img src="/img/NFT-4.png"/>NOME DA ARTE</li>
+                    <li class="purchase-date font"><i class='bx bx-calendar'></i>DD/MM/AAAA</li>
+                    <li class="price font">R$9999,99</li>
+                </ul>
+                </div> 
+                <div class="info-table-container">
+            <ul type='none' class="last-purchase-row">
+                <li class="miniature-and-name font"><img src="/img/NFT-4.png"/>NOME DA ARTE</li>
+                <li class="purchase-date font"><i class='bx bx-calendar'></i>DD/MM/AAAA</li>
+                <li class="price font">R$9999,99</li>
+            </ul>
+            </div> 
+            <div class="info-table-container">
+                <ul type='none' class="last-purchase-row">
+                    <li class="miniature-and-name font"><img src="/img/NFT-4.png"/>NOME DA ARTE</li>
+                    <li class="purchase-date font"><i class='bx bx-calendar'></i>DD/MM/AAAA</li>
+                    <li class="price font">R$9999,99</li>
+                </ul>
+                </div>
+            </div>
+        </section>
+        <section class="galery-container">
+            <div class="title-and-filter">
+            <article class="title-3"><h1>Sua galeria:</h1></article>
+            <form action="/profile/filter" method="GET">
+                <select name="classify" id="filter">
+                    <option name="classify" value="" selected disabled> filtrar por</option>
+                    <option name="classify" value=""> artes 2D</option>
+                    <option name="classify" value=""> artes 3D</option>
+                    <option name="classify" value=""> fotografias</option>
+                    <option name="classify" value=""> colecionáveis</option>
+                </select>
+            </form>
+            </div>
+            <div class="galery-row-container">
+            <ul type='none' class="top-row">
+                <li><img class="image-size" src="/img/NFT-4.png"/></li>
+                <li><img class="image-size" src="/img/NFT-4.png"/></li>
+                <li><img class="image-size" src="/img/NFT-4.png"/></li>
+            </ul>
+            <ul type='none' class="bottom-row">
+                <li><img class="image-size" src="/img/NFT-4.png"/></li>
+                <li><img class="image-size" src="/img/NFT-4.png"/></li>
+                <li><img class="image-size" src="/img/NFT-4.png"/></li>
+            </ul>
+            </div>
+        </section>
+       </main>
+       <footer>
+        <div class="nfterritory-footer">
+            <div class="logo">
+                <img src="/img/logo.png" alt="" srcset="">
+            </div>
+            <div class="text">
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+            </div>
+        </div>
+        <div class="comunidade">
+            <div class="text-comunidade">
+                <span>Continue por dentro de tudo!</span>
+                <span>Cadastre seu e-mail receba</span>
+                <span>novidades e ofertas da NFTerritory:</span>
+            </div>
+            <div class="search-comunidade">
+                <input type="text" placeholder="Digite aqui seu e-mail">
+                <div><i class='bx bx-check'></i></div>
+            </div>
+            <span class="join"> 
+             Faça parte da comunidade:
+            </span>
+            <ul> 
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+            </ul>    
+            <ul> 
+                <li><a href="#"><i class='bx bxl-reddit'></i></a></li>
+                <li><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-clicaveis">
+            <span><a href="#">Fale conosco</a></span>
+            <span><a href="#">Trabalhe conosco</a></span>
+            <span><a href="#">Perguntas Frequentes</a></span>
+            <span><a href="#">Política de privacidade</a></span>
+            <span><a href="#">Termos e condições</a></span>
+        </div>
+     </footer>
+</body>
+</html>
