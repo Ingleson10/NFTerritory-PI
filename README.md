@@ -1,3 +1,3 @@
 # NFTerritory
-Projeto Integrador proposto pela Digital House Brasil - Criar/desenolver um e-commerce.
+Projeto Integrador proposto pela Digital House Brasil - Criar/desenvolver um e-commerce.
 
