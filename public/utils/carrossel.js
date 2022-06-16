@@ -30,7 +30,7 @@ function Chevleft(){
     }
     currentimage.setAttribute("src",itens[counter].url.toString())
 }
-
+chevleft.addEventListener("click",Chevleft)
 function Chevright(){
     if(counter>=itens.length-1){
         counter=0
@@ -40,5 +40,6 @@ function Chevright(){
     currentimage.setAttribute("src",itens[counter].url.toString())
     carrtext.innerHTML= itens[counter].texto.toString()
 }
+chevright.addEventListener("click",Chevright)
 
 setInterval(Chevright, 3000)
