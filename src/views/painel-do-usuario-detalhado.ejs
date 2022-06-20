@@ -7,40 +7,10 @@
     <link rel="stylesheet" href="/css/painel-do-usuario-detalhado.css">
     <link rel="stylesheet" href="/css/painel-do-usuario-responsividade.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>Profile</title>
+    <title>Perfil</title>
 </head>
 <body>
-    <header>
-        <div class="nav2">
-            <ul>
-                <li>support <i class='bx bxs-chevron-down'></i></li>
-                <li>accessibility <i class='bx bxs-chevron-down'></i></li>
-                <li>login <i class='bx bxs-chevron-down'></i></li>
-                <li>buy <i class='bx bxs-chevron-down'></i></li>
-            </ul>
-        </div>
-           <div class="header-main">
-               <div class="rotas">
-               </div>
-               <div class="logo">
-                   <img src="/img/logo.png" alt="Logo">
-               </div>
-           </div>
-           <div class="description">
-            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae hic itaque perferendis consequuntur porro, minima libero tempora, ratione voluptates quo maxime voluptas omnis incidunt. Recusandae sequi corporis laudantium ea enim!</span>
-        </div>
-           <div class="search">
-               <input type="text" name="search" id="search" placeholder="Search...">
-           </div>
-           <div class="nav">
-            <ul>
-                <li><a href="#">Artes 2D</a> </li>
-                <li><a href="#">Artes 3D</a></li>
-                <li><a href="#">Fotografias</a></li>
-                <li><a href="#">Colecionáveis</a></li>
-            </ul>
-        </div>
-       </header>
+    <%- include('./partials/header') %>
     <main>
        <section class="user-cover">
         <i class='bx bx-cog'></i>
@@ -152,46 +122,6 @@
             <button class="back-to-top"><h1>Retornar ao topo</h1></button>
     </section>
     </main>
-       <footer>
-        <div class="nfterritory-footer">
-            <div class="logo">
-                <img src="/img/logo.png" alt="" srcset="">
-            </div>
-            <div class="text">
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
-            </div>
-        </div>
-        <div class="comunidade">
-            <div class="text-comunidade">
-                <span>Continue por dentro de tudo!</span>
-                <span>Cadastre seu e-mail receba</span>
-                <span>novidades e ofertas da NFTerritory:</span>
-            </div>
-            <div class="search-comunidade">
-                <input type="text" placeholder="Digite aqui seu e-mail">
-                <div><i class='bx bx-check'></i></div>
-            </div>
-            <span> 
-             Faça parte da comunidade:
-            </span>
-            <ul> 
-                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
-                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
-            </ul>    
-            <ul> 
-                <li><a href="#"><i class='bx bxl-reddit'></i></a></li>
-                <li><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-clicaveis">
-            <span><a href="#">Fale conosco</a></span>
-            <span><a href="#">Trabalhe conosco</a></span>
-            <span><a href="#">Perguntas Frequentes</a></span>
-            <span><a href="#">Política de privacidade</a></span>
-            <span><a href="#">Termos e condições</a></span>
-        </div>
-     </footer>
+        <%- include('./partials/footer') %>
 </body>
 </html>
