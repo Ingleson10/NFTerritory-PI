@@ -15,10 +15,6 @@
   font-family: 'Roboto', sans-serif; 
 }
 
-html{
-    
-}
-
 body{
   display: flex;
   flex-direction: column;
@@ -423,12 +419,6 @@ header .nav ul li a:hover{
   margin-top: 3%;
 }
 
-
-/* .cards-container{
-  display: flex;
-  justify-content: ;
-} */
-
 .cards-whole-container h1, .safety-container h1{
   background: linear-gradient(180deg, rgba(20, 118, 139, 0.3) 0%, rgba(55, 170, 149, 0) 100%),
   linear-gradient(0deg, rgba(55, 170, 149, 0.8), rgba(55, 170, 149, 0.8));
@@ -568,8 +558,6 @@ header .nav ul li a:hover{
   linear-gradient(0deg, rgba(55, 170, 149, 0.8), rgba(55, 170, 149, 0.8));
   cursor: pointer;
 }
-
-/*                                    Inicio do footer                               */
   
 footer{
   display: flex;
