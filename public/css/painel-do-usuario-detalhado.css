@@ -411,6 +411,18 @@ header .nav ul li a:hover{
   color: gray;
 }
 
+.align button{
+  border-radius: 15px;
+  border: 1px gray solid;
+  transition: 0.4s;
+}
+
+.align{
+  width: 55vw;
+  display: flex;
+  justify-content: center;
+}
+
 .account-data-container{
   width: 60vw;
   display: flex;
