@@ -414,7 +414,6 @@ header .nav ul li a:hover{
 .align button{
   border-radius: 15px;
   border: 1px gray solid;
-  transition: 0.4s;
 }
 
 .align{
@@ -500,6 +499,7 @@ header .nav ul li a:hover{
 .plus-button i{
   font-size: 40px;
   cursor: pointer;
+  opacity: 0.85%;
 }
 
 .checkbox-container{
@@ -586,8 +586,7 @@ footer{
 .nfterritory-footer{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 250px;
+  justify-content: center;
   width: 27vw;
   border-right: 1px black solid;
   margin: 40px 30px 40px 40px;

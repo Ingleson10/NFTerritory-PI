@@ -1,0 +1,344 @@
+@media(max-width: 768px){
+    header .nav2{
+        height: 3vh;
+    }
+
+    header .search #search{
+        padding: 4px;
+    }
+
+    header .nav{
+        margin: 20px 0px;
+    }
+
+    header .nav ul{
+        padding: 3px;
+    }
+
+    header .nav ul li{
+        padding-right: 0px;
+        width: 30%;
+    }
+
+    header .nav ul li a, .description span{
+        font-size: 1.7vw;
+    }
+
+    .user-cover{
+        height: 40vh;
+    }
+
+    .user-cover i{
+        font-size: 5vw
+    }
+
+    .user-info-and-user-data-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-info-container{
+        margin-left: 5%;
+        max-width: 40vw;
+        width: 100%;
+        height: auto;
+    }
+
+    .user-avatar{
+        height: 25vh;
+        max-width: 35%;
+        width: 100%;
+
+        position: relative;
+        bottom: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    .user-avatar i{
+        font-size: 15vw;
+        margin-top: 0;
+    }
+
+    .name-edit-city-country-network-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .name-and-edit-icon-container{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .name-and-edit-icon-container p{
+        font-size: 2vw;
+        margin-right: 0;
+    }
+
+    .name-and-edit-icon-container i {
+        font-size: 20px;
+        padding-left: 1%;
+    }
+
+    #city, .city-country-network{
+        font-size: 2vw;
+    }
+
+    #about{
+        margin: 0 3vw;
+        width: 35vw;
+        position: relative;
+        bottom: 1vh;
+    }
+
+    #edit-bio-button{
+        position: relative;
+        bottom: 7vh;
+        left: 70%;
+    }
+
+    .info-button, .cards-button, .safety-button{
+        font-size: 15px;
+    }
+
+    .buttons-container{
+        position: relative;
+        bottom: 2vh;
+    }
+
+    .user-data-tittle{
+        width: 100vw;
+        font-size: 3vw;
+    }
+
+    .personal-data-container h3, .account-data-container h3{
+        font-size: 2vw;
+    }
+
+    .explanatory{
+        margin-left: 13%;
+        font-size: 1.5vw;
+    }
+
+    .personal-data-container input, .account-data-container input{
+        font-size: 2vw;
+        padding: 1%;
+    }
+    
+    .input-whole-container input{
+        font-size: 2vw;
+        padding: 0.8%;
+    }
+
+    .checkbox-container p{
+        font-size: 1.5vw;
+    }
+    
+    .card-logo-and-info{
+        width: 40vw;
+    }
+
+    .cards i{
+        font-size: 45px;
+    }
+
+    .card-data li{
+        font-size: 2vw;
+    }
+
+    .user-data-container i{
+        font-size: 4vw;
+    }
+
+    .cards-whole-container h1, .safety-container h1{
+        font-size: 3vw;
+    }
+
+    .input-container i{
+        font-size: 4vw;
+    }
+
+    .back-to-top{
+        font-size: 1.5vw;
+    }
+
+    .nfterritory-footer{
+        margin: 7% 0 7% 5%;
+        padding-right: 3%;
+        width: 30vw;
+        justify-content: space-between;
+        height: 90px;
+    }
+
+    footer .comunidade .search-comunidade input{
+        padding: 5px;
+    }
+
+    footer .comunidade .search-comunidade i{
+        font-size: 20px;
+    }
+
+    footer .comunidade .text-comunidade{
+        padding-top: 10px;
+    }
+
+    footer .comunidade .search-comunidade{
+        margin-top: 10px;
+    }
+
+    .comunidade span{
+        margin-top: 10px;
+    }
+
+    .comunidade ul{
+        width: 50%;
+        font-size: 30px;
+        justify-content: space-evenly;
+    }
+
+    .footer-clicaveis span{
+        margin-top: 20%;
+    }
+
+    .footer-clicaveis{
+        justify-content: unset
+    }
+}
+
+@media(max-width: 425px){
+    .user-info-container{
+        max-width: 60vw;
+    }
+
+    #about{
+        width: 45vw;
+    }
+
+    .user-avatar{
+        height: 20vw;
+        max-width: 30%;
+    }
+
+    .info-button, .cards-button, .safety-button{
+        font-size: 13px;
+    }
+
+    .name-and-edit-icon-container p, #city, .city-country-network{
+        font-size: 3vw;
+    }
+
+    .personal-data-container h3, .account-data-container h3{
+        font-size: 2.5vw;
+    }
+
+    .personal-data-container input, .account-data-container input{
+        padding: 2%;
+        width: 70vw;
+    }
+
+    .explanatory{
+        font-size: 10px;
+
+        position: relative;
+        bottom: 6px;
+
+        margin-bottom: 0;
+    }
+
+    .personal-data-container{
+        width: 80vw;
+    }
+
+    .user-data-container i{
+        font-size: 6vw;
+    }
+
+    .align{
+        width: 80vw;
+    }
+
+    .align button{
+        border-radius: 10px;
+    }
+
+    .cards{
+        border-radius: 20px;
+    }
+
+    .cards i{
+        font-size: 30px;
+    }
+
+    .plus-button i{
+        font-size: 6vw;
+        opacity: 0.85;
+    }
+
+    .plus-button button{
+        border-radius: 10px;
+    }
+
+    .input-container i{
+        font-size: 6vw;
+    }
+
+    .safety-explanatory{
+        font-size: 10px;
+        margin-left: 28%
+    }
+
+    .checkbox-container p{
+        font-size: 2vw;
+    }
+
+    .nfterritory-footer{
+        margin: 7% 0 7% 5%;
+        padding-right: 3%;
+        width: 30vw;
+        justify-content: space-between;
+        height: 90px;
+    }
+
+    footer .comunidade .search-comunidade input{
+        padding: 5px;
+    }
+
+    footer .comunidade .search-comunidade i{
+        font-size: 20px;
+    }
+
+    footer .comunidade .text-comunidade span{
+        margin-top: 5px;
+    }
+
+    footer .comunidade .text-comunidade{
+        padding-top: 10px;
+    }
+
+    footer .comunidade .search-comunidade{
+        margin-top: 10px;
+    }
+
+    .comunidade span{
+        margin-top: 10px;
+    }
+
+    .comunidade ul{
+        width: 50%;
+        font-size: 20px;
+        justify-content: space-evenly;
+    }
+
+    .footer-clicaveis span{
+        margin-top: 30%;
+    }
+
+    .footer-clicaveis{
+        justify-content: unset
+    }
+}
