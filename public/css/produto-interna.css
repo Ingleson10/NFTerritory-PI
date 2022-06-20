@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
-* 
-{
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
   --cor-text : #fff;
-  --border-color : #fff
+  --border-color : #fff;
+  --cor-do-arrow :#1c1c1c;
 }
-body
-{
-    display: flex;
-    flex-direction: column;
-    background-color: #1c1c1c;
-    align-items: center;
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1c1c;
 }
-.nav2
-{
+
+.nav2{
   display: flex;
   background-color: #f3f0f0;
   width: 100%;
@@ -25,56 +25,56 @@ body
   align-items: flex-end;
   margin-bottom: 20px;
 }
-.nav2 ul
-{
 
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    color: white;
-    width: 50%;
-    
+.nav2 ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: white;
+  width: 50%;
+}
 
+.nav2 ul li{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  border-bottom: rgb(0, 255, 149) 3px solid;
 }
-.nav2 ul li 
-{
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    border-bottom: red 2px solid;
-}
-.nav2 ul li:hover 
-{
+
+.nav2 ul li:hover{
   border-bottom: red 5px solid;
+}
 
+.nav2 ul li i{
+  color: grey;
 }
-.nav2 ul li i {
-    color: grey;
+
+.nav2 ul li:hover{
+  color: red;
+  cursor: pointer;
 }
-.nav2 ul li:hover
-{
-    color: red;
-    cursor: pointer;
-}
-header {
+
+header{
   display: flex;
   justify-self: flex-start;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  
   font-size: 1.5vw;
 }
-header .header-main {
+
+header .header-main{
   display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
 }
-.header-main .rotas ul {
+
+.header-main .rotas ul{
   display: flex;
   padding: 10px;
 }
-.header-main .rotas ul li {
+
+.header-main .rotas ul li{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,34 +84,39 @@ header .header-main {
   background-color: #37aa95e8;
   margin-right: 15px;
 }
-.header-main .rotas ul li a {
+
+.header-main .rotas ul li a{
   font-size: 25px;
   color: white;
   font-weight: 800;
 }
-.header-main .rotas ul li a:hover
-{
-    color: #1c1c1c;
+
+.header-main .rotas ul li a:hover{
+  color: #1c1c1c;
 }
-.header-main .logo img {
+
+.header-main .logo img{
   width: 20vw;
 }
 
-header .description {
+header .description{
   display: flex;
   justify-content: center;
 }
-header .description span {
+
+header .description span{
   color: var(--cor-text);
   text-align: center;
   width: 50%;
 }
-header .search {
+
+header .search{
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-header .search #search {
+
+header .search #search{
   font-size: 1.5vw;
   border-radius: 10px;
   color: rgb(51, 51, 51);
@@ -121,15 +126,14 @@ header .search #search {
   height: auto;
   border: none;
 }
-
-
-header .nav {
+  
+header .nav{
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 40px;
 }
-header .nav ul {
+
+header .nav ul{
   display: flex;
   background-color: #37aa95e8;
   border-radius: 10px;
@@ -137,36 +141,35 @@ header .nav ul {
   width: 50%;
   justify-content: space-between;
   text-align: center;
-  
 }
-header .nav ul li {
+
+header .nav ul li{
   width: 40%;
   list-style-type: none;
   color: var(--cor-text);
-  
 }
-header .nav ul li a {
+
+header .nav ul li a{
   color: white;
   text-decoration: none;
   font-size: 1.4vw;
 }
-header .nav ul li a:hover {
+
+header .nav ul li a:hover{
   text-decoration: underline;
   color: #1c1c1c;
 }
-/*                                      Fim do /Header                               */
 
-.produto
-{
+.produto{
   width: 40vw;
   display: flex;
   justify-content: center;
   background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 0px );
--webkit-backdrop-filter: blur( 0px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .rs{
@@ -177,28 +180,25 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   letter-spacing: 1px;
   border: none;
   border-radius: 40px;
- 
-  
   color: #fff;
   background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
   linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
   font-size: 1.5vw;
-
-  
 }
+
 .rs{
   transform: scale(1.1);
   cursor: pointer;
 }
-.rs{
 
+.rs{
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
   margin-top: 20px;
 }
+
 .descricao{
-  
   display: flex;
   justify-content: center;
   color: white;
@@ -207,7 +207,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .carrinho{
-
   font-size: 5vw;
   margin-top: 50px;
   padding: 10px 20px;
@@ -215,20 +214,17 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   letter-spacing: 1px;
   border: none;
   border-radius: 40px;
- 
-  
   color: #fff;
   background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
   linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
   font-size: 1.5vw;
-
 }
-.carrinho{
 
+.carrinho{
   transform: scale(1.1);
   cursor: pointer;
-
 }
+
 .carrinho{
   display: flex;
   justify-content: center;
@@ -236,10 +232,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin-bottom: 50px;
 }
 
-/*                                    Inicio do footer                               */
-  
-footer
-{
+footer{
   display: flex;
   justify-self: flex-end;
   width: 100%;
@@ -248,8 +241,8 @@ footer
   font-size: 1.8vw;
   color: var(--cor-text);
 }
-.nfterritory-footer
-{
+
+.nfterritory-footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,108 +251,100 @@ footer
   margin: 40px 30px 40px 40px;
   padding-right: 20px;
 }
-.nfterritory-footer .logo
-{
+
+.nfterritory-footer .logo{
   display: flex;
-  justify-content: center;
-  
+  justify-content: center; 
 }
-.nfterritory-footer img
-{
+
+.nfterritory-footer img{
   display: flex;
-  
   width: 60%;
 }
-.nfterritory-footer .text
-{
+
+.nfterritory-footer .text{
   display: flex;
   flex-direction: column;
   justify-self: center;
   align-self: center;
 }
-.nfterritory-footer .text span
-{
+
+.nfterritory-footer .text span{
   margin-top:10px;
   font-size: 1.5vw;text-align: center;
-
 }
-footer .comunidade
-{
+
+footer .comunidade{
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   margin-left: 10%;
- 
-} footer .comunidade .btn-comunidade
-{
+}
+
+footer .comunidade .btn-comunidade{
   display: flex;
   justify-content: center;
   font-size: 3vw;
 }
-footer .comunidade .text-comunidade
-{
+
+footer .comunidade .text-comunidade{
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-footer .comunidade .text-comunidade span
-{
+
+footer .comunidade .text-comunidade span{
   margin-top: 10px;
 }
-footer .comunidade .search-comunidade
-{
+
+footer .comunidade .search-comunidade{
   display: flex;
-  
   margin-top: 20px;
   align-items: center;
 }
-footer .comunidade .search-comunidade input
-{
+
+footer .comunidade .search-comunidade input{
   font-size: 1.5vw;
   width: 20vw;
   border-radius:15px; 
-
 }
-footer .comunidade .search-comunidade div
-{
+
+footer .comunidade .search-comunidade div{
   display: flex;
   justify-content: center;
   text-align: center;
-  color: white;
   border-radius: 50%;
   cursor: pointer;
-
 }
-footer .comunidade .search-comunidade div i:hover
-{
+
+footer .comunidade .search-comunidade div i:hover{
     color: black;
 }
 
-footer .comunidade .search-comunidade  i
-{
+footer .comunidade .search-comunidade button i{
   font-size: 3vw;
   color: white;
-  
+  background-color: #1c1c1c;
 }
 
-.comunidade span
-{
+.comunidade span{
   margin-top: 20px;
 }
-.comunidade ul
-{
+
+.comunidade ul{
   display: flex;
   justify-content: space-between;
   list-style: none;
   width: 30%;
   font-size: 3vw;
 }
-.comunidade ul li a
-{
+
+.comunidade ul li a{
   color: white;
-}.footer-clicaveis 
-{
+}
+
+.footer-clicaveis {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
@@ -367,12 +352,12 @@ footer .comunidade .search-comunidade  i
   text-align: center;
   margin-right: 5%  ;
 }
-.footer-clicaveis span
-{
+
+.footer-clicaveis span{
   margin-top: 20px;
 }
-.footer-clicaveis span a
-{
+
+.footer-clicaveis span a{
   color: white;
   text-decoration: none;
 }

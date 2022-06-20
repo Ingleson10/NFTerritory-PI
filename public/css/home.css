@@ -1,39 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
-* 
-{
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   --cor-text : #fff;
-  --border-color : #fff
+  --border-color : #fff;
+  --cor-do-arrow :#1c1c1c;
 }
 
-body
-{
-    display: flex;
-    flex-direction: column;
-    background-color: #1c1c1c;
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1c1c;
 }
-header {
+
+.nav2{
+  display: flex;
+  background-color: #f3f0f0;
+  width: 100%;
+  justify-content: flex-end;
+  height: 5vh;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.nav2 ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: white;
+  width: 50%;
+}
+
+.nav2 ul li{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  border-bottom: rgb(0, 255, 149) 3px solid;
+}
+
+.nav2 ul li:hover{
+  border-bottom: red 5px solid;
+}
+
+.nav2 ul li i{
+  color: grey;
+}
+
+.nav2 ul li:hover{
+  color: red;
+  cursor: pointer;
+}
+
+header{
   display: flex;
   justify-self: flex-start;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  
   font-size: 1.5vw;
 }
-header .header-main {
+
+header .header-main{
   display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
 }
-.header-main .rotas ul {
+
+.header-main .rotas ul{
   display: flex;
   padding: 10px;
 }
-.header-main .rotas ul li {
+
+.header-main .rotas ul li{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,34 +84,39 @@ header .header-main {
   background-color: #37aa95e8;
   margin-right: 15px;
 }
-.header-main .rotas ul li a {
+
+.header-main .rotas ul li a{
   font-size: 25px;
   color: white;
   font-weight: 800;
 }
-.header-main .rotas ul li a:hover
-{
-    color: #1c1c1c;
+
+.header-main .rotas ul li a:hover{
+  color: #1c1c1c;
 }
-.header-main .logo img {
+
+.header-main .logo img{
   width: 20vw;
 }
 
-header .description {
+header .description{
   display: flex;
   justify-content: center;
 }
-header .description span {
+
+header .description span{
   color: var(--cor-text);
   text-align: center;
   width: 50%;
 }
-header .search {
+
+header .search{
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-header .search #search {
+
+header .search #search{
   font-size: 1.5vw;
   border-radius: 10px;
   color: rgb(51, 51, 51);
@@ -80,15 +126,14 @@ header .search #search {
   height: auto;
   border: none;
 }
-
-
-header .nav {
+  
+header .nav{
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 40px;
 }
-header .nav ul {
+
+header .nav ul{
   display: flex;
   background-color: #37aa95e8;
   border-radius: 10px;
@@ -96,51 +141,54 @@ header .nav ul {
   width: 50%;
   justify-content: space-between;
   text-align: center;
-  
 }
-header .nav ul li {
+
+header .nav ul li{
   width: 40%;
   list-style-type: none;
   color: var(--cor-text);
-  
 }
-header .nav ul li a {
+
+header .nav ul li a{
   color: white;
   text-decoration: none;
   font-size: 1.4vw;
 }
-header .nav ul li a:hover {
+
+header .nav ul li a:hover{
   text-decoration: underline;
   color: #1c1c1c;
 }
-.car {
+
+.car{
   display: flex;
   justify-content: center;
-  margin: 40px 0px;
-  
+  margin: 40px 0px; 
 }
-.car .carrossel {
+
+.car .carrossel{
   display: flex;
-  
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.car .carrossel .carrosel-img
-{
+
+.car .carrossel .carrosel-img{
   width: 100%;
   height: 30vw;
   overflow: hidden;
 }
-.car .carrossel .carrosel-img img {
+
+.car .carrossel .carrosel-img img{
   width: 100%;
   border-radius: 15px;
 }
 
-.car .btn-carrossel {
+.car .btn-carrossel{
   cursor: pointer;
 }
-.car .btn-carrossel .bxs-left-arrow {
+
+.car .btn-carrossel .bxs-left-arrow{
   background: rgba(8, 0, 0, 0.25);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
@@ -151,8 +199,8 @@ header .nav ul li a:hover {
   color: white;
   padding: 10px;
 }
-.car .btn-carrossel .bxs-right-arrow {
-  
+
+.car .btn-carrossel .bxs-right-arrow{
   background: rgba(3, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -163,13 +211,14 @@ header .nav ul li a:hover {
   color: white;
   padding: 10px;
 }
-main {
+
+main{
   display: flex;
   flex-direction: column;
   background-image: url(../../img/back.png);
 }
 
-.buy {
+.buy{
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -178,7 +227,8 @@ main {
   margin-top: 100px;
   border-bottom: 1px solid white;
 }
-.buy .product {
+
+.buy .product{
   position: relative;
   display: flex;
   flex-direction: column;
@@ -192,7 +242,8 @@ main {
   opacity: 2;
   z-index: 1;
 }
-.buy .product .details {
+
+.buy .product .details{
   display: flex;
   justify-content: space-between;
   padding: 4px;
@@ -201,7 +252,8 @@ main {
   float: right;
   position: relative;
 }
-.buy .product img {
+
+.buy .product img{
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -210,19 +262,23 @@ main {
   z-index: 1;
   position: absolute;
 }
-.buy .details2 {
+
+.buy .details2{
   width: 400px;
 }
-.buy .details2 .description {
+
+.buy .details2 .description{
   color: var(--cor-text);
   text-align: center;
 }
-.buy .details2 .rotas ul {
+
+.buy .details2 .rotas ul{
   display: flex;
   padding: 10px;
   justify-content: end;
 }
-.buy .details2 .rotas ul li {
+
+.buy .details2 .rotas ul li{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,17 +289,19 @@ main {
   margin-right: 15px;
 }
 
-.buy .details2 .rotas ul li a {
+.buy .details2 .rotas ul li a{
   font-size: 18px;
   color: white;
   font-weight: 800;
   text-decoration: none;
 }
-.buy .details2 .rotas ul #compre {
+
+.buy .details2 .rotas ul #compre{
   width: 100px;
   border-radius: 5px;
 }
-.buy2 {
+
+.buy2{
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -252,7 +310,8 @@ main {
   margin-top: 100px;
   border-bottom: 1px solid white;
 }
-.buy2 .product {
+
+.buy2 .product{
   position: relative;
   display: flex;
   flex-direction: column;
@@ -264,7 +323,8 @@ main {
   opacity: 2;
   z-index: 1;
 }
-.buy2 .product .details {
+
+.buy2 .product .details{
   display: flex;
   justify-content: space-between;
   padding: 4px;
@@ -272,7 +332,8 @@ main {
   color: var(--cor-text);
   float: right;
 }
-.buy2 .product img {
+
+.buy2 .product img{
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -280,19 +341,23 @@ main {
   border-bottom-right-radius: 40px;
   z-index: 1;
 }
-.buy2 .details2 {
+
+.buy2 .details2{
   width: 400px;
 }
-.buy2 .details2 .description {
+
+.buy2 .details2 .description{
   color: var(--cor-text);
   text-align: center;
 }
-.buy2 .details2 .rotas ul {
+
+.buy2 .details2 .rotas ul{
   display: flex;
   padding: 10px;
   justify-content: end;
 }
-.buy2 .details2 .rotas ul li {
+
+.buy2 .details2 .rotas ul li{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,18 +368,19 @@ main {
   margin-right: 15px;
 }
 
-.buy2 .details2 .rotas ul li a {
+.buy2 .details2 .rotas ul li a{
   font-size: 18px;
   color: white;
   font-weight: 800;
   text-decoration: none;
 }
-.buy2 .details2 .rotas ul #compre {
+
+.buy2 .details2 .rotas ul #compre{
   width: 100px;
   border-radius: 5px;
 }
-footer
-{
+
+footer{
   display: flex;
   justify-self: flex-end;
   width: 100%;
@@ -323,8 +389,8 @@ footer
   font-size: 1.8vw;
   color: var(--cor-text);
 }
-.nfterritory-footer
-{
+
+.nfterritory-footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -333,103 +399,100 @@ footer
   margin: 40px 30px 40px 40px;
   padding-right: 20px;
 }
-.nfterritory-footer .logo
-{
+
+.nfterritory-footer .logo{
   display: flex;
-  justify-content: center;
-  
+  justify-content: center; 
 }
-.nfterritory-footer img
-{
+
+.nfterritory-footer img{
   display: flex;
-  
   width: 60%;
 }
-.nfterritory-footer .text
-{
+
+.nfterritory-footer .text{
   display: flex;
   flex-direction: column;
   justify-self: center;
   align-self: center;
 }
-.nfterritory-footer .text span
-{
+
+.nfterritory-footer .text span{
   margin-top:10px;
   font-size: 1.5vw;text-align: center;
-
 }
-footer .comunidade
-{
+
+footer .comunidade{
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   margin-left: 10%;
- 
-} footer .comunidade .btn-comunidade
-{
+}
+
+footer .comunidade .btn-comunidade{
   display: flex;
   justify-content: center;
   font-size: 3vw;
 }
-footer .comunidade .text-comunidade
-{
+
+footer .comunidade .text-comunidade{
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-footer .comunidade .text-comunidade span
-{
+
+footer .comunidade .text-comunidade span{
   margin-top: 10px;
 }
-footer .comunidade .search-comunidade
-{
+
+footer .comunidade .search-comunidade{
   display: flex;
-  
   margin-top: 20px;
   align-items: center;
 }
-footer .comunidade .search-comunidade input
-{
+
+footer .comunidade .search-comunidade input{
   font-size: 1.5vw;
   width: 20vw;
   border-radius:15px; 
-
 }
-footer .comunidade .search-comunidade div
-{
+
+footer .comunidade .search-comunidade div{
   display: flex;
   justify-content: center;
   text-align: center;
-  
-  
   border-radius: 50%;
   cursor: pointer;
-
 }
-footer .comunidade .search-comunidade button i
-{
+
+footer .comunidade .search-comunidade div i:hover{
+    color: black;
+}
+
+footer .comunidade .search-comunidade button i{
   font-size: 3vw;
   color: white;
   background-color: #1c1c1c;
 }
-.comunidade span
-{
+
+.comunidade span{
   margin-top: 20px;
 }
-.comunidade ul
-{
+
+.comunidade ul{
   display: flex;
   justify-content: space-between;
   list-style: none;
   width: 30%;
   font-size: 3vw;
 }
-.comunidade ul li a
-{
+
+.comunidade ul li a{
   color: white;
-}.footer-clicaveis 
-{
+}
+
+.footer-clicaveis {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
@@ -437,12 +500,12 @@ footer .comunidade .search-comunidade button i
   text-align: center;
   margin-right: 5%  ;
 }
-.footer-clicaveis span
-{
+
+.footer-clicaveis span{
   margin-top: 20px;
 }
-.footer-clicaveis span a
-{
+
+.footer-clicaveis span a{
   color: white;
   text-decoration: none;
 }
