@@ -31,7 +31,7 @@
                 <p>www.twitter.com/joazinho</p>
             </article>
         </article>
-        <form action="/profile" method="POST">
+        <form action="/perfil/editar" method="POST">
         <div class="about-container">
             <textarea id="about" name="about" id="about" placeholder="Conte-nos um pouco sobre você!"></textarea>
             <button id="edit-bio-button"><i class='bx bx-check'></i></button>
@@ -44,10 +44,10 @@
         </form>
     </section>
     <section class="user-data-container">
-        <article class="user-data-tittle"><h1>Seus dados</h1></article>
+        <article id="user-data-title"><h1>Seus dados</h1></article>
         <article class="personal-data-container">
             <h3>Dados pessoais</h3>
-            <form action="/profile/user-data" method="GET">
+            <form action="/perfil/dados-do-usuario" method="GET">
             <ul type="none">
                 <div class="li-explanatory-container">
                 <li class="name li-style"><i class='bx bx-user'></i><input type="text" name="name" id="name" placeholder="joao da silva"/></li>
@@ -71,7 +71,7 @@
         </article>
         <article class="account-data-container">
             <h3>Dados da conta</h3>
-            <form action="/profile/account-data" method="GET">
+            <form action="/perfil/dados-da-conta" method="GET">
                 <ul type="none">
                     <div class="li-explanatory-container">
                     <li class="nickname li-style"><i class='bx bx-user'></i><input type="text" name="nickname" id="nickname" placeholder="joaozinho034"/></i></li>
@@ -101,7 +101,7 @@
         </article>
         </div>
         <article class="plus-button">
-            <form action="/profile/cards/add" method="GET">
+            <form action="/perfil/cartoes/add" method="GET">
                 <button class="plus"><i class='bx bx-plus'></i></button>
         </article>
     </section>
@@ -109,8 +109,8 @@
         <h1>Segurança</h1>
         <article class="input-whole-container">
             <div class="input-container">
-            <form action="/profile/safety" method="GET">
-                <i class='bx bx-lock-alt'></i><input type="text" name="password" id="password" placeholder="********"/><i class='bx bx-check config'></i>
+            <form action="/perfil/seguranca" method="GET">
+                <i class='bx bx-lock-alt'></i><input type="text" name="password" id="password" placeholder="********"/><i class='bx bx-check config' id="check"></i>
             </div>
                 <p class="safety-explanatory">senha</p>
             <div class="checkbox-container">

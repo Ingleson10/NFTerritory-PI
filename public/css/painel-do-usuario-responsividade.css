@@ -211,7 +211,7 @@
         margin: 7% 0 7% 5%;
         padding-right: 3%;
         width: 30vw;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 90px;
     }
 

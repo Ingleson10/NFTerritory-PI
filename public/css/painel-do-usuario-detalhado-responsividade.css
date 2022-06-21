@@ -99,7 +99,14 @@
     #edit-bio-button{
         position: relative;
         bottom: 7vh;
-        left: 70%;
+        left: 80%;
+    }
+
+    #check{
+        border-radius: 15px;
+        outline: none;
+        border: 1px gray solid;
+        background-color: #E3E3E3;
     }
 
     .info-button, .cards-button, .safety-button{
@@ -111,9 +118,13 @@
         bottom: 2vh;
     }
 
-    .user-data-tittle{
+    #user-data-title{
         width: 100vw;
         font-size: 3vw;
+    }
+
+    .personal-data-container{
+        width: 85vw;
     }
 
     .personal-data-container h3, .account-data-container h3{
@@ -123,6 +134,10 @@
     .explanatory{
         margin-left: 13%;
         font-size: 1.5vw;
+    }
+
+    .align button{
+        border-radius: 10px;
     }
 
     .personal-data-container input, .account-data-container input{
@@ -151,16 +166,12 @@
         font-size: 2vw;
     }
 
-    .user-data-container i{
-        font-size: 4vw;
-    }
-
     .cards-whole-container h1, .safety-container h1{
         font-size: 3vw;
     }
 
-    .input-container i{
-        font-size: 4vw;
+    .plus-button i{
+        opacity: 0.85;
     }
 
     .back-to-top{
@@ -285,6 +296,10 @@
 
     .input-container i{
         font-size: 6vw;
+    }
+
+    #check{
+        border-radius: 10px;
     }
 
     .safety-explanatory{
