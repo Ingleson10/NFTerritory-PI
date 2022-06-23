@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+:root{
+    --color-light-green: #5DD3A1;
+    --color-greyish: #E3E3E3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#succsses-page{
+    background-color: var(--color-light-green);
+}
+
+.logo{
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.check-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.check-icon i{
+    font-size: 60px;
+    opacity: 0.9;
+}
+
+.success-phrase h1{
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 5%;
+}
+
+.container-2{
+    margin: 65px 40px;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 670px;
+}
+
+.number{
+    font-size: 40px;
+}
+
+.payment-phrase{
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.back-to-index{
+    background-color: var(--color-greyish);
+    border: 1px solid black;
+    color: black;
+    border-radius: 30px;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.back-to-index:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: lightgray;
+}
