@@ -499,7 +499,7 @@ header .nav ul li a:hover{
 .plus-button i{
   font-size: 40px;
   cursor: pointer;
-  opacity: 0.85%;
+  opacity: 0.85;
 }
 
 .checkbox-container{
@@ -525,6 +525,13 @@ header .nav ul li a:hover{
 .input-whole-container i{
   font-size: 40px;
   opacity: 0.85;
+}
+
+.input-whole-container .config{
+  background-color: #E3E3E3;
+  border: gray solid 1px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .input-container{
