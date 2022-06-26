@@ -98,12 +98,24 @@ header .logo img{
     justify-content: space-between;
     color: #242329;
 }
+.others-options span:hover
+{
+    text-decoration: underline;
+    color: red;
+    cursor :pointer;
+}
 .sign-in .entrar
 {
     background-color: #1c1c1c;
     padding: 5px 40px;
     border-radius: 5px;
     margin: 10px;
+}
+.sign-in .entrar:hover
+{
+    background-color: red;
+    color:white;
+    cursor: pointer;
 }
 .login-with-social-medias
 {
@@ -122,6 +134,12 @@ header .logo img{
     margin: 10px;
     padding: 10px 20px;
     border-radius: 5px;
+}
+.login-with-social-medias .google:hover
+{
+    background-color: #d1c5fc;
+    color: black;
+    cursor: pointer;
 }
 .login-with-social-medias .google i
 {
@@ -145,6 +163,12 @@ header .logo img{
     margin: 10px;
     padding: 10px 20px;
     border-radius: 5px;
+}
+.login-with-social-medias .facebook:hover
+{
+    background-color: #d1c5fc;
+    color: black;
+    cursor: pointer;
 }
 
 

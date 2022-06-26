@@ -36,6 +36,7 @@ img {
   display: flex;
   align-self: center;
   color: white;
+  font-size: 2vw;
 }
 .registro form {
   display: flex;
@@ -46,6 +47,10 @@ img {
   position: relative;
   margin: 20px 20px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 1.3vw;
 }
 
 .input {
@@ -76,22 +81,45 @@ img {
 .input:is(:focus, :valid) {
   outline-color: #d1c5fc;
 }
+.full-name
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
 .full-name .input {
-  width: 95%;
+    
+  width: 43vw;
 }
 .email {
   display: flex;
+  justify-content: space-evenly;
+  
+}
+.email .input {
+    width: 19vw;
 }
 .senha {
   display: flex;
+  justify-content: space-evenly;
+}
+.senha .input {
+    width: 19vw;
 }
 span {
   display: flex;
   align-self: center;
   color: white;
   margin: 20px;
+  font-size: 1.4vw;
+  padding: 5px 20px;
   border-radius: 5px;
-  background-color: #3ac263;
-  padding: 5px 25px;
-  cursor: pointer;
+  background: linear-gradient(to left, rgb(4, 71, 255) 50%, rgb(38, 139, 48) 50%) right;
+  background-size: 200%;
+  transition: .10s ease-out;
+}
+span:hover
+{
+    background-position: left;
+    cursor: pointer;
 }
