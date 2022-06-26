@@ -3,6 +3,8 @@ const path = require('path');
 const porta = 5000
 
 const usuarioRouter = require('./src/routes/usuarioRouter')
+const indexRouter = require('./src/routes/indexRouter')
+const loginRouter = require('./src/routes/loginController.js')
 
 const app = express();
 
@@ -12,5 +14,6 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(usuarioRouter)
-
+app.use(indexRouter)
+app.use(loginRouter)
 app.listen(porta, () => console.log("Aplicação rodando em http://localhost:5000"));
