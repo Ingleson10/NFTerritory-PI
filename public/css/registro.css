@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(8, 1, 22);
+  display: flex;
+  justify-content: center;
+}
+img {
+  display: flex;
+  width: 10vw;
+  align-self: center;
+  margin: 10px 0px;
+}
+.registro {
+  display: flex;
+  flex-direction: column;
+
+  width: 50vw;
+  background: rgba(17, 1, 1, 0.2);
+
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 50px;
+  border-radius: 10px;
+}
+.registro .title {
+  display: flex;
+  align-self: center;
+  color: white;
+}
+.registro form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  position: relative;
+  margin: 20px 20px;
+  color: white;
+}
+
+.input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+
+  font: inherit;
+  color: #fff;
+  background-color: transparent;
+  outline: 2px solid #fff;
+  cursor: pointer;
+}
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  transition: transform 0.25s;
+}
+.input:focus + .input-label,
+.input:valid + .input-label {
+  transform: translate(10px, -14px) scale(0.8);
+  color: #d1c5fc;
+  padding-inline: 5px;
+  background-color: #242329;
+}
+.input:is(:focus, :valid) {
+  outline-color: #d1c5fc;
+}
+.full-name .input {
+  width: 95%;
+}
+.email {
+  display: flex;
+}
+.senha {
+  display: flex;
+}
+span {
+  display: flex;
+  align-self: center;
+  color: white;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #3ac263;
+  padding: 5px 25px;
+  cursor: pointer;
+}
