@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(8, 1, 22);
+    background-color: #1C5C47;
     display: flex;
     justify-content: center;
 }
@@ -18,14 +18,11 @@ body{
 .login{
     display: flex;
     justify-content: center;
-    background-image: url(../../img/back-login.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 50vw;
+    width: 65vw;
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 15px;
-    background-color: rgb(145, 145, 145); 
+    background-color: rgba(255, 255, 255, 0.336); 
     color: white;
     
 }
@@ -33,6 +30,12 @@ body{
 header{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+header .title {
+    display: flex;
+    align-self: center;
+    font-size: 1.5em;
 }
 
 header .logo{
@@ -50,10 +53,18 @@ header .logo img{
     align-items: center;
     flex-direction: column;
     padding-bottom: 100px ;
+    background: rgba(17, 1, 1, 0.2);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 50px;
+    border-radius: 10px;
 }
 
 .input-group
 {
+    color: #fff;
     position: relative;
     margin: 20px 0px;
 }
@@ -78,12 +89,12 @@ header .logo img{
 .input:focus+.input-label,
 .input:valid+.input-label{
     transform: translate(10px,-14px) scale(.8);
-    color: #d1c5fc;
+    color: #2c2c2c;
     padding-inline: 5px;
-    background-color: #242329;
+    background-color: #fff;
 }
 .input:is(:focus , :valid) {
-    outline-color: #d1c5fc;
+    outline-color: #fff;
 }
 .sign-in
 {
@@ -96,7 +107,7 @@ header .logo img{
 {
     display: flex;
     justify-content: space-between;
-    color: #242329;
+    color: #fff;
 }
 .others-options span:hover
 {
