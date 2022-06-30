@@ -2,10 +2,10 @@
 @import 'boxicons';
 
 .root{
-  --cor-text : #fff;
-  --border-color : #fff;
-  --color-light-green: #5DD3A1;
-  --color-dark-blue: #14768B;
+  --cor-verde-claro: #01DB96;
+  --cor-verde-mais-escuro: #00A873;
+  --cor-branca: #FFF;
+  --cor-preta: #000;
 }
 
 *{
@@ -40,20 +40,20 @@ body{
   display: flex;
   justify-content: space-around;
   list-style: none;
-  color: white;
+  color: var(--cor-branca);
   width: 50%;
 }
 
 .nav2 ul li{
   display: flex;
   justify-content: space-between;
-  color: black;
+  color: var(--cor-preta);
   border-bottom: #5DD3A1 2px solid;
   transition-duration: 0.2s;
 }
 
 .nav2 ul li:hover{
-  border-bottom: #14768B 3px solid;
+  border-bottom: #1C5C47 3px solid;
 }
 
 .nav2 ul li i{
@@ -61,7 +61,7 @@ body{
 }
 
 .nav2 ul li:hover{
-  color: black;
+  color: var(--cor-preta);
   cursor: pointer;
 }
 
@@ -76,29 +76,33 @@ header{
 
 header .header-main{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .header-main .rotas ul{
   display: flex;
-  padding: 10px;
+  padding: 30px;
 }
 
 .header-main .rotas ul li{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #5DD3A1;
-  margin-right: 15px;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+
+.header-main .rotas i{
+  font-size: 2.5vw;
 }
 
 .header-main .rotas ul li a{
   font-size: 25px;
-  color: white;
+  color: var(--cor-branca);
   font-weight: 800;
 }
 
@@ -106,11 +110,11 @@ header .header-main{
   color: #1c1c1c;
 }
 
-  .header-main .logo img{
+.header-main .logo img{
   width: 15vw;
   cursor: pointer;
 }
-  
+
 header .description{
     display: flex;
     justify-content: center;
@@ -118,7 +122,7 @@ header .description{
 }
 
 header .description span{
-  color: var(--cor-text);
+  color: var(--cor-branca);
   text-align: center;
   width: 50%;
   font-style: italic;
@@ -152,10 +156,10 @@ header .nav{
   margin-bottom: 40px;
 }
 
-  header .nav ul{
+header .nav ul{
   display: flex;
-  background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
+  background: linear-gradient(180deg, rgba(67, 223, 171, 0.8) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(0, 89, 59, 0.75), rgba(0, 89, 59, 0.75));
   box-shadow: 5px 5px 5px grey;
   border-radius: 10px;
   padding: 5px;
@@ -168,11 +172,11 @@ header .nav ul li{
   padding-right: 20px;
   width: 40%;
   list-style-type: none;
-  color: var(--cor-text); 
+  color: var(--cor-branca); 
 }
 
 header .nav ul li a{
-  color: black;
+  color: var(--cor-preta);
   text-decoration: none;
   font-size: 1.4vw;
   font-weight: 400;
@@ -187,8 +191,8 @@ header .nav ul li a:hover{
 .user-cover{
   width: 100%;
   height: 40vh;
-  background: linear-gradient(180deg, rgba(20, 118, 139, 0.92) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(55, 170, 149, 0.91), rgba(55, 170, 149, 0.91));
+  background: linear-gradient(180deg, rgba(28, 92, 71, 0.9) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(67, 223, 171, 0.8), rgba(67, 223, 171, 0.8));
   border: 0.5px gray solid;
 }
 
@@ -344,8 +348,8 @@ header .nav ul li a:hover{
 }
 
 .title h1{
-  background: rgba(20, 118, 139, 0.6);
-  box-shadow: -10px -10px rgba(55, 170, 149, 0.6);
+  background: rgba(0, 168, 115, 0.6);
+  box-shadow: -10px -10px rgba(1, 219, 150, 0.6);
   padding: 10px;
   border-radius: 20px;
   font-style: italic;
@@ -383,8 +387,8 @@ header .nav ul li a:hover{
 }
 
 .title-2{
-  background: rgba(20, 118, 139, 0.6);
-  box-shadow: -10px -10px rgba(55, 170, 149, 0.6);
+  background: rgba(0, 168, 115, 0.6);
+  box-shadow: -10px -10px rgba(1, 219, 150, 0.6);
   padding: 10px;
   border-radius: 20px;
   font-style: italic;
@@ -392,6 +396,7 @@ header .nav ul li a:hover{
   margin: 80px 0px 50px 100px;
   display: flex;
   justify-content: center;
+  max-width: fit-content;
 }
 
 .last-purchase-row{
@@ -434,16 +439,16 @@ header .nav ul li a:hover{
 }
 
 .galery-container h1{
-  background: rgba(20, 118, 139, 0.6);
-  box-shadow: -10px -10px rgba(55, 170, 149, 0.6);
+  background: rgba(0, 168, 115, 0.6);
+  box-shadow: -10px -10px rgba(1, 219, 150, 0.6);
   padding: 10px;
   border-radius: 20px;
   font-style: italic;
   font-size: 25px;
   margin: 80px 0px 40px 100px;
-  width: 12vw;
   display: flex;
   justify-content: center;
+  max-width: max-content;
 }
 
 .top-row, .bottom-row{
@@ -466,8 +471,7 @@ header .nav ul li a:hover{
 }
 
 .title-and-filter select{
-  width: 10vw;
-  color: black;
+  color: var(--cor-preta);
   border-radius: 20px;
   padding: 5%;
   font-size: 18px;
@@ -483,8 +487,8 @@ footer{
   display: flex;
   justify-self: flex-end;
   width: 100%;
-  background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
+  background: linear-gradient(180deg, rgba(44, 44, 44, 0.22) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(67, 223, 171, 0.99), rgba(67, 223, 171, 0.99));
   font-size: 1.5vw;
   color: black;
   font-style: italic;

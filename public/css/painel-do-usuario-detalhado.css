@@ -2,10 +2,10 @@
 @import 'boxicons';
 
 .root{
-  --cor-text : #fff;
-  --border-color : #fff;
-  --color-light-green: #5DD3A1;
-  --color-dark-blue: #14768B;
+  --cor-verde-claro: #01DB96;
+  --cor-verde-mais-escuro: #00A873;
+  --cor-branca: #FFF;
+  --cor-preta: #000;
 }
 
 *{
@@ -40,20 +40,20 @@ body{
   display: flex;
   justify-content: space-around;
   list-style: none;
-  color: white;
+  color: var(--cor-branca);
   width: 50%;
 }
 
 .nav2 ul li{
   display: flex;
   justify-content: space-between;
-  color: black;
+  color: var(--cor-preta);
   border-bottom: #5DD3A1 2px solid;
   transition-duration: 0.2s;
 }
 
 .nav2 ul li:hover{
-  border-bottom: #14768B 3px solid;
+  border-bottom: #1C5C47 3px solid;
 }
 
 .nav2 ul li i{
@@ -61,7 +61,7 @@ body{
 }
 
 .nav2 ul li:hover{
-  color: black;
+  color: var(--cor-preta);
   cursor: pointer;
 }
 
@@ -76,29 +76,33 @@ header{
 
 header .header-main{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .header-main .rotas ul{
   display: flex;
-  padding: 10px;
+  padding: 30px;
 }
 
 .header-main .rotas ul li{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #5DD3A1;
-  margin-right: 15px;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+
+.header-main .rotas i{
+  font-size: 2.5vw;
 }
 
 .header-main .rotas ul li a{
   font-size: 25px;
-  color: white;
+  color: var(--cor-branca);
   font-weight: 800;
 }
 
@@ -106,11 +110,11 @@ header .header-main{
   color: #1c1c1c;
 }
 
-  .header-main .logo img{
+.header-main .logo img{
   width: 15vw;
   cursor: pointer;
 }
-  
+
 header .description{
     display: flex;
     justify-content: center;
@@ -118,7 +122,7 @@ header .description{
 }
 
 header .description span{
-  color: var(--cor-text);
+  color: var(--cor-branca);
   text-align: center;
   width: 50%;
   font-style: italic;
@@ -152,10 +156,10 @@ header .nav{
   margin-bottom: 40px;
 }
 
-  header .nav ul{
+header .nav ul{
   display: flex;
-  background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
+  background: linear-gradient(180deg, rgba(67, 223, 171, 0.8) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(0, 89, 59, 0.75), rgba(0, 89, 59, 0.75));
   box-shadow: 5px 5px 5px grey;
   border-radius: 10px;
   padding: 5px;
@@ -168,11 +172,11 @@ header .nav ul li{
   padding-right: 20px;
   width: 40%;
   list-style-type: none;
-  color: var(--cor-text); 
+  color: var(--cor-branca); 
 }
 
 header .nav ul li a{
-  color: black;
+  color: var(--cor-preta);
   text-decoration: none;
   font-size: 1.4vw;
   font-weight: 400;
@@ -184,12 +188,11 @@ header .nav ul li a:hover{
   color: #303030;
 }
 
-
 .user-cover{
   width: 100%;
   height: 50vh;
-  background: linear-gradient(180deg, rgba(20, 118, 139, 0.92) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(55, 170, 149, 0.91), rgba(55, 170, 149, 0.91));
+  background: linear-gradient(180deg, rgba(28, 92, 71, 0.9) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(67, 223, 171, 0.8), rgba(67, 223, 171, 0.8));
   border: 0.5px gray solid;
 }
 
@@ -304,7 +307,7 @@ header .nav ul li a:hover{
 }
 
 .info-button, .cards-button, .safety-button{
-  background-color: white;
+  background-color: var(--cor-branca);
   border: 0.2px black solid;
   outline: none;
   border-radius: 10px;
@@ -344,9 +347,9 @@ header .nav ul li a:hover{
   margin-top: 2%;
 }
 
-.user-data-tittle{
-  background: linear-gradient(180deg, rgba(20, 118, 139, 0.3) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(55, 170, 149, 0.8), rgba(55, 170, 149, 0.8));
+#user-data-title{
+  background: linear-gradient(180deg, rgba(28, 92, 71, 0.3) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(67, 223, 171, 0.8), rgba(67, 223, 171, 0.8));
   width: 100%;
   text-align: center;
   padding: 5px;
@@ -415,6 +418,17 @@ header .nav ul li a:hover{
   color: gray;
 }
 
+.align button{
+  border-radius: 15px;
+  border: 1px gray solid;
+}
+
+.align{
+  width: 55vw;
+  display: flex;
+  justify-content: center;
+}
+
 .account-data-container{
   width: 60vw;
   display: flex;
@@ -423,20 +437,14 @@ header .nav ul li a:hover{
   margin-top: 3%;
 }
 
-
-/* .cards-container{
-  display: flex;
-  justify-content: ;
-} */
-
 .cards-whole-container h1, .safety-container h1{
-  background: linear-gradient(180deg, rgba(20, 118, 139, 0.3) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(55, 170, 149, 0.8), rgba(55, 170, 149, 0.8));
+  background: linear-gradient(180deg, rgba(28, 92, 71, 0.3) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(67, 223, 171, 0.8), rgba(67, 223, 171, 0.8));
   width: 100%;
   text-align: center;
   padding: 5px;
   border: 0.5px gray solid;
-  font-size: 25px;
+  font-size: 30px;
   font-style: italic;
   margin: 3% 0% 4% 0%;
 }
@@ -498,6 +506,7 @@ header .nav ul li a:hover{
 .plus-button i{
   font-size: 40px;
   cursor: pointer;
+  opacity: 0.85;
 }
 
 .checkbox-container{
@@ -523,6 +532,13 @@ header .nav ul li a:hover{
 .input-whole-container i{
   font-size: 40px;
   opacity: 0.85;
+}
+
+.input-whole-container .config{
+  background-color: #E3E3E3;
+  border: gray solid 1px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .input-container{
@@ -564,19 +580,17 @@ header .nav ul li a:hover{
   border-radius: 20px;
   outline: none;
   border: 1px gray solid;
-  background: linear-gradient(180deg, rgba(20, 118, 139, 0.8) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(55, 170, 149, 0.8), rgba(55, 170, 149, 0.8));
+  background: linear-gradient(180deg, rgba(67, 223, 171, 0.8) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(0, 89, 59, 0.75), rgba(0, 89, 59, 0.3));
   cursor: pointer;
 }
-
-/*                                    Inicio do footer                               */
   
 footer{
   display: flex;
   justify-self: flex-end;
   width: 100%;
-  background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
+  background: linear-gradient(180deg, rgba(44, 44, 44, 0.22) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(67, 223, 171, 0.99), rgba(67, 223, 171, 0.99));
   font-size: 1.5vw;
   color: black;
   font-style: italic;
@@ -586,8 +600,7 @@ footer{
 .nfterritory-footer{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 250px;
+  justify-content: center;
   width: 27vw;
   border-right: 1px black solid;
   margin: 40px 30px 40px 40px;

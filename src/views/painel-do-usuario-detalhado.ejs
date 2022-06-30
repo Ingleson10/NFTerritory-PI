@@ -5,42 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/painel-do-usuario-detalhado.css">
-    <link rel="stylesheet" href="/css/painel-do-usuario-responsividade.css">
+    <link rel="stylesheet" href="/css/painel-do-usuario-detalhado-responsividade.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>Profile</title>
+    <title>Perfil</title>
 </head>
 <body>
-    <header>
-        <div class="nav2">
-            <ul>
-                <li>support <i class='bx bxs-chevron-down'></i></li>
-                <li>accessibility <i class='bx bxs-chevron-down'></i></li>
-                <li>login <i class='bx bxs-chevron-down'></i></li>
-                <li>buy <i class='bx bxs-chevron-down'></i></li>
-            </ul>
-        </div>
-           <div class="header-main">
-               <div class="rotas">
-               </div>
-               <div class="logo">
-                   <img src="/img/logo.png" alt="Logo">
-               </div>
-           </div>
-           <div class="description">
-            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae hic itaque perferendis consequuntur porro, minima libero tempora, ratione voluptates quo maxime voluptas omnis incidunt. Recusandae sequi corporis laudantium ea enim!</span>
-        </div>
-           <div class="search">
-               <input type="text" name="search" id="search" placeholder="Search...">
-           </div>
-           <div class="nav">
-            <ul>
-                <li><a href="#">Artes 2D</a> </li>
-                <li><a href="#">Artes 3D</a></li>
-                <li><a href="#">Fotografias</a></li>
-                <li><a href="#">Colecionáveis</a></li>
-            </ul>
-        </div>
-       </header>
+    <%- include('./partials/header') %>
     <main>
        <section class="user-cover">
         <i class='bx bx-cog'></i>
@@ -61,7 +31,7 @@
                 <p>www.twitter.com/joazinho</p>
             </article>
         </article>
-        <form action="/profile" method="POST">
+        <form action="/perfil/editar" method="POST">
         <div class="about-container">
             <textarea id="about" name="about" id="about" placeholder="Conte-nos um pouco sobre você!"></textarea>
             <button id="edit-bio-button"><i class='bx bx-check'></i></button>
@@ -74,41 +44,43 @@
         </form>
     </section>
     <section class="user-data-container">
-        <article class="user-data-tittle"><h1>Seus dados</h1></article>
+        <article id="user-data-title"><h1>Seus dados</h1></article>
         <article class="personal-data-container">
             <h3>Dados pessoais</h3>
-            <form action="/profile/user-data" method="GET">
+            <form action="/perfil/dados-do-usuario" method="GET">
             <ul type="none">
                 <div class="li-explanatory-container">
-                <li class="name li-style"><i class='bx bx-user'></i><input type="text" name="name" id="name" placeholder="joao da silva"/><i class='bx bx-check config'></i></li>
+                <li class="name li-style"><i class='bx bx-user'></i><input type="text" name="name" id="name" placeholder="joao da silva"/></li>
                 <p class="explanatory">nome completo</p>
                 </div>
                 <div class="li-explanatory-container">
-                <li class="network li-style"><i class='bx bx-network-chart'></i><input type="text" name="network" id="network" placeholder="www.twitter.com/seuperfil"/><i class='bx bx-check config'></i></li>
+                <li class="network li-style"><i class='bx bx-network-chart'></i><input type="text" name="network" id="network" placeholder="www.twitter.com/seuperfil"/></li>
                 <p class="explanatory">site</p>
                 </div>
                 <div class="li-explanatory-container">
-                <li class="phone li-style"><i class='bx bx-mobile'></i><input type="text" name="phone" id="phone" placeholder="(XX)XXXXX-XXXX"/><i class='bx bx-check config'></i></li>
+                <li class="phone li-style"><i class='bx bx-mobile'></i><input type="text" name="phone" id="phone" placeholder="(XX)XXXXX-XXXX"/></li>
                 <p class="explanatory">telefone</p>
                 </div>
                 <div class="li-explanatory-container">
-                <li class="cpf li-style"><i class='bx bx-id-card'></i><input type="text" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX"/><i class='bx bx-check config'></i></li>
+                <li class="cpf li-style"><i class='bx bx-id-card'></i><input type="text" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX"/></li>
                 <p class="explanatory">cpf</p>
+                <div class="align"><button class="confirmation"><i class='bx bx-check config'></i></button></div>
                 </div>
             </ul>
             </form>
         </article>
         <article class="account-data-container">
             <h3>Dados da conta</h3>
-            <form action="/profile/account-data" method="GET">
+            <form action="/perfil/dados-da-conta" method="GET">
                 <ul type="none">
                     <div class="li-explanatory-container">
-                    <li class="nickname li-style"><i class='bx bx-user'></i><input type="text" name="nickname" id="nickname" placeholder="joaozinho034"/><i class='bx bx-check config'></i></li>
+                    <li class="nickname li-style"><i class='bx bx-user'></i><input type="text" name="nickname" id="nickname" placeholder="joaozinho034"/></i></li>
                     <p class="explanatory">nome de usuário</p>
                     </div>
                     <div class="li-explanatory-container">
-                    <li class="email li-style"><i class='bx bx-envelope'></i><input type="text" name="email" id="email" placeholder="seu e-mail"/><i class='bx bx-check config'></i></li>
+                    <li class="email li-style"><i class='bx bx-envelope'></i><input type="text" name="email" id="email" placeholder="seu e-mail"/></i></li>
                     <p class="explanatory">e-mail</p>
+                    <div class="align"><button class="confirmation"><i class='bx bx-check config'></i></button></div>
                     </div>
         </article>
     </section>    
@@ -129,7 +101,7 @@
         </article>
         </div>
         <article class="plus-button">
-            <form action="/profile/cards/add" method="GET">
+            <form action="/perfil/cartoes/add" method="GET">
                 <button class="plus"><i class='bx bx-plus'></i></button>
         </article>
     </section>
@@ -137,8 +109,8 @@
         <h1>Segurança</h1>
         <article class="input-whole-container">
             <div class="input-container">
-            <form action="/profile/safety" method="GET">
-                <i class='bx bx-lock-alt'></i><input type="text" name="password" id="password" placeholder="********"/><i class='bx bx-check config'></i>
+            <form action="/perfil/seguranca" method="GET">
+                <i class='bx bx-lock-alt'></i><input type="text" name="password" id="password" placeholder="********"/><i class='bx bx-check config' id="check"></i>
             </div>
                 <p class="safety-explanatory">senha</p>
             <div class="checkbox-container">
@@ -152,46 +124,6 @@
             <button class="back-to-top"><h1>Retornar ao topo</h1></button>
     </section>
     </main>
-       <footer>
-        <div class="nfterritory-footer">
-            <div class="logo">
-                <img src="/img/logo.png" alt="" srcset="">
-            </div>
-            <div class="text">
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
-            </div>
-        </div>
-        <div class="comunidade">
-            <div class="text-comunidade">
-                <span>Continue por dentro de tudo!</span>
-                <span>Cadastre seu e-mail receba</span>
-                <span>novidades e ofertas da NFTerritory:</span>
-            </div>
-            <div class="search-comunidade">
-                <input type="text" placeholder="Digite aqui seu e-mail">
-                <div><i class='bx bx-check'></i></div>
-            </div>
-            <span> 
-             Faça parte da comunidade:
-            </span>
-            <ul> 
-                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
-                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
-            </ul>    
-            <ul> 
-                <li><a href="#"><i class='bx bxl-reddit'></i></a></li>
-                <li><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-clicaveis">
-            <span><a href="#">Fale conosco</a></span>
-            <span><a href="#">Trabalhe conosco</a></span>
-            <span><a href="#">Perguntas Frequentes</a></span>
-            <span><a href="#">Política de privacidade</a></span>
-            <span><a href="#">Termos e condições</a></span>
-        </div>
-     </footer>
+        <%- include('./partials/footer') %>
 </body>
 </html>

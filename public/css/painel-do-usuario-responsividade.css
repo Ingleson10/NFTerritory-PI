@@ -1,4 +1,4 @@
-@media(max-width: 425px){
+@media(max-width: 768px){
     header .nav2{
         height: 3vh;
     }
@@ -211,7 +211,7 @@
         margin: 7% 0 7% 5%;
         padding-right: 3%;
         width: 30vw;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 90px;
     }
 
@@ -269,7 +269,7 @@
     }
 
     .title-2{
-        width: 32vw;
+        width: 35vw;
     }
 
     .galery-container h1{
