@@ -76,24 +76,28 @@ header{
 
 header .header-main{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .header-main .rotas ul{
   display: flex;
-  padding: 10px;
+  padding: 30px;
 }
 
 .header-main .rotas ul li{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #5DD3A1;
-  margin-right: 15px;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+
+.header-main .rotas i{
+  font-size: 2.5vw;
 }
 
 .header-main .rotas ul li a{
@@ -106,13 +110,9 @@ header .header-main{
   color: #1c1c1c;
 }
 
-  .header-main .logo img{
+.header-main .logo img{
   width: 15vw;
   cursor: pointer;
-}
-  
-.logo-color{
-  fill: red;
 }
 
 header .description{
@@ -156,7 +156,7 @@ header .nav{
   margin-bottom: 40px;
 }
 
-  header .nav ul{
+header .nav ul{
   display: flex;
   background: linear-gradient(180deg, rgba(67, 223, 171, 0.8) 0%, rgba(55, 170, 149, 0) 100%),
   linear-gradient(0deg, rgba(0, 89, 59, 0.75), rgba(0, 89, 59, 0.75));

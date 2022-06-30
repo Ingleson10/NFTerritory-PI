@@ -1,28 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import 'boxicons';
+
+.root{
+  --cor-verde-claro: #01DB96;
+  --cor-verde-mais-escuro: #00A873;
+  --cor-branca: #FFF;
+  --cor-preta: #000;
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  --cor-text : #fff;
-  --border-color : #fff;
-  --cor-do-arrow :#1c1c1c;
+  font-family: 'Roboto', sans-serif; 
+}
+
+html{
+    
 }
 
 body{
   display: flex;
   flex-direction: column;
-  background-color: #1c1c1c;
+  max-width: 100vw;
 }
 
 .nav2{
   display: flex;
   background-color: #f3f0f0;
+  box-shadow: 2px 2px 15px grey;
   width: 100%;
   justify-content: flex-end;
-  height: 5vh;
-  align-items: flex-end;
+  height: 7vh;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -30,19 +40,20 @@ body{
   display: flex;
   justify-content: space-around;
   list-style: none;
-  color: white;
+  color: var(--cor-branca);
   width: 50%;
 }
 
 .nav2 ul li{
   display: flex;
   justify-content: space-between;
-  color: black;
-  border-bottom: rgb(0, 255, 149) 3px solid;
+  color: var(--cor-preta);
+  border-bottom: #5DD3A1 2px solid;
+  transition-duration: 0.2s;
 }
 
 .nav2 ul li:hover{
-  border-bottom: red 5px solid;
+  border-bottom: #1C5C47 3px solid;
 }
 
 .nav2 ul li i{
@@ -50,7 +61,7 @@ body{
 }
 
 .nav2 ul li:hover{
-  color: red;
+  color: var(--cor-preta);
   cursor: pointer;
 }
 
@@ -65,29 +76,33 @@ header{
 
 header .header-main{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .header-main .rotas ul{
   display: flex;
-  padding: 10px;
+  padding: 30px;
 }
 
 .header-main .rotas ul li{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background-color: #37aa95e8;
-  margin-right: 15px;
+  background-color: #5DD3A1;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+
+.header-main .rotas i{
+  font-size: 2.5vw;
 }
 
 .header-main .rotas ul li a{
   font-size: 25px;
-  color: white;
+  color: var(--cor-branca);
   font-weight: 800;
 }
 
@@ -96,18 +111,22 @@ header .header-main{
 }
 
 .header-main .logo img{
-  width: 20vw;
+  width: 15vw;
+  cursor: pointer;
 }
 
 header .description{
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
 }
 
 header .description span{
-  color: var(--cor-text);
+  color: var(--cor-branca);
   text-align: center;
   width: 50%;
+  font-style: italic;
+  font-weight: 300;
 }
 
 header .search{
@@ -117,47 +136,56 @@ header .search{
 }
 
 header .search #search{
-  font-size: 1.5vw;
+  font-size: 1vw;
   border-radius: 10px;
   color: rgb(51, 51, 51);
-  background-color: rgb(197, 197, 197);
-  padding: 5px;
-  width: 40vw;
+  box-shadow: 5px 5px 5px grey;
+  background-color: #E3E3E3;
+  padding: 10px;
+  width: 30vw;
   height: auto;
   border: none;
+  font-style: italic;
+  outline: none;
 }
   
 header .nav{
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 header .nav ul{
   display: flex;
-  background-color: #37aa95e8;
+  background: linear-gradient(180deg, rgba(67, 223, 171, 0.8) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(0, 89, 59, 0.75), rgba(0, 89, 59, 0.75));
+  box-shadow: 5px 5px 5px grey;
   border-radius: 10px;
   padding: 5px;
   width: 50%;
-  justify-content: space-between;
-  text-align: center;
 }
 
 header .nav ul li{
+  display: flex;
+  justify-content: space-around;
+  padding-right: 20px;
   width: 40%;
   list-style-type: none;
-  color: var(--cor-text);
+  color: var(--cor-branca); 
 }
 
 header .nav ul li a{
-  color: white;
+  color: var(--cor-preta);
   text-decoration: none;
   font-size: 1.4vw;
+  font-weight: 400;
+  transition: 0.3s;
 }
 
 header .nav ul li a:hover{
-  text-decoration: underline;
-  color: #1c1c1c;
+  text-decoration: none;
+  color: #303030;
 }
 
 .forma-de-pagamento{
@@ -262,25 +290,27 @@ footer{
   display: flex;
   justify-self: flex-end;
   width: 100%;
-  background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
-  font-size: 1.8vw;
-  color: var(--cor-text);
+  background: linear-gradient(180deg, rgba(44, 44, 44, 0.22) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(67, 223, 171, 0.99), rgba(67, 223, 171, 0.99));
+  font-size: 1.5vw;
+  color: black;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .nfterritory-footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 20vw;
+  width: 27vw;
   border-right: 1px black solid;
   margin: 40px 30px 40px 40px;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .nfterritory-footer .logo{
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .nfterritory-footer img{
@@ -289,15 +319,13 @@ footer{
 }
 
 .nfterritory-footer .text{
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-self: center;
+  text-align: center;
 }
 
 .nfterritory-footer .text span{
-  margin-top:10px;
-  font-size: 1.5vw;text-align: center;
+  margin-top: 10px;
+  font-size: 1.5vw;
+  text-align: center;
 }
 
 footer .comunidade{
@@ -305,13 +333,7 @@ footer .comunidade{
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-left: 10%;
-}
-
-footer .comunidade .btn-comunidade{
-  display: flex;
-  justify-content: center;
-  font-size: 3vw;
+  margin-left: 7%;
 }
 
 footer .comunidade .text-comunidade{
@@ -322,6 +344,7 @@ footer .comunidade .text-comunidade{
 
 footer .comunidade .text-comunidade span{
   margin-top: 10px;
+  font-weight: 300;
 }
 
 footer .comunidade .search-comunidade{
@@ -331,9 +354,14 @@ footer .comunidade .search-comunidade{
 }
 
 footer .comunidade .search-comunidade input{
-  font-size: 1.5vw;
+  font-size: 1vw;
   width: 20vw;
+  border: 0.3px gray solid;
   border-radius:15px; 
+  padding: 10px;
+  font-style: italic;
+  background-color: #E3E3E3;
+  outline: none;
 }
 
 footer .comunidade .search-comunidade div{
@@ -344,14 +372,11 @@ footer .comunidade .search-comunidade div{
   cursor: pointer;
 }
 
-footer .comunidade .search-comunidade div i:hover{
-    color: black;
-}
-
-footer .comunidade .search-comunidade button i{
-  font-size: 3vw;
-  color: white;
-  background-color: #1c1c1c;
+footer .comunidade .search-comunidade i{
+  font-size: 40px;
+  margin-left: 0.5vw;
+  background-color: #E3E3E3;
+  border-radius: 100%;
 }
 
 .comunidade span{
@@ -363,27 +388,28 @@ footer .comunidade .search-comunidade button i{
   justify-content: space-between;
   list-style: none;
   width: 30%;
-  font-size: 3vw;
+  font-size: 40px;
 }
 
-.comunidade ul li a{
-  color: white;
-}
-
-.footer-clicaveis {
+.footer-clicaveis{
   display: flex;
   flex-direction: column;
   margin-left: 10%;
+  margin-right: 5%;
   justify-content: center;
   text-align: center;
-  margin-right: 5%  ;
 }
 
 .footer-clicaveis span{
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .footer-clicaveis span a{
-  color: white;
+  color: black;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-clicaveis span a:hover{
+  color: #303030;
 }
