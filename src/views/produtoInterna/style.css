@@ -195,7 +195,7 @@ header .nav ul li a:hover {
 /*                                    Inicio do footer                               */
   #btn-carrinho
   {
-    font-size: 5vw;
+  font-size: 10vw;
   margin-top: 50px;
   padding: 10px 20px;
   transition: all .2s ease-in-out;

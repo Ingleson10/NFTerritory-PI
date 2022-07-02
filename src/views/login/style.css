@@ -22,7 +22,6 @@ main
 {
     display: flex;
     justify-content: center;
-    background-image: url(../../img/back-login.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 50%;
