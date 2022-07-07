@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body
+{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.login
+{
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    background-color: rgb(187, 187, 187);
+    
+    
+}
+header
+{
+    display: flex;
+    justify-content: center;
+}
+header .logo
+{
+    width: 100px;
+}
+
+header .logo img
+{
+    width: 100%;
+}
+.login 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login .join
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-bottom: 1px solid black;
+}
+.login .join .buttons
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+.login .buttons button
+{
+   
+    padding: 10px 40px;
+
+    border-radius: 10px;
+    background: radial-gradient(50% 50% at 50% 50%, #37AA95 43.23%, rgba(20, 118, 139, 0.8) 100%);
+    color: black;
+    border: none;
+    cursor: pointer;
+
+
+
+}
+.login .buttons a
+{
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+}
+.login .buttons a:hover
+{
+    color:rgb(153, 150, 150);
+    text-decoration: underline;
+}
+.login .buttons button:hover
+{
+    background:rgba(38, 119, 104, 0.95);
+    color: white;
+}
+.login .join .social-medias
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login .join .user-full
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.login .join .user-full .user label
+{
+    position: relative;
+    font-size: 10px;
+    left: 50px;
+    
+}
+.login .join .user-full .usuario
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+.login .join .user-full .usuario i
+{
+    font-size: 28px;
+}
+.login .join .user-full .usuario input
+{
+    
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    width: 90%;
+}
+.login .join .password-full
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.login .join .password-full .pw label
+{
+    position: relative;
+    font-size: 10px;
+    left: 50px;
+}
+.login .join .password-full .password
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.login .join .password-full .password i
+{
+    font-size: 28px;
+}
+.login .join .password-full .password input
+{
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    width: 90%;
+}
+.login .join .social-medias
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.login .join .social-medias .sm
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px 10px;
+    cursor: pointer;
+}
+.login .join .social-medias .sm:hover
+{
+    background-color: rgb(65, 63, 63);
+    color: white;
+}
+.login .join .social-medias .sm img
+{
+    margin-right: 10px;
+}
+.login .register
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.login .register .new
+{
+    margin-top: 20px;
+}
+.login .register .button button
+{
+    
+    padding: 10px 40px;
+    border-radius: 10px;
+    background: radial-gradient(50% 50% at 50% 50%, #37AA95 43.23%, rgba(20, 118, 139, 0.8) 100%);
+
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.login .register .button button:hover
+{
+    background:rgba(38, 119, 104, 0.95);
+    color: white;
+}
+.register span{
+    margin-bottom: 20px;
+    align-self: flex-end;
+    margin-right: 10px;
+    font-style: italic;
+    font-weight: normal;
+}
+
