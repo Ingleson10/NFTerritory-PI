@@ -1,6 +1,6 @@
-const produtoInternaController = {
+const cadastroController = {
     cadastrar: (req, res)=>{
-        res.render('cadastrarUsuario')
+        res.render('cadastro')
     },
 }
 

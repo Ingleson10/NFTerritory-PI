@@ -1,6 +1,7 @@
 const express = require('express');
-const carrinhoController = require('../controllers/carrinhoController');
 const router = express.Router();
+
+const carrinhoController = require('../controllers/carrinhoController');
 
 router.get('/carrinho' , carrinhoController.view)
 
