@@ -5,121 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-  
-           <div class="header-main">
-               <div class="rotas">
-                   <ul>
-                       <li><a href="/help"><i class='bx bx-question-mark'></i></a></li>
-                       <li><a href="/accessibility"><i class='bx bx-body' ></i></a></li>
-                   </ul>
-               </div>
-               
-               <div class="logo">
-                   <img src="../../../public/img/logo.png" alt="">
-               </div>
-               <div class="rotas">
-                   <ul>
-                       <li><a href="/profile"><i class='bx bxs-user'></i></a></li>
-                       <li><a href="/cart"><i class='bx bx-cart'></i></a></li>
-                   </ul>
-               </div>
-           
-           </div>
-           
-        </div>
-
-       </header>
-
+            <img class="logo" src="/img/logo.png"/>
+    </header>
        <div class="container">
             <a class="links" id="paracadastro"></a>
-            
-            <!--Formulário de Cadastro-->
-
             <div id="Cadastrar">
-
                 <form method="post" action="">
-                    <h1>Criar Uma conta?</h1>
-
+                    <h1>Crie sua conta!</h1>
                     <p>
-                        <label for="nome_cad">Seu nome</label>
                         <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Ex: Luis Augusto"/>
+                        <label for="nome_cad">Seu nome</label>
                     </p>
-
                     <p>
-                        <label for="email_cad">Seu E-mail</label>
                         <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Ex: luis@hotmail.com"/>
+                        <label for="email_cad">Seu E-mail</label>
                     </p>
-
                     <p>
-                        <label for="senha_cad">Sua Senha</label>
                         <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="*****"/>
+                        <label for="senha_cad">Sua Senha</label>
                     </p>
-
                     <p>
-                        <label for="confirma_senha">Confirme a Senha</label>
                         <input id="confirma_senha" name="confirma_senha" required="required" type="password" placeholder="*****"/>
+                        <label for="confirma_senha">Confirme a Senha</label>
                     </p>
-
                     <p>
                         <input type="submit" value="Cadastrar">
                     </p>
-
                     <p class="link"> Já tem uma conta?
-
                         <a href="#paralogin"> Ir para login</a>
-
                     </p>
-
                 </form>
-
             </div>
 
-       <footer>
-        <div class="nfterritory-footer">
-            <div class="logo">
-                <img src="../../img/logo.png" alt="" srcset="">
-            </div>
-            <div class="text">
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. I</span>
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. I</span>
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. I</span>
-            </div>
-        </div>
-        <div class="comunidade">
-            <div class="text-comunidade">
-                <span>Continue por dentro de tudo</span>
-                <span>Cadastre seu e-mail receba</span>
-                <span>novidades e ofertas da NFTerritory</span>
-            </div>
-            <div class="search-comunidade">
-                <input type="text" placeholder="Digite aqui seu e-mail">
-                <div class="btn-comunidade"><i class='bx bxs-chevron-down-circle'></i> </div>
-            </div>
-            <span>
-             Faça parte da comunidade:
-            </span>
-            <ul> 
-                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
-                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
-            </ul>    
-            <ul> 
-                <li><a href="#"><i class='bx bxl-reddit'></i></a></li>
-                <li><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-clicaveis">
-            <span><a href="#">Fale conosco</a></span>
-            <span><a href="#">Trabalhe conosco</a></span>
-            <span><a href="#">Perguntas Frequentes</a></span>
-            <span><a href="#">Política de privacidade</a></span>
-            <span><a href="#">Termos e condições</a></span>
-        </div>
-        
-     </footer>
 </body>
 </html>
