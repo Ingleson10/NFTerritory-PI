@@ -1,6 +1,6 @@
 const finalizaCompraController = {
     adicionarCartao: (req, res)=>{
-        res.render('adicionar-cartao')
+        res.render('finalizacao-compra')
     },
 }
 

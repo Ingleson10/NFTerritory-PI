@@ -8,6 +8,7 @@ const indexRouter = require('./src/routes/indexRouter')
 const loginRouter = require('./src/routes/loginRouter')
 const carrinhoRouter = require('./src/routes/carrinhoRouter');
 const cadastroRouter = require('./src/routes/cadastroRouter');
+const finalizaRouter = require('./src/routes/finalizaRouter')
 const app = express();
 
 app.set('views', path.join(__dirname, 'src', 'views'));
@@ -21,4 +22,6 @@ app.use(indexRouter)
 app.use(loginRouter)
 app.use(carrinhoRouter)
 app.use(cadastroRouter)
+app.use(finalizaRouter)
+
 app.listen(porta, () => console.log("Aplicação rodando em http://localhost:5000"));

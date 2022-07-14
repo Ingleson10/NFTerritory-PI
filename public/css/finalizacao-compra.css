@@ -236,11 +236,10 @@ header .nav ul li a:hover{
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
-  border-top: #f3f0f0 1px solid ;
+  border-top: gray 1px solid ;
   display: flex;
   margin: 20px 0px;
   justify-content: center;
-  color: white;
 }
 
 .detalhes-do-item .card{
@@ -263,7 +262,7 @@ header .nav ul li a:hover{
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid gray;
   font-size: 1.5vw;
 }
 
@@ -275,7 +274,7 @@ header .nav ul li a:hover{
   letter-spacing: 1px;
   border: none;
   border-radius: 40px;
-  color: #fff;
+  color: black;
   background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
   linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
   font-size: 1.5vw;
