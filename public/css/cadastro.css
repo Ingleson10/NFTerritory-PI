@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
-* 
-{
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,56 +9,63 @@
   --border-color : #fff
 }
 
-body
-{
+body{
   min-width: 100vw;
   min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-.container
-{
   display: flex;
-  width: 50vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  max-width: 40vw;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.575);
-  padding: 20px;
+  padding: 3% 0;
   border-radius: 10px;
+  margin: 2% 0;
 }
 
-form
-{
+.header img{
+  width: 17vw;
+}
+
+#Cadastrar h1{
+  font-style: italic;
+  margin: 3% 0;
+  font-size: 2.5vw;
+}
+
+form{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-
-
 p:first-child{
-  margin: 0px;
   margin-right: 25px;
 }
 
-label{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: white;
-}
-
-
 input {
   outline: none;
+  border: 1px gray solid;
+  box-shadow: 3px 3px 5px gray;
+  max-width: 40vw;
+  width: 100%;
+}
+
+.label{
+  margin-bottom: 2%;
+  margin-top: 1%;
+  font-style: italic;
+  font-size: 14px;
 }
 
 input:not([type="checkbox"]){
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -67,27 +74,29 @@ input:not([type="checkbox"]){
   
   padding: 10px;
   border-radius: 40px
-
 }
 
-/*estilo do botão submit */
-input[type="submit"]{
+.buttons{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+  width: 15vw;
+}
 
-
-  width: 7vw;
-  padding: 5px 10px;
+input[type="submit"]{
+  width: 10vw;
   transition: all .2s ease-in-out;
   letter-spacing: 1px;
   border-radius: 40px;
-  color: #fff;
-  background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
-  font-size: 1.2vw;
+  color: black;
+  background: linear-gradient(180deg, rgba(44, 44, 44, 0.22) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(67, 223, 171, 0.99), rgba(67, 223, 171, 0.99));
+  font-size: 1.7vw;
   border: none;
   cursor: pointer;
-  
 }
+
 input[type="submit"]:hover{
 
   background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
@@ -102,24 +111,4 @@ justify-content: space-between;
 width: 100%;
 align-items: center;
 margin-top: 10px;
-margin-bottom: 10px;
 }
-
-  
-
-/*                                    Inicio do footer                               */
-  .buttons
-  {
-    display: flex;
-    align-items: center;
-  }
-  .buttons a 
-  {
-    margin-left: 5px;
-    color: #1c1c1c;
-    text-decoration: none;
-  }
-  .buttons a:hover
-  {
-    color: #01db96;
-  }
