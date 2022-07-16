@@ -13,7 +13,8 @@ module.exports = (sequelize, dataTypes) => {
         },
         nome_de_usuario: {
             type: dataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            unique: true
         },
         senha: {
             type: dataTypes.STRING,
@@ -21,7 +22,8 @@ module.exports = (sequelize, dataTypes) => {
         },
         telefone: {
             type: dataTypes.INTEGER,
-            allowNull: true
+            allowNull: true,
+            unique: true
         },
         email: {
             type: dataTypes.STRING,
@@ -30,7 +32,8 @@ module.exports = (sequelize, dataTypes) => {
         },
         CPF: {
             type: dataTypes.INTEGER,
-            allowNull: true
+            allowNull: true,
+            unique: true
         },
         site: {
             type: dataTypes.STRING,
@@ -40,7 +43,8 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.BOOLEAN,
             allowNull: false,
             defaultValue: 0
-        }
+        },
+        
     }
 
     const config = {
