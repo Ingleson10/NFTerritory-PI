@@ -21,7 +21,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         telefone: {
-            type: dataTypes.INTEGER,
+            type: dataTypes.STRING,
             allowNull: true,
             unique: true
         },
@@ -31,7 +31,7 @@ module.exports = (sequelize, dataTypes) => {
             unique: true
         },
         CPF: {
-            type: dataTypes.INTEGER,
+            type: dataTypes.STRING,
             allowNull: true,
             unique: true
         },
@@ -53,4 +53,10 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     const Usuario = sequelize.define(alias, collumns, config)
+
+    Usuario.associate = (models) => {
+        Usuario.hasMany(models.PagamentoUsuario, { foreignKey: 'usuario_id', as: 'usuario' });
+      }
+    
+      return Usuario
 }
