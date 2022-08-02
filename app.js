@@ -9,6 +9,7 @@ const loginRouter = require('./src/routes/loginRouter')
 const carrinhoRouter = require('./src/routes/carrinhoRouter');
 const cadastroRouter = require('./src/routes/cadastroRouter');
 const produtoRouter = require('./src/routes/produtoRouter');
+const crudRouter = require('./src/routes/crudRouter')
 const app = express();
 
 app.set('views', path.join(__dirname, 'src', 'views'));
@@ -24,5 +25,6 @@ app.use(loginRouter);
 app.use(carrinhoRouter);
 app.use(cadastroRouter);
 app.use(produtoRouter);
+app.use(crudRouter)
 
 app.listen(porta, () => console.log("Aplicação rodando em http://localhost:5000"));
