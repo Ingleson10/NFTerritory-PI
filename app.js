@@ -21,10 +21,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/usuario', usuarioRouter);
 app.use('/compra', compraRouter);
 app.use(indexRouter);
-app.use(loginRouter);
-app.use(carrinhoRouter);
-app.use(cadastroRouter);
-app.use(produtoRouter);
+app.use('/login', loginRouter);
+app.use('/carrinho', carrinhoRouter);
+app.use('/cadastrar', cadastroRouter);
+app.use('/produtos', produtoRouter);
 app.use(crudRouter)
 
 app.listen(porta, () => console.log("Aplicação rodando em http://localhost:5000"));
