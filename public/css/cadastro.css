@@ -16,6 +16,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #1C5C47;
 }
 
 .container{
@@ -28,6 +29,7 @@ body{
   padding: 3% 0;
   border-radius: 10px;
   margin: 2% 0;
+  background-color: #C3C3C3;
 }
 
 .header img{
@@ -40,29 +42,34 @@ body{
   font-size: 2.5vw;
 }
 
+#Cadastrar .input-container{
+  display: flex;
+  flex-direction: column;
+  
+}
+
 form{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-p:first-child{
-  margin-right: 25px;
-}
-
-input {
+input{
   outline: none;
   border: 1px gray solid;
   box-shadow: 3px 3px 5px gray;
   max-width: 40vw;
   width: 100%;
+  background-color: beige;
 }
 
 .label{
   margin-bottom: 2%;
   margin-top: 1%;
+  margin-left: 7%;
   font-style: italic;
   font-size: 14px;
+  color: black;
 }
 
 input:not([type="checkbox"]){
@@ -81,7 +88,8 @@ input:not([type="checkbox"]){
   flex-direction: column;
   align-items: center;
   margin-top: 3%;
-  width: 15vw;
+  max-width: 20vw;
+  width: 100%;
 }
 
 input[type="submit"]{
@@ -90,25 +98,29 @@ input[type="submit"]{
   letter-spacing: 1px;
   border-radius: 40px;
   color: black;
-  background: linear-gradient(180deg, rgba(44, 44, 44, 0.22) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(67, 223, 171, 0.99), rgba(67, 223, 171, 0.99));
+  background: linear-gradient(180deg, rgba(67, 223, 171, 0.8) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(0, 89, 59, 0.75), rgba(0, 89, 59, 0.3));
   font-size: 1.7vw;
   border: none;
   cursor: pointer;
 }
 
 input[type="submit"]:hover{
-
-  background: linear-gradient(180deg, rgba(55, 170, 149, 0.91) 0%, rgba(55, 170, 149, 0) 100%),
-  linear-gradient(0deg, rgba(20, 118, 139, 0.92), rgba(20, 118, 139, 0.92));
+  background: linear-gradient(180deg, rgba(44, 44, 44, 0.22) 0%, rgba(55, 170, 149, 0) 100%),
+  linear-gradient(0deg, rgba(67, 223, 171, 0.99), rgba(67, 223, 171, 0.99));
   font-size: 1.3vw;
 
 }
 
 .link{
-display: flex;
-justify-content: space-between;
-width: 100%;
-align-items: center;
-margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly ;
+  width: 100%;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.link a{
+  text-decoration: none;
+  color: black;
 }
