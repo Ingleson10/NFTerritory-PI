@@ -191,7 +191,7 @@ header .nav ul li a:hover{
 .car{
   display: flex;
   justify-content: center;
-  margin: 40px 0px; 
+  margin-top: 5vh; 
 }
 
 .car .carrossel{
@@ -253,7 +253,7 @@ main{
   width: 100%;
   justify-content: space-evenly;
   margin-top: 100px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid gray;
 }
 
 .buy .product{
@@ -264,7 +264,7 @@ main{
   width: 20vw;
   height: 20vw;
   overflow: hidden;
-  background-color: gray;
+  background-color: #C3C3C3;
   border-radius: 15px;
   margin: 20px;
   opacity: 2;
@@ -276,7 +276,7 @@ main{
   justify-content: space-between;
   padding: 4px;
   font-weight: 100;
-  color: var(--cor-text);
+  color: var(--cor-branca);
   float: right;
   position: relative;
 }
@@ -296,7 +296,7 @@ main{
 }
 
 .buy .details2 .description{
-  color: var(--cor-text);
+  color: var(--cor-branca);
   text-align: center;
 }
 
@@ -357,7 +357,7 @@ main{
   justify-content: space-between;
   padding: 4px;
   font-weight: 100;
-  color: var(--cor-text);
+  color: var(--cor-branca);
   float: right;
 }
 
@@ -375,7 +375,7 @@ main{
 }
 
 .buy2 .details2 .description{
-  color: var(--cor-text);
+  color: var(--cor-branca);
   text-align: center;
 }
 

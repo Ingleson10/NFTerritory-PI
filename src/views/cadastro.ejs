@@ -17,27 +17,24 @@
             <div id="Cadastrar">
                 <form method="post" action="">
                     <h1>Crie sua conta!</h1>
-                    <p>
+                    <div class="input-container">
                         <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Ex: Luis Augusto"/>
-                        <p class="label">Seu nome</p>
-                    </p>
-                    <p>
+                        <p class="label">Nome</p>
+                    </div>
+                    <div class="input-container">
                         <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Ex: luis@hotmail.com"/>
-                        <p class="label">Seu e-mail</p>
-                    </p>
-                    <p>
+                        <p class="label">E-mail</p>
+                    </div>
+                    <div class="input-container">
                         <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="*****"/>
-                        <p class="label">Sua senha</p>
-                    </p>
-                    <p>
-                        <input id="confirma_senha" name="confirma_senha" required="required" type="password" placeholder="*****"/>
-                        <p class="label">Confirme sua senha</p>
-                    </p>
+                        <p class="label">Senha</p>
+                    </div>
                     <div class="buttons">
                         <input type="submit" value="Cadastrar">
-                        <p class="link"> Já tem uma conta?
-                            <a href="#paralogin"> Ir para login</a>
-                        </p>   
+                        <div class="link">
+                            <p> Já tem uma conta?</p>   
+                            <a href="/login"> Ir para login</a>
+                        </div>
                     </div>
                 </form>
             </div>

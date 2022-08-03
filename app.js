@@ -18,8 +18,8 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
 
-app.use(usuarioRouter);
-app.use(compraRouter);
+app.use('/usuario', usuarioRouter);
+app.use('/compra', compraRouter);
 app.use(indexRouter);
 app.use(loginRouter);
 app.use(carrinhoRouter);
