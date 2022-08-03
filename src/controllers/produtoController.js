@@ -1,6 +1,7 @@
 const produtoController = {
-    produtos: (req, res)=>{
-        res.render('listagem-produto')
+    produtos: async  (req, res)=>{
+        const products = await Products.findAll()
+        res.render('listagem-produto', {products})
     },
 
     detalhes: (req, res)=>{
