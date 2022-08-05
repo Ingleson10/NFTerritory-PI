@@ -1,26 +1,26 @@
-module.exports = (sequelize, dataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const alias = 'Produto';
 
     const columns = {
         id: {
-            type: dataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
         nome: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         preco: {
-            type: dataTypes.FLOAT,
+            type: DataTypes.FLOAT,
             allowNull: false
         },
         disponibilidade: {
-            type: dataTypes.BOOLEAN,
+            type: DataTypes.BOOLEAN,
             allowNull: false
         },
         categoria_id: {
-            type: dataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false
         }
     }

@@ -1,46 +1,46 @@
-module.exports = (sequelize, dataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const alias = 'Usuario';
 
     const collumns = {
         id: {
-            type: dataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
         nome_completo: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: true
         },
         nome_de_usuario: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
             unique: true
         },
         senha: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         telefone: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: true,
             unique: true
         },
         email: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
             unique: true
         },
         CPF: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: true,
             unique: true
         },
         site: {
-            type: dataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: true
         },
         admin: {
-            type: dataTypes.BOOLEAN,
+            type: DataTypes.BOOLEAN,
             allowNull: false,
             defaultValue: 0
         },
@@ -56,7 +56,7 @@ module.exports = (sequelize, dataTypes) => {
 
     Usuario.associate = (models) => {
         Usuario.hasMany(models.PagamentoUsuario, { foreignKey: 'usuario_id', as: 'usuario' });
-      }
+    } 
     
-      return Usuario
+    return Usuario
 }
