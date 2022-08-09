@@ -42,11 +42,13 @@ module.exports = (sequelize, DataTypes) => {
     timestamps: false,
   };
 
-        const PagamentoUsuario = sequelize.define(alias, collumns, config);
+  const PagamentoUsuario = sequelize.define(alias, collumns, config);
 
-        PagamentoUsuario.associate = (models) => {
-        PagamentoUsuario.belongToMany(models.Usuario, { foreignKey: 'usuario_id', as: 'usuario' });
-    
+  PagamentoUsuario.associate = (models) => {
+    PagamentoUsuario.belongsTo(models.Usuario, {
+      foreignKey: "usuario_id",
+      as: "usuario",
+    });
   };
 
   return PagamentoUsuario;
