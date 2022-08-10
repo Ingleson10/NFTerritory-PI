@@ -5,7 +5,7 @@ const cadastroController = {
     novoCadastro: (req, res)=>{
         
         console.log(req.body);
-
+    },
 
     register: (req, res) => {
         const {email, senha} = req.body
@@ -14,6 +14,6 @@ const cadastroController = {
 
     }
 }
-}
+
 
 module.exports = cadastroController;

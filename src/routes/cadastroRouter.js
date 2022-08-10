@@ -5,7 +5,7 @@ const cadastroController = require('../controllers/cadastroController');
 router.get('/', cadastroController.cadastrar);
 router.post('/cadastro', cadastroController.novoCadastro)
 router.get('/cadastrar', cadastroController.cadastrar);
-router.post('/cadastrar', casdastroController.register)
+router.post('/cadastrar', cadastroController.register)
 
 
 module.exports = router;

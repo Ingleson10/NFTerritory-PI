@@ -1,4 +1,4 @@
-const {Users, Permissions, Addresses} = require('../models')
+const {Users, Permissions, Addresses} = require('../database/models')
 const path = require('path')
 
 

@@ -25,10 +25,6 @@ app.use(loginRouter);
 app.use(carrinhoRouter);
 app.use(cadastroRouter);
 app.use(produtoRouter);
-<<<<<<< HEAD
-app.use(crudRouter)
-=======
 app.use(crudRouter);
->>>>>>> 3c685a232a86194ac3a63cdfd7e2c5bf6f0a3b2b
 
 app.listen(porta, () => console.log("Aplicação rodando em http://localhost:5000"));
