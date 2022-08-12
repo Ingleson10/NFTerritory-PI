@@ -3,6 +3,7 @@ const router = express.Router()
 const crudController = require('../controllers/crudController')
 const multer = require('multer')
 const path = require('path')
+const verificarSeUsuarioEhAdmin = require('../middlewares/verificarSeUsuarioEhAdmin')
 
 const multerDiskStorage = multer.diskStorage({
     destination: (req,file, callback) => {
@@ -15,7 +16,7 @@ const multerDiskStorage = multer.diskStorage({
     })
     const upload = multer({storage:multerDiskStorage})
     
-    router.get('/crud', crudController.index)
-    router.post('/cadastro', upload.single('produto-img'), crudController.cadastro)
+    router.get('/crud', verificarSeUsuarioEhAdmin, crudController.index)
+    router.post('/cadastro', verificarSeUsuarioEhAdmin, upload.single('produto-img'), crudController.cadastro)
 
 module.exports = router
