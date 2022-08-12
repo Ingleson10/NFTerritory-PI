@@ -1,6 +1,6 @@
 const { check } = require('express-validator')
 
-const validarCadastro = [
+const validarCadastro = (req, res, next) => {[
     check('nome_completo')
         .isEmpty().withMessage('Digite seu nome completo'),
     check('nome_usuario')
@@ -20,5 +20,7 @@ const validarCadastro = [
     check('senha')
         .isEmpty().withMessage('Digite sua senha')
 ]
+next()
+}
 
 module.exports = validarCadastro
