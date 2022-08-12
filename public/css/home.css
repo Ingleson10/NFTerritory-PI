@@ -101,9 +101,7 @@ header .header-main{
 }
 
 .header-main .rotas ul li a{
-  font-size: 25px;
-  color: var(--cor-branca);
-  font-weight: 800;
+  color: black;
 }
 
 .header-main .rotas ul li a:hover{

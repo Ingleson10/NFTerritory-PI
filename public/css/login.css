@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Roboto', sans-serif; 
 }
 
 body{
@@ -12,8 +11,6 @@ body{
     display: flex;
     justify-content: center;
 }
-
-
 
 .login{
     display: flex;
@@ -66,8 +63,21 @@ header .logo img{
 {
     color: #fff;
     position: relative;
-    margin: 20px 0px;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
+
+.lembrar{
+    display: flex;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.lembrar label{
+    margin-left: 2%;
+    font-style: italic;
+}
+
 .input{
     padding: 10px;
     border: none;
@@ -76,8 +86,7 @@ header .logo img{
     font: inherit;
     color: #fff;
     background-color: transparent;
-    outline: 2px solid #fff;
-    cursor: pointer;
+    outline: 2px solid #fff; 
 }
 .input-label{
     position: absolute;
@@ -109,18 +118,34 @@ header .logo img{
     justify-content: space-between;
     color: #fff;
 }
+
+.others-options a{
+    text-decoration: none;
+    color: white;
+}
+
+.others-options a:hover{
+    text-decoration: underline;
+}
+
 .others-options span:hover
 {
     text-decoration: underline;
-    color: red;
+    color: #ff1d0d;
     cursor :pointer;
 }
+
 .sign-in .entrar
 {
     background-color: #1c1c1c;
-    padding: 5px 40px;
+    padding: 2%;
     border-radius: 5px;
     margin: 10px;
+    color: white;
+    transition: 0.3s;
+    border: none;
+    width: 7vw;
+    font-size: large;
 }
 .sign-in .entrar:hover
 {
@@ -138,13 +163,14 @@ header .logo img{
 .login-with-social-medias .google
 {
     display: flex;
-    width: 20vw;
     align-items: center;
     background-color: #1c1c1c;
     color: #fff;
     margin: 10px;
     padding: 10px 20px;
     border-radius: 5px;
+    transition: 0.3s;
+    width: 17vw;
 }
 .login-with-social-medias .google:hover
 {
@@ -167,13 +193,14 @@ header .logo img{
 .login-with-social-medias .facebook
 {
     display: flex;
-    width: 20vw;
     align-items: center;
     background-color: #1c1c1c;
     color: #fff;
     margin: 10px;
     padding: 10px 20px;
     border-radius: 5px;
+    transition: 0.3s;
+    width: 17vw;
 }
 .login-with-social-medias .facebook:hover
 {
@@ -182,7 +209,18 @@ header .logo img{
     cursor: pointer;
 }
 
+.error {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+    color: black;
+    font-style: italic;
+}
 
+.join{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
