@@ -1,0 +1,94 @@
+@import 'boxicons';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+
+html{
+    height: 100vh;
+    display: block;
+    position: relative;
+}
+
+html::after{
+    content: '';
+    background-image: url('/img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    position: absolute;
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 10%;
+}
+
+header img{
+    max-width: 13vw;
+    width: 100%;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+main .explanatory-container{
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+main .explanatory{
+    font-size: 4vw;
+}
+
+main .explanatory-text{
+    margin-top: 2%;
+    max-width: 50vw;
+}
+
+main .socials{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.socials h4{
+    margin-bottom: 1%;
+}
+
+.socials ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials li{
+    list-style: none;
+}
+
+.socials li i{
+    font-size: 3vw;
+    width: 4vw;
+}
+
+.socials li a{
+    color: black
+}
