@@ -37,7 +37,7 @@ module.exports = (sequelize, DataTypes) => {
   const PedidoFinalizado = sequelize.define(alias, collumns, config);
 
   PedidoFinalizado.associate = (models) => {
-    PedidoFinalizado.belongsTo(models.Usuario, {
+    PedidoFinalizado.hasMany(models.Usuario, {
       foreignKey: "usuario_id",
       as: "usuario",
     });

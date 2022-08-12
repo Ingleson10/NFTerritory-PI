@@ -45,7 +45,7 @@ module.exports = (sequelize, DataTypes) => {
   const PagamentoUsuario = sequelize.define(alias, collumns, config);
 
   PagamentoUsuario.associate = (models) => {
-    PagamentoUsuario.belongsTo(models.Usuario, {
+    PagamentoUsuario.hasMany(models.Usuario, {
       foreignKey: "usuario_id",
       as: "usuario",
     });

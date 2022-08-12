@@ -4,6 +4,7 @@ module.exports = {
         "password": "5050",
         "database": "nfterritory",
         "host": "localhost",
+        "port": 3306,
         "dialect": "mysql"
       },
       "test": {

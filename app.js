@@ -9,7 +9,8 @@ const loginRouter = require('./src/routes/loginRouter')
 const carrinhoRouter = require('./src/routes/carrinhoRouter');
 const cadastroRouter = require('./src/routes/cadastroRouter');
 const produtoRouter = require('./src/routes/produtoRouter');
-const crudRouter = require('./src/routes/crudRouter')
+const crudRouter = require('./src/routes/crudRouter');
+const bodyParser = require('body-parser');
 const app = express();
 
 app.set('views', path.join(__dirname, 'src', 'views'));
@@ -17,6 +18,7 @@ app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}))
 
 app.use('/usuario', usuarioRouter);
 app.use('/compra', compraRouter);
@@ -26,5 +28,6 @@ app.use(carrinhoRouter);
 app.use(cadastroRouter);
 app.use(produtoRouter);
 app.use(crudRouter);
+app.use(bodyParser.json())
 
 app.listen(porta, () => console.log("Aplicação rodando em http://localhost:5000"));
