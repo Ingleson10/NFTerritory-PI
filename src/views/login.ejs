@@ -12,29 +12,40 @@
     <main class="login">
         <header>
             <div class="logo">
-                <img src="/img/logo-branca.png" alt="Logo" srcset="">
+                <a href="/"><img src="/img/logo-branca.png" alt="Logo" srcset=""></a>
             </div>
             <div class="title">
-                <h3>SIGN-IN</h3>
+                <h3>ENTRAR</h3>
             </div>
         </header>
         <div class="join">
            <div class="input-group">
-            <input type="text" id="name" required class="input">
-            <label for="name" class="input-label">Endereço de Email</label>
+            <form action="/login" method="POST">
+            <input type="text" id="email" required class="input" name="email">
+            <label for="email" class="input-label">Email</label>
            </div>
            <div class="input-group">
-            <input type="password" id="name" required class="input">
-            <label for="name" class="input-label">senha</label>
+            <input type="password" id="senha" required class="input" name="senha">
+            <label for="senha" class="input-label">Senha</label>
            </div>
+           <div class="lembrar">
+            <input type="checkbox" id="lembrar" name="lembrar" class="lembrar">
+            <label for="lembrar">Manter-se conectado</label>
+           </div>
+            <% if(typeof error !== 'undefined') { %>
+                <div class="error">
+                  <p><%= error %></p>
+                </div>
+              <% } %>
             <div class="others-options">
                 <span>Esqueceu a senha?</span>
                 <a href="/cadastrar">Registre-se</a>
             </div>
            <div class="sign-in">
-            <span class="entrar">
+            <button class="entrar">
                 Entrar
-            </span>
+            </button>
+            </form>
            </div>
            <div class="login-with-social-medias">
             <div class="google">
