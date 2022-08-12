@@ -27,19 +27,18 @@
                 <i class='bx bx-edit-alt'></i>
             </article>
             <article class="city-country-network">
-                <p id="city">CIDADE - ESTADO</p>
                 <p>www.twitter.com/joazinho</p>
             </article>
         </article>
-        <form action="/perfil/editar" method="POST">
+        <form method="GET">
         <div class="about-container">
             <textarea id="about" name="about" id="about" placeholder="Conte-nos um pouco sobre você!"></textarea>
             <button id="edit-bio-button"><i class='bx bx-check'></i></button>
         </div>
             <ul type='none' class="buttons-container">
-                <li id="my-info" class="size"><button class="info-button">Meus dados</button></li>
-                <li id="safety" class="size"><button class="safety-button">Segurança</button></li>
-                <li id="cards" class="size"><button class="cards-button">Cartões</button></li>
+                <li id="my-info" class="size"><a href="/usuario/perfil/editar"><button class="info-button">Meus dados</button></a></li>
+                <li id="safety" class="size"><a href="/usuario/perfil/editar"><button class="safety-button">Segurança</button></a></li>
+                <li id="cards" class="size"><a href="/usuario/perfil/editar"><button class="cards-button">Cartões</button></a></li>
             </ul>
         </form>
     </section>
