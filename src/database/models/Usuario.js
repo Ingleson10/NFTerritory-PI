@@ -5,13 +5,14 @@ module.exports = (sequelize, dataTypes) => {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
         nome_completo: {
             type: dataTypes.STRING,
-            allowNull: true
+            allowNull: false,
         },
-        nome_de_usuario: {
+        nome_usuario: {
             type: dataTypes.STRING,
             allowNull: false,
             unique: true
@@ -22,7 +23,7 @@ module.exports = (sequelize, dataTypes) => {
         },
         telefone: {
             type: dataTypes.STRING,
-            allowNull: true,
+            allowNull: false,
             unique: true
         },
         email: {
@@ -32,12 +33,12 @@ module.exports = (sequelize, dataTypes) => {
         },
         CPF: {
             type: dataTypes.STRING,
-            allowNull: true,
+            allowNull: false,
             unique: true
         },
         site: {
             type: dataTypes.STRING,
-            allowNull: true
+            allowNull: false
         },
         admin: {
             type: dataTypes.BOOLEAN,
