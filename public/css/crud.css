@@ -131,20 +131,50 @@ form
     display: flex;
     flex-direction: column;
 }
-button[type='submit']
+.button
 {
     display: flex;
-    align-self: center;
-    background-color: rgb(230, 112, 112);
+    align-self: center  ;
+    position: relative;
+    
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+    background-color: #202231;
     color: #fff;
     border: none;
-    padding: 5px 20px;
-    margin-top: 20px;
-    font-size: 2vw;
-}
-button[type='submit']:hover
-{
-    background-color: rgb(250, 95, 95);
+    border-radius: 4px;
     cursor: pointer;
+    transition: width .5s , border-radius .5s;
+    
+}
+.button *{
+    font-size: 1.8vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .25s;
+}
+.icon
+{
+    opacity: 0;
+
+}
+.button:hover
+{
+width: 30px;
+background-color: #44c08a;
+border-radius: 50%;
+}
+.button:hover .text
+{
+    opacity: 0;
+
+}
+.button:hover .icon
+{
+    opacity: 1;
+    transition-delay: .5s;
 }
 
