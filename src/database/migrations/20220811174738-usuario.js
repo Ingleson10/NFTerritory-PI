@@ -8,7 +8,7 @@ module.exports = {
     },
     nome_completo: {
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: false
     },
     nome_de_usuario: {
         type: Sequelize.STRING,
@@ -21,7 +21,7 @@ module.exports = {
     },
     telefone: {
         type: Sequelize.STRING,
-        allowNull: true,
+        allowNull: false,
         unique: true
     },
     email: {
@@ -31,12 +31,12 @@ module.exports = {
     },
     CPF: {
         type: Sequelize.STRING,
-        allowNull: true,
+        allowNull: false,
         unique: true
     },
     site: {
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: false
     },
     admin: {
         type: Sequelize.BOOLEAN,

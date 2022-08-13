@@ -10,7 +10,8 @@ module.exports = {
     },
     nome: {
         type: dataTypes.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: true
     },
     preco: {
         type: dataTypes.FLOAT,
