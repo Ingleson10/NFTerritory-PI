@@ -498,6 +498,10 @@ footer .comunidade .search-comunidade i{
   font-size: 40px;
 }
 
+.comunidade ul li a{
+  color: black;
+}
+
 .footer-clicaveis{
   display: flex;
   flex-direction: column;
