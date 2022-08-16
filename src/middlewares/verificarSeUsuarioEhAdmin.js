@@ -1,7 +1,15 @@
 const { Usuario } = require('../database/models');
 
-const verificarSeUsuarioEhAdmin = (req, res, next) => {
-    if(!Usuario.admin){
+const verificarSeUsuarioEhAdmin = async (req, res, next) => {
+    const { email } = JSON.parse(req.cookies.usuario)
+    const user = await Usuario.findOne({
+        where: {
+            email
+        }
+        
+    })
+    // console.log(user.email)
+    if(user && !user.admin){        
         return res.redirect('/')
     }
     next()
