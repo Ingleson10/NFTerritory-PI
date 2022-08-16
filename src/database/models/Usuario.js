@@ -44,7 +44,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.BOOLEAN,
             allowNull: false,
             defaultValue: 0
-        },
+        }
         
     }
 
@@ -57,6 +57,10 @@ module.exports = (sequelize, dataTypes) => {
 
     Usuario.associate = (models) => {
         Usuario.hasMany(models.PagamentoUsuario, { foreignKey: 'usuario_id', as: 'usuario' });
+      }
+
+      Usuario.associate = (models) => {
+        Usuario.hasMany(models.PedidoFinalizado, { foreignKey: 'usuario_id', as: 'usuario' });
       }
     
       return Usuario

@@ -1,18 +1,19 @@
 module.exports = (sequelize, dataTypes) => {
     const alias = 'PedidoFinalizado';
 
-    const collumns = {
+    const columns = {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
         total: {
             type: dataTypes.FLOAT,
             allowNull: false
         },
         data_compra: {
-            type: dataTypes.INTEGER,
+            type: dataTypes.DATEONLY,
             allowNull: false
         },
         usuario_id: {
@@ -35,11 +36,19 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
       }
 
-      const PedidoFinalizado = sequelize.define(alias, collumns, config);
+      const PedidoFinalizado = sequelize.define(alias, columns, config);
 
       PedidoFinalizado.associate = (models) => {
-        PedidoFinalizado.belongToMany(models.Usuario, { foreignKey: 'usuario_id', as: 'usuario' });
+        PedidoFinalizado.belongsTo(models.Usuario, { foreignKey: 'usuario_id', as: 'usuario' });
+      }
+
+      PedidoFinalizado.associate = (models) => {
+        PedidoFinalizado.belongsTo(models.PagamentoUsuario, { foreignKey: 'pagamento_id' });
+      }
+
+      PedidoFinalizado.associate = (models) => {
+        PedidoFinalizado.belongsTo(models.Produto, { foreignKey: 'produto_id' })
       }
     
-      return Usuario
+      return PedidoFinalizado
 }

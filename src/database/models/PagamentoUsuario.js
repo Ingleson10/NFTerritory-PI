@@ -50,6 +50,10 @@ module.exports = (sequelize, dataTypes) => {
       PagamentoUsuario.associate = (models) => {
         PagamentoUsuario.belongsTo(models.Usuario, { foreignKey: 'usuario_id', as: 'usuario' });
       }
+
+      PagamentoUsuario.associate = (models) => {
+        PagamentoUsuario.hasMany(models.PedidoFinalizado, { foreignKey: 'pagamento_id' });
+      }
     
       return PagamentoUsuario
 }
