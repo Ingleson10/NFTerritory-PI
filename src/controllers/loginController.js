@@ -25,9 +25,9 @@ const loginController = {
             req.session.usuarioLogado = usuario
 
             if(lembrarUsuario){
-                res.cookie('usuario', JSON.stringify({ email: usuario.email, nome: usuario.nome_usuario, admin: usuario.admin}), { maxAge: 90000 })
+                var farFuture = new Date(new Date().getTime() + (1000606024365*10)); // ~10y
+                res.cookie('usuario', JSON.stringify({ email: usuario.email, nome: usuario.nome_usuario, admin: usuario.admin}), { maxAge: farFuture })
                 console.log(req.cookies.usuario)
-                //cookie vindo undefined, mas em aplication no navegador os dados do usuario aparecem (?)
             }
 
             res.redirect('/usuario/perfil')      
