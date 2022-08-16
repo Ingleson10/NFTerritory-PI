@@ -3,6 +3,6 @@ const router = express.Router();
 
 const carrinhoController = require('../controllers/carrinhoController');
 
-router.get('/' , carrinhoController.view)
+router.get('/carrinho' , carrinhoController.view)
 
 module.exports = router

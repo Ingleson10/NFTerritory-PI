@@ -29,8 +29,6 @@ const multerDiskStorage = multer.diskStorage({
     })
     router.post('/cadastro', upload.single('produto-img'), crudController.cadastro)
 
-    console.log('Documentos Enviados!!')
-
     
 
 module.exports = router
