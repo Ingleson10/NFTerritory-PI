@@ -6,9 +6,7 @@ const verificarSeUsuarioEhAdmin = async (req, res, next) => {
         where: {
             email
         }
-        
     })
-    // console.log(user.email)
     if(user && !user.admin){        
         return res.redirect('/')
     }
