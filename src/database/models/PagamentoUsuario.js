@@ -1,11 +1,12 @@
 module.exports = (sequelize, dataTypes) => {
     const alias = 'PagamentoUsuario';
 
-    const collumns = {
+    const columns = {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
         tipo_pagamento: {
             type: dataTypes.STRING,
@@ -21,7 +22,8 @@ module.exports = (sequelize, dataTypes) => {
         },
         conta: {
             type: dataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            unique: true
         },
         cvv: {
             type: dataTypes.STRING,
@@ -43,11 +45,15 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
       }
 
-      const PagamentoUsuario = sequelize.define(alias, collumns, config);
+      const PagamentoUsuario = sequelize.define(alias, columns, config);
 
       PagamentoUsuario.associate = (models) => {
-        PagamentoUsuario.belongToMany(models.Usuario, { foreignKey: 'usuario_id', as: 'usuario' });
+        PagamentoUsuario.belongsTo(models.Usuario, { foreignKey: 'usuario_id', as: 'usuario' });
+      }
+
+      PagamentoUsuario.associate = (models) => {
+        PagamentoUsuario.hasMany(models.PedidoFinalizado, { foreignKey: 'pagamento_id' });
       }
     
-      return Usuario
+      return PagamentoUsuario
 }

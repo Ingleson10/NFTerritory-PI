@@ -1,39 +1,41 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.createTable('pagamento_usuario', {
-      id: {
-        type: Sequelize.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
-    },
-    tipo_pagamento: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    banco: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    bandeira: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    conta: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    cvv: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    validade: {
-        type: Sequelize.STRING,
-        allowNull: false
-    }, 
-    usuario_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-    }
+        id: {
+            type: dataTypes.INTEGER,
+            primaryKey: true,
+            autoIncrement: true,
+            allowNull: false
+        },
+        tipo_pagamento: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+        banco: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+        bandeira: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+        conta: {
+            type: dataTypes.STRING,
+            allowNull: false,
+            unique: true
+        },
+        cvv: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+        validade: {
+            type: dataTypes.STRING,
+            allowNull: false
+        }, 
+        usuario_id: {
+            type: dataTypes.INTEGER,
+            allowNull: false,
+        }
     })
   },
 

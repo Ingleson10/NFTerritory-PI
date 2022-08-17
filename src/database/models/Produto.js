@@ -5,11 +5,13 @@ module.exports = (sequelize, dataTypes) => {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
         nome: {
             type: dataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            unique: true
         },
         preco: {
             type: dataTypes.FLOAT,
@@ -33,8 +35,12 @@ module.exports = (sequelize, dataTypes) => {
     const Produto = sequelize.define(alias, columns, config)
 
     Produto.associate = (models) => {
-        Produto.hasMany(models.CategoriaProduto, { foreignKey: 'categoria_id', as: 'produto '})
+        Produto.belongsTo(models.CategoriaProduto, { foreignKey: 'categoria_id' })
     }
+
+    Produto.associate = (models) => {
+        Produto.hasMany(models.PedidoFinalizado, { foreignKey: 'produto_id' })
+      }
 
     return Produto
 }

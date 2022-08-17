@@ -6,11 +6,13 @@ module.exports = {
     id: {
         type: dataTypes.INTEGER,
         primaryKey: true,
-        autoIncrement: true
+        autoIncrement: true,
+        allowNull: false
     },
     nome: {
         type: dataTypes.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: true
     },
     preco: {
         type: dataTypes.FLOAT,

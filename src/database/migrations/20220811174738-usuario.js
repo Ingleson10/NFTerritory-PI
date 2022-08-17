@@ -1,7 +1,6 @@
-module.exports = (sequelize, dataTypes) => {
-    const alias = 'Usuario';
-
-    const collumns = {
+module.exports = {
+  async up (queryInterface, Sequelize) {
+    await queryInterface.createTable('usuario', {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
@@ -45,23 +44,10 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false,
             defaultValue: 0
         }
-        
-    }
+    })
+  },
 
-    const config = {
-        tableName: 'usuario',
-        timestamps: false
-    }
-
-    const Usuario = sequelize.define(alias, collumns, config)
-
-    Usuario.associate = (models) => {
-        Usuario.hasMany(models.PagamentoUsuario, { foreignKey: 'usuario_id', as: 'usuario' });
-      }
-
-      Usuario.associate = (models) => {
-        Usuario.hasMany(models.PedidoFinalizado, { foreignKey: 'usuario_id', as: 'usuario' });
-      }
-    
-      return Usuario
-}
+  async down (queryInterface, Sequelize) {
+    await queryInterface.dropTable('usuario');
+  }
+};

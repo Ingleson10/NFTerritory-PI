@@ -35,18 +35,26 @@ header .title
 }
 header .rotas
 {
+    width: 15vw;
     font-size: 1.2vw;
+    display: flex;
+    justify-content: space-evenly;
 
 }
 header .rotas span
 {
     margin-right: 20px;
 }
-header .rotas span:hover
+header .rotas a:hover
 {
     color: rgb(100, 100, 100);
     cursor: pointer;
     text-decoration: underline;
+}
+header .rotas a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
 }
 .cadastrar-produto
 {

@@ -11,31 +11,51 @@
 <body>
        <div class="container">
         <div class="header">
-            <img class="logo" src="/img/logo.png"/>
+            <a href="/"><img class="logo" src="/img/logo.png"/></a>
         </div>
             <a class="links" id="paracadastro"></a>
             <div id="Cadastrar">
-                <form method="post" action="">
+                <!-- <% if(locals.errors && errors.name){ %>
+                    <p class="aviso"><%= errors.name %></p>
+                <% } %> -->
+                <form action="/cadastrar" method="POST">
                     <h1>Crie sua conta!</h1>
                     <div class="input-container">
-                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Ex: Luis Augusto"/>
-                        <p class="label">Nome</p>
+                        <input id="nome-completo" name="nome_completo" required="required" type="text" placeholder="Ex: Luis Augusto"/>
+                        <p class="label">Nome Completo</p>
                     </div>
                     <div class="input-container">
-                        <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Ex: luis@hotmail.com"/>
+                        <input id="nome" name="nome_usuario" required="required" type="text" placeholder="Ex: Luizinho"/>
+                        <p class="label">Nome de usuário</p>
+                    </div>
+                    <div class="input-container">
+                        <input id="email" name="email" required="required" type="email" placeholder="Ex: luis@hotmail.com"/>
                         <p class="label">E-mail</p>
                     </div>
                     <div class="input-container">
-                        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="*****"/>
+                        <input id="telefone" name="telefone" required="required" type="phone" placeholder="Ex: 34 99999-9999"/>
+                        <p class="label">Telefone</p>
+                    </div>
+                    <div class="input-container">
+                        <input id="cpf" name="CPF" required="required" type="text" placeholder="Ex: 568.788.658-56"/>
+                        <p class="label">CPF</p>
+                    </div>
+                    <div class="input-container">
+                        <input id="site" name="site" required="required" type="text" placeholder="Ex: twitter.com/luizinhomaroto"/>
+                        <p class="label">Site</p>
+                    </div>    
+                    <div class="input-container">
+                        <input id="senha" name="senha" required="required" type="password" placeholder="*****"/>
                         <p class="label">Senha</p>
                     </div>
-                    <div class="buttons">
-                        <input type="submit" value="Cadastrar">
+                        <button type="submit">Cadastrar</button>
                         <div class="link">
+                            <% if(typeof error !== 'undefined'){ %>
+                                <p><%= error %></p>
+                            <% } %>
                             <p> Já tem uma conta?</p>   
                             <a href="/login"> Ir para login</a>
                         </div>
-                    </div>
                 </form>
             </div>
 
