@@ -15,10 +15,6 @@
   font-family: 'Roboto', sans-serif; 
 }
 
-html{
-    
-}
-
 body{
   display: flex;
   flex-direction: column;
@@ -101,9 +97,7 @@ header .header-main{
 }
 
 .header-main .rotas ul li a{
-  font-size: 25px;
-  color: var(--cor-branca);
-  font-weight: 800;
+  color: black;
 }
 
 .header-main .rotas ul li a:hover{
@@ -158,6 +152,7 @@ header .nav{
 
 header .nav ul{
   display: flex;
+  justify-content: center;
   background: linear-gradient(180deg, rgba(67, 223, 171, 0.8) 0%, rgba(55, 170, 149, 0) 100%),
   linear-gradient(0deg, rgba(0, 89, 59, 0.75), rgba(0, 89, 59, 0.75));
   box-shadow: 5px 5px 5px grey;
@@ -167,16 +162,12 @@ header .nav ul{
 }
 
 header .nav ul li{
-  display: flex;
-  justify-content: space-around;
-  padding-right: 20px;
-  width: 40%;
   list-style-type: none;
-  color: var(--cor-branca); 
+  padding: 0 3%
 }
 
 header .nav ul li a{
-  color: var(--cor-preta);
+  color: black;
   text-decoration: none;
   font-size: 1.4vw;
   font-weight: 400;

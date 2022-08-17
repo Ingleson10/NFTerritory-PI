@@ -23,11 +23,11 @@
         </article>
         <article class="name-edit-city-country-network-container">
             <article class="name-and-edit-icon-container">
-                <p>SEU NOME AQUI</p>
+                <p><%= user.nome_usuario %></p>
                 <i class='bx bx-edit-alt'></i>
             </article>
             <article class="city-country-network">
-                <p>www.twitter.com/joazinho</p>
+                <p><%= user.site %></p>
             </article>
         </article>
         <form method="GET">
@@ -46,44 +46,57 @@
         <article id="user-data-title"><h1>Seus dados</h1></article>
         <article class="personal-data-container">
             <h3>Dados pessoais</h3>
-            <form action="/perfil/dados-do-usuario" method="GET">
+            <form method="POST" action="/usuario/perfil/editar">
             <ul type="none">
                 <div class="li-explanatory-container">
-                <li class="name li-style"><i class='bx bx-user'></i><input type="text" name="name" id="name" placeholder="joao da silva"/></li>
+                <li class="name li-style"><i class='bx bx-user'></i><input type="text" name="nome_completo" id="name" placeholder="joao da silva"/></li>
                 <p class="explanatory">nome completo</p>
                 </div>
                 <div class="li-explanatory-container">
-                <li class="network li-style"><i class='bx bx-network-chart'></i><input type="text" name="network" id="network" placeholder="www.twitter.com/seuperfil"/></li>
+                <li class="network li-style"><i class='bx bx-network-chart'></i><input type="text" name="site" id="network" placeholder="www.twitter.com/seuperfil"/></li>
                 <p class="explanatory">site</p>
                 </div>
                 <div class="li-explanatory-container">
-                <li class="phone li-style"><i class='bx bx-mobile'></i><input type="text" name="phone" id="phone" placeholder="(XX)XXXXX-XXXX"/></li>
+                <li class="phone li-style"><i class='bx bx-mobile'></i><input type="text" name="telefone" id="phone" placeholder="(XX)XXXXX-XXXX"/></li>
                 <p class="explanatory">telefone</p>
                 </div>
                 <div class="li-explanatory-container">
-                <li class="cpf li-style"><i class='bx bx-id-card'></i><input type="text" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX"/></li>
+                <li class="cpf li-style"><i class='bx bx-id-card'></i><input type="text" name="CPF" id="cpf" placeholder="XXX.XXX.XXX-XX"/></li>
                 <p class="explanatory">cpf</p>
-                <div class="align"><button class="confirmation"><i class='bx bx-check config'></i></button></div>
                 </div>
             </ul>
-            </form>
         </article>
         <article class="account-data-container">
             <h3>Dados da conta</h3>
-            <form action="/perfil/dados-da-conta" method="GET">
+            <form method="POST" action="/usuario/perfil/editar">
                 <ul type="none">
                     <div class="li-explanatory-container">
-                    <li class="nickname li-style"><i class='bx bx-user'></i><input type="text" name="nickname" id="nickname" placeholder="joaozinho034"/></i></li>
+                    <li class="nickname li-style"><i class='bx bx-user'></i><input type="text" name="nome_usuario" id="nickname" placeholder="joaozinho034"/></i></li>
                     <p class="explanatory">nome de usuário</p>
                     </div>
                     <div class="li-explanatory-container">
                     <li class="email li-style"><i class='bx bx-envelope'></i><input type="text" name="email" id="email" placeholder="seu e-mail"/></i></li>
                     <p class="explanatory">e-mail</p>
-                    <div class="align"><button class="confirmation"><i class='bx bx-check config'></i></button></div>
                     </div>
         </article>
     </section>    
     </div>
+    <section class="safety-container">
+        <h1>Segurança</h1>
+        <article class="input-whole-container">
+            <div class="input-container">
+                <i class='bx bx-lock-alt'></i><input type="password" name="senha" id="password" placeholder="********"/></div>
+                <p class="safety-explanatory">senha</p>
+            <div class="checkbox-container">
+                <input class="check" type="checkbox" name="safety" value="on"/>
+                <p class="safety-explanatory-2">Verificação em duas etapas.</p>
+            </div>
+            <div class="confirmation-container">
+            <button type= "submit" class="confirmation">Atualizar cadastro</button>
+            </div>
+            </form>
+        </article>
+    </section>
     <section class="cards-whole-container">
         <h1>Seus cartões</h1>
         <div class="cards-container">
@@ -102,21 +115,6 @@
         <article class="plus-button">
             <form action="/perfil/cartoes/add" method="GET">
                 <button class="plus"><i class='bx bx-plus'></i></button>
-        </article>
-    </section>
-    <section class="safety-container">
-        <h1>Segurança</h1>
-        <article class="input-whole-container">
-            <div class="input-container">
-            <form action="/perfil/seguranca" method="GET">
-                <i class='bx bx-lock-alt'></i><input type="text" name="password" id="password" placeholder="********"/><i class='bx bx-check config' id="check"></i>
-            </div>
-                <p class="safety-explanatory">senha</p>
-            <div class="checkbox-container">
-                <input class="check" type="checkbox" name="safety" value="on"/>
-                <p class="safety-explanatory-2">Verificação em duas etapas.</p>
-            </div>
-            </form>
         </article>
     </section>
     <section class="back-to-top-container">

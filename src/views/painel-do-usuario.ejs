@@ -23,11 +23,11 @@
             </article>
             <article class="name-edit-city-country-network-container">
                 <article class="name-and-edit-icon-container">
-                    <p>NOME</p>
+                    <p><%= user.nome_usuario %></p>
                     <i class='bx bx-edit-alt'></i>
                 </article>
                 <article class="city-country-network">
-                    <p>www.twitter.com/joazinho</p>
+                    <p><%= user.site %></p>
                 </article>
             </article>
             <form action="/usuario/perfil/editar" method="GET">
