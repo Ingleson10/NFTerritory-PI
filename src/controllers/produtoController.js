@@ -1,10 +1,56 @@
-const produtoController = {
-    produtos: (req, res)=>{
-        res.render('listagem-produto')
-    },
+const { Produto } = require('../database/models')
+const formatarPreco = require('../utils/formatarPreco')
 
-    detalhes: (req, res)=>{
-        res.render('produto-interna')
+const produtoController = {
+    produtos: (req, res) => {
+        res.render('listagem-produto', { formatarPreco })
+    },
+    artes2d: (req, res) => {
+        Produto.findAll({
+            where: {
+                categoria_id: 1
+            }
+        }).then((resultado)=>{
+            res.render('listagem-produto', { produtos: resultado, formatarPreco })
+        }).catch(error => console.log(error))
+    },
+    artes3d: (req, res) => {
+        Produto.findAll({
+            where: {
+                categoria_id: 2
+            }
+        }).then((resultado) => {
+            res.render('listagem-produto', { produtos: resultado, formatarPreco })
+        }).catch(error => console.log(error))
+    },
+    fotografias: (req, res) => {
+        Produto.findAll({
+            where: {
+                categoria_id: 3
+            }
+        }).then((resultado) => {
+            res.render('listagem-produto', { produtos: resultado, formatarPreco })
+        }).catch(error => console.log(error))
+    },
+    colecionaveis: (req, res) => {
+        Produto.findOne({
+            where: {
+                categoria_id: 4
+            }
+        }).then((resultado) => {
+            res.render('listagem-produto', { produtos: resultado, formatarPreco })
+        }).catch(error => console.log(error))
+    },
+    detalhes: (req, res) => {
+        const { id } = req.params;
+
+        Produto.findOne({
+            where: {
+                id
+            }
+        }).then((resultado) => {
+            res.render('produto-interna', { produto: resultado, formatarPreco })
+        }).catch(error => console.log(error))
     },
 }
 
