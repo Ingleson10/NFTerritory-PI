@@ -122,26 +122,6 @@ header .description span{
   font-style: italic;
   font-weight: 300;
 }
-
-header .search{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-header .search #search{
-  font-size: 1vw;
-  border-radius: 10px;
-  color: rgb(51, 51, 51);
-  box-shadow: 5px 5px 5px grey;
-  background-color: #E3E3E3;
-  padding: 10px;
-  width: 30vw;
-  height: auto;
-  border: none;
-  font-style: italic;
-  outline: none;
-}
   
 header .nav{
   display: flex;
