@@ -11,194 +11,36 @@
 <body>
     <%- include('./partials/header') %>
     <main>
-        <div class="filter">
-            <div class="rota">
-                <span class="2d">
-                    Artes 2D
-                </span>
-            </div>
-            <div class="filtrar">
-                <select name="classificar" id="filter">
-                    <option value="">Classificar por..</option>
-                </select>
-            </div>
-        </div>
+        
         <div class="cards">
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=noTroll(mudarHeart(0)) id ='like'><i class='bx bx-heart'></i></button></li>
-                    </ul>
+           <div class="card">
+            <div class="card_content">
+                <div class="card_title">
+                    <h3>Nft da Ana</h3>
+                    
+                    <span>30 <i class='bx bxs-heart'></i></span>
+
+                </div>
+                <span class="card_subtitle">
+                   <strong> by Edkush42 </strong>
+                </span>
+                <p class="card_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor 
+                </p>
+                <div class="payment">
+                    <span class="preco">
+                        R$5000
+                    </span>
+                    <span class="carrinho_comprar">
+                        <i class='bx bx-cart-add' ></i>
+                        <span class="comprar">
+                            <strong>comprar</strong>
+                        </span>
+                        
+                    </span>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=noTroll(mudarHeart(1)) id ='like'><i class='bx bx-heart'></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=mudarHeart(2) id ='like'><i class='bx bx-heart'></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=mudarHeart(3) id ='like'><i class='bx bx-heart'></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=mudarHeart(4) id ='like'> <i class='bx bx-heart'></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=mudarHeart(5) id ='like'><i class='bx bx-heart'></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=mudarHeart(6) id ='like'><i class='bx bx-heart'></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=mudarHeart(7) id ='like'><i class='bx bx-heart'></i></li>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=mudarHeart(8) id ='like'><i class='bx bx-heart'></i></li>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=mudarHeart(9) id ='like'><i class='bx bx-heart'></i></li>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=mudarHeart(10) id ='like'><i class='bx bx-heart'></i></li>
-                </div>
-            </div>
-                        <div class="card">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <ul class="buy">
-                    <li id="valor">
-                        <span>R$9999999</span>
-                    </li>
-                </ul>
-                <div class="details-card">
-                    <p>lorem ipsun</p>
-                    <ul>
-                        <li>30</li>
-                        <li onclick=mudarHeart(7) id ='like'><i class='bx bx-heart'></i></li>
-                </div>
-            </div>
+           </div>
         </div>
     </main>
     <div class="subir" onclick = subir()><i class='bx bxs-chevrons-up'></i></div>
