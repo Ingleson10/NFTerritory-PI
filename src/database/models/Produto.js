@@ -24,6 +24,14 @@ module.exports = (sequelize, dataTypes) => {
         categoria_id: {
             type: dataTypes.INTEGER,
             allowNull: false
+        },
+        imageUrl: {
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+        artista: {
+            type: dataTypes.STRING,
+            allowNull: false
         }
     }
 
