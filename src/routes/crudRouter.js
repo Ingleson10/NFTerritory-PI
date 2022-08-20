@@ -12,12 +12,16 @@ const multerDiskStorage = multer.diskStorage({
     callback(null, folder)
     },
     filename: (req,file,callback)=>{
-        const imgName = Date.now() + '-' + file.originalname
+        const imgName = file.originalname
+        const nomeImagem = {
+            img: file.originalname
+        }
+        module.exports = nomeImagem
         callback(null, imgName)}
     })
-    const upload = multer({storage:multerDiskStorage})
+    const upload = multer({storage:multerDiskStorage})  
     
     router.get('/crud', verificarSeUsuarioEstaLogado, verificarSeUsuarioEhAdmin, crudController.index)
-    router.post('/cadastro', verificarSeUsuarioEstaLogado, verificarSeUsuarioEhAdmin, upload.single('produto-img'), crudController.cadastro)
+    router.post('/crud', verificarSeUsuarioEstaLogado, verificarSeUsuarioEhAdmin, upload.single('produto_img'), crudController.cadastro)
 
 module.exports = router
