@@ -112,7 +112,7 @@ header .header-main{
 header .description{
     display: flex;
     justify-content: center;
-    margin-bottom: 1%;
+    margin: 2%;
 }
 
 header .description span{
@@ -122,32 +122,11 @@ header .description span{
   font-style: italic;
   font-weight: 300;
 }
-
-header .search{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-header .search #search{
-  font-size: 1vw;
-  border-radius: 10px;
-  color: rgb(51, 51, 51);
-  box-shadow: 5px 5px 5px grey;
-  background-color: #E3E3E3;
-  padding: 10px;
-  width: 30vw;
-  height: auto;
-  border: none;
-  font-style: italic;
-  outline: none;
-}
   
 header .nav{
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 2%;
 }
 
 header .nav ul{
@@ -276,6 +255,11 @@ header .nav ul li a:hover{
   cursor: pointer;
   background: linear-gradient(180deg, rgba(44, 44, 44, 0.22) 0%, rgba(55, 170, 149, 0) 100%),
   linear-gradient(0deg, rgba(67, 223, 171, 0.99), rgba(67, 223, 171, 0.99));
+}
+
+.detalhes-do-item button a{
+  text-decoration: none;
+  color: black;
 }
 
 .title h1{

@@ -1,158 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/carrinho.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>Carrinho</title>
-</head>
-<body>
-    <%- include('./partials/header') %>
-       <div class="sugerir">
-           <span>Talvez você também goste:</span>
-       </div>
-       <section class="cards-sugeridos">
-        <div class="cards">
-            <div class="arrow" id="left">
-                <i class='bx bxs-left-arrow'></i>
-            </div>
-            <div class="product">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <div class="details">
-                    <p>Name of picture</p>
-                    <p>value: R$?????</p>
-                </div>
-            </div>   
-            <div class="product">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <div class="details">
-                    <p>Name of picture</p>
-                    <p>value: R$?????</p>
-                </div>
-            </div>   
-            <div class="product">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <div class="details">
-                    <p>Name of picture</p>
-                    <p>value: R$?????</p>
-                </div>
-            </div>   
-            <div class="arrow" id="right" >
-                <i class='bx bxs-right-arrow'></i>
-            </div>
-         </div> 
-       </section>
 
-       <section class="carrinho">
-           <div class="sugerir">
-                <span>Você se interessou em:</span>
-           </div>
-           <div class="produtos">
-              <div class="imagem-produto">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e"alt="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/carrinho.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <title>Carrinho</title>
+</head>
+
+<body>
+  <%- include('./partials/header') %>
+    <div class="sugerir">
+      <span>Talvez você também goste:</span>
+    </div>
+    <section class="cards-sugeridos">
+      <div class="cards">
+        <div class="arrow" id="left">
+          <i class='bx bxs-left-arrow'></i>
+        </div>
+        <div class="products">
+          <% produtos.forEach(produto=> { %>
+            <div class="product-card">
+              <img src="/produtos/<%= produto.imageUrl %>" alt="NFT">
+              <div class="details">
+                <p>
+                  <%= produto.nome %>
+                </p>
+                <p>
+                  <%= formatarPreco(produto.preco) %>
+                </p>
               </div>
-              <div class="details-buy">
-                  <div class="nome-produto">
-                    LOREM IPSUM DOLOR - by Lorem ipsum
-                  </div>
-                  <div class="resumo-compra">
-                      <div class="resume">
-                        <span>Resumo da compra</span>
-                      </div>
-                      
-                      <div class="preco-produto">
-                        <ul>
-                            <li>Total</li>
-                            <li>R$??????</li>
-                        </ul>
-                      </div>
-                      <div class="parcelas">
-                          <span>em 1x no cartão</span>
-                            <span>ou em 12x de R$???</span>
-                      </div>
-                      <div class="buttons">
-                        <button id="finalizar" class ='btn'>
-                            <a href="compra/finalizar">Finalizar</a>
-                        </button>
-                        <button id="remover" class ='btn'>
-                              remover
-                        </button>
-                      </div>
-                  </div>
-              </div>
-           </div>
-           <div class="produtos">
-              <div class="imagem-produto">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e"alt="">
-              </div>
-              <div class="details-buy">
-                  <div class="nome-produto">
-                    LOREM IPSUM DOLOR - by Lorem ipsum
-                  </div>
-                  <div class="resumo-compra">
-                      <div class="resume">
-                        <span>Resumo da compra</span>
-                      </div>
-                      
-                      <div class="preco-produto">
-                        <ul>
-                            <li>Total</li>
-                            <li>R$??????</li>
-                        </ul>
-                      </div>
-                      <div class="parcelas">
-                          <span>em 1x no cartão</span>
-                            <span>ou em 12x de R$???</span>
-                      </div>
-                      <div class="buttons">
-                        <button id="finalizar" class ='btn'>
-                            <a href="compra/finalizar">Finalizar</a>
-                        </button>
-                        <button id="remover" class ='btn' >
-                            remover
-                        </button>
-                      </div>
-                  </div>
-              </div>
-           </div>
-           <div class="produtos">
-              <div class="imagem-produto">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e"alt="">
-              </div>
-              <div class="details-buy">
-                  <div class="nome-produto">
-                    LOREM IPSUM DOLOR - by Lorem ipsum
-                  </div>
-                  <div class="resumo-compra">
-                      <div class="resume">
-                        <span>Resumo da compra</span>
-                      </div>
-                      
-                      <div class="preco-produto">
-                        <ul>
-                            <li>Total</li>
-                            <li>R$??????</li>
-                        </ul>
-                      </div>
-                      <div class="parcelas">
-                          <span>em 1x no cartão</span>
-                            <span>ou em 12x de R$???</span>
-                      </div>
-                      <div class="buttons">
-                        <button id="finalizar" class ='btn'>
-                            <a href="compra/finalizar">Finalizar</a>
-                        </button>
-                        <button id="remover" class ='btn' >
-                            remover
-                        </button>
-                      </div>
-                  </div>
-              </div>
-           </div>
-        </div>   
-       </section>
-       <%- include('./partials/footer') %>
+            </div>
+            <% }) %>
+        </div>
+        <div class="arrow" id="right">
+          <i class='bx bxs-right-arrow'></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="carrinho">
+      <div class="sugerir">
+        <span>Você se interessou em:</span>
+      </div>
+      <div class="produtos">
+        <div class="imagem-produto">
+          <img
+            src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e"
+            alt="">
+        </div>
+        <div class="details-buy">
+          <div class="nome-produto">
+            LOREM IPSUM DOLOR - by Lorem ipsum
+          </div>
+          <div class="resumo-compra">
+            <div class="resume">
+              <span>Resumo da compra</span>
+            </div>
+
+            <div class="preco-produto">
+              <ul>
+                <li>Total</li>
+                <li>R$??????</li>
+              </ul>
+            </div>
+            <div class="parcelas">
+              <span>em 1x no cartão</span>
+              <span>ou em 12x de R$???</span>
+            </div>
+            <div class="buttons">
+              <button id="finalizar" class='btn'>
+                <a href="compra/finalizar">Finalizar</a>
+              </button>
+              <button id="remover" class='btn'>
+                remover
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="produtos">
+        <div class="imagem-produto">
+          <img
+            src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e"
+            alt="">
+        </div>
+        <div class="details-buy">
+          <div class="nome-produto">
+            LOREM IPSUM DOLOR - by Lorem ipsum
+          </div>
+          <div class="resumo-compra">
+            <div class="resume">
+              <span>Resumo da compra</span>
+            </div>
+
+            <div class="preco-produto">
+              <ul>
+                <li>Total</li>
+                <li>R$??????</li>
+              </ul>
+            </div>
+            <div class="parcelas">
+              <span>em 1x no cartão</span>
+              <span>ou em 12x de R$???</span>
+            </div>
+            <div class="buttons">
+              <button id="finalizar" class='btn'>
+                <a href="compra/finalizar">Finalizar</a>
+              </button>
+              <button id="remover" class='btn'>
+                remover
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="produtos">
+        <div class="imagem-produto">
+          <img
+            src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e"
+            alt="">
+        </div>
+        <div class="details-buy">
+          <div class="nome-produto">
+            LOREM IPSUM DOLOR - by Lorem ipsum
+          </div>
+          <div class="resumo-compra">
+            <div class="resume">
+              <span>Resumo da compra</span>
+            </div>
+
+            <div class="preco-produto">
+              <ul>
+                <li>Total</li>
+                <li>R$??????</li>
+              </ul>
+            </div>
+            <div class="parcelas">
+              <span>em 1x no cartão</span>
+              <span>ou em 12x de R$???</span>
+            </div>
+            <div class="buttons">
+              <button id="finalizar" class='btn'>
+                <a href="compra/finalizar">Finalizar</a>
+              </button>
+              <button id="remover" class='btn'>
+                remover
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="back-to-top-container">
+        <button class="back-to-top">
+          <h1>Retornar ao topo</h1>
+        </button>
+      </section>
+      </div>
+    </section>
+    <%- include('./partials/footer') %>
 </body>
+
 </html>

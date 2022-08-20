@@ -21,6 +21,10 @@ body{
   max-width: 100vw;
 }
 
+/* main *{
+  display: flex;
+} */
+
 .nav2{
   display: flex;
   background-color: #f3f0f0;
@@ -157,8 +161,11 @@ header .nav ul li a:hover{
   text-decoration: none;
   color: #303030;
 }
-.cards 
+.cards
 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -167,10 +174,11 @@ header .nav ul li a:hover{
   position: relative;
   width: 250px;
   height: 250px;
-  background:url('../img/NFT-4.png') center no-repeat;
   background-size: cover;
   border-radius: 20px;
   overflow: hidden;
+  margin: 3%;
+  cursor: pointer;
 }
 .card_content
 {
@@ -184,24 +192,13 @@ header .nav ul li a:hover{
   transform: translateY(35px);
   transition: transform .25s;
 }
-.card_content::before
-{
-  content: '';
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #01DB96;
-}
 
 .card_title
 {
   display: flex;
   line-height: 15px;
   align-items: center;
+  justify-content: space-between;
 }
 .card_title h3
 {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,42 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Produtos</title>
 </head>
+
 <body>
     <%- include('./partials/header') %>
-    <main>
-        
-        <div class="cards">
-           <div class="card">
-            <div class="card_content">
-                <div class="card_title">
-                    <h3>Nft da Ana</h3>
-                    
-                    <span>30 <i class='bx bxs-heart'></i></span>
+        <main>
+            <div class="cards">
+                <% produtos.forEach(produto=> { %>
+                    <div class="card" style="background:url('/produtos/<%= produto.imageUrl %>') center no-repeat;">
+                        <div class="card_content">
+                            <div class="card_title">
+                                <h3><%= produto.nome %></h3>
 
-                </div>
-                <span class="card_subtitle">
-                   <strong> by Edkush42 </strong>
-                </span>
-                <div class="payment">
-                    <span class="preco">
-                        R$5000
-                    </span>
-                    <span class="carrinho_comprar">
-                        <i class='bx bx-cart-add' ></i>
-                        <span class="comprar">
-                            <strong>comprar</strong>
-                        </span>   
-                    </span>
-                </div>
-            </div>
-           </div>
-        </div>
-    </main>
-    <div class="subir" onclick = subir()><i class='bx bxs-chevrons-up'></i></div>
-    <%- include('./partials/footer') %>
-    <script src="../../scripts/like.js"></script>
-    <script src="../../scripts/subir.js"></script>
+                                <span>30 <i class='bx bxs-heart'></i></span>
+
+                            </div>
+                            <span class="card_subtitle">
+                                <strong> by <%= produto.artista %> </strong>
+                            </span>
+                            <div class="payment">
+                                <span class="preco">
+                                    <%= formatarPreco(produto.preco) %>
+                                </span>
+                                <span class="carrinho_comprar">
+                                    <i class='bx bx-cart-add'></i>
+                                    <span class="comprar">
+                                        <strong>comprar</strong>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+            <% }) %>
+
+        </main>
+        <%- include('./partials/footer') %>
+            <script src="../../scripts/like.js"></script>
+            <script src="../utils/subir.js"></script>
 </body>
+
 </html>
