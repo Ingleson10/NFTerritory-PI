@@ -3,7 +3,9 @@ const formatarPreco = require('../utils/formatarPreco')
 
 const produtoController = {
     produtos: (req, res) => {
-        res.render('listagem-produto', { formatarPreco })
+        Produto.findAll({}).then((resultado)=>{
+            res.render('listagem-produto', { produtos: resultado, formatarPreco })
+        }).catch(error => console.log(error))
     },
     artes2d: (req, res) => {
         Produto.findAll({

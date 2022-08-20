@@ -1,30 +1,39 @@
 'use strict';
+const { DataTypes } = require("sequelize")
 
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.createTable('produto', { 
     id: {
-        type: dataTypes.INTEGER,
+        type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false
     },
     nome: {
-        type: dataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
         unique: true
     },
     preco: {
-        type: dataTypes.FLOAT,
+        type: DataTypes.FLOAT,
         allowNull: false
     },
     disponibilidade: {
-        type: dataTypes.BOOLEAN,
+        type: DataTypes.BOOLEAN,
         allowNull: false
     },
     categoria_id: {
-        type: dataTypes.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false
+    },
+    imageUrl: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    artista: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
     });
   },

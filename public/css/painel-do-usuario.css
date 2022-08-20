@@ -112,7 +112,7 @@ header .header-main{
 header .description{
     display: flex;
     justify-content: center;
-    margin-bottom: 1%;
+    margin: 2%;
 }
 
 header .description span{
@@ -122,32 +122,11 @@ header .description span{
   font-style: italic;
   font-weight: 300;
 }
-
-header .search{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-header .search #search{
-  font-size: 1vw;
-  border-radius: 10px;
-  color: rgb(51, 51, 51);
-  box-shadow: 5px 5px 5px grey;
-  background-color: #E3E3E3;
-  padding: 10px;
-  width: 30vw;
-  height: auto;
-  border: none;
-  font-style: italic;
-  outline: none;
-}
   
 header .nav{
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 2%;
 }
 
 header .nav ul{
@@ -234,18 +213,11 @@ header .nav ul li a:hover{
   align-items: center;
   justify-content: center;
   width: 15vw;
-  margin-left: 20px;
 }
 
 .name-and-edit-icon-container p{
   font-size: 18px;
   font-style: italic;
-  margin-right: 7px;
-}
-
-.name-and-edit-icon-container i{
-  font-size: 25px;
-  cursor: pointer;
 }
 
 .city-country-network{

@@ -15,7 +15,10 @@ module.exports = (sequelize, dataTypes) => {
         nome_usuario: {
             type: dataTypes.STRING,
             allowNull: false,
-            unique: true
+            defaultValue: '', 
+                unique: {
+                    msg: `Este nome de usuário já está em uso`
+            }
         },
         senha: {
             type: dataTypes.STRING,
@@ -24,17 +27,27 @@ module.exports = (sequelize, dataTypes) => {
         telefone: {
             type: dataTypes.STRING,
             allowNull: false,
-            unique: true
+            defaultValue: '', 
+                unique: {
+                    msg: `Este número de telefone já está cadastrado`
+            }
+
         },
         email: {
             type: dataTypes.STRING,
             allowNull: false,
-            unique: true
+            defaultValue: '', 
+                unique: {
+                    msg: `Este e-mail já está cadastrado`
+            }
         },
         CPF: {
             type: dataTypes.STRING,
             allowNull: false,
-            unique: true
+            defaultValue: '', 
+                unique: {
+                    msg: `Este CPF já está cadastrado`
+            }
         },
         site: {
             type: dataTypes.STRING,
