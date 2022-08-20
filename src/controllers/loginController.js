@@ -26,7 +26,7 @@ const loginController = {
 
             if(lembrarUsuario){
                 var farFuture = new Date(new Date().getTime() + (1000606024365*10)); // ~10y
-                res.cookie('usuario', JSON.stringify({ email: usuario.email, nome: usuario.nome_usuario, admin: usuario.admin}), { maxAge: farFuture })
+                res.cookie('usuario', JSON.stringify({ email: usuario.email, nome: usuario.nome_usuario, id: usuario.id}), { maxAge: farFuture })
             }
 
             res.redirect('/usuario/perfil')      
