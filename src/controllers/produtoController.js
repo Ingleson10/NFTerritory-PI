@@ -35,11 +35,12 @@ const produtoController = {
         }).catch(error => console.log(error))
     },
     colecionaveis: (req, res) => {
-        Produto.findOne({
+        Produto.findAll({
             where: {
                 categoria_id: 4
             }
         }).then((resultado) => {
+            console.log(resultado)
             res.render('listagem-produto', { produtos: resultado, formatarPreco })
         }).catch(error => console.log(error))
     },

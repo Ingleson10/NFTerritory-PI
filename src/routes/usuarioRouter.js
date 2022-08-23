@@ -5,5 +5,6 @@ const verificarSeUsuarioEstaLogado = require('../middlewares/verificarSeUsuarioE
 
 router.get('/perfil', verificarSeUsuarioEstaLogado, usuarioController.perfil);
 router.get('/perfil/editar', verificarSeUsuarioEstaLogado,  usuarioController.editar);
+router.post('/perfil/editar', verificarSeUsuarioEstaLogado, usuarioController.alterarCadastro);
 
 module.exports = router;
