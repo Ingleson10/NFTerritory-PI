@@ -339,7 +339,7 @@ header .nav ul li a:hover{
 .carrinho .produtos .details-buy .resumo-compra .buttons  #finalizar{
   background: linear-gradient(to left, rgb(4, 71, 255) 50%, rgb(118, 240, 128) 50%) right;
   background-size: 200%;
-  transition: .10s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .carrinho .produtos .details-buy .resumo-compra .buttons #finalizar:hover{
@@ -349,7 +349,7 @@ header .nav ul li a:hover{
 .carrinho .produtos .details-buy .resumo-compra .buttons  #remover{
   background: linear-gradient(to left, rgb(70, 4, 252) 50%, rgb(255, 60, 0) 50%) right;
   background-size: 200%;
-  transition: .10s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .carrinho .produtos .details-buy .resumo-compra .buttons #remover:hover {
