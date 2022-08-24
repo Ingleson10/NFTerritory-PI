@@ -1,5 +1,4 @@
 const { Usuario } = require('../database/models')
-const validarCadastro = require('../utils/validarCadastro')
 const bcrypt = require('bcrypt')
 
 const cadastroController = {
@@ -9,16 +8,16 @@ const cadastroController = {
     cadastrarUsuario: async (req, res)=>{
         const { nome_completo, nome_usuario, senha, telefone, email, CPF, site } = req.body
         const senhaHash = bcrypt.hashSync(senha, 10)
-        await Usuario.findAll({
+        const usuario = await Usuario.findOne({
             where: {
                 email
             }
         })
+        console.log(usuario)
+        if(usuario){
+            return res.render('cadastro', { erro: 'E-mail já cadastrado', oldData: req.body })
+        }
 
-        const { error } = validarCadastro.validate(req.body, { abortEarly: false })
-            if (error){
-                return res.redirect('cadastro', { errors: error.details, old:req.body })
-            }      
         Usuario.create({
             nome_completo,
             nome_usuario,

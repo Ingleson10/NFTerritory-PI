@@ -15,9 +15,6 @@
         </div>
             <a class="links" id="paracadastro"></a>
             <div id="Cadastrar">
-                <!-- <% if(locals.errors && errors.name){ %>
-                    <p class="aviso"><%= errors.name %></p>
-                <% } %> -->
                 <form action="/cadastrar" method="POST">
                     <h1>Crie sua conta!</h1>
                     <div class="input-container">
@@ -48,11 +45,15 @@
                         <input id="senha" name="senha" required="required" type="password" placeholder="*****"/>
                         <p class="label">Senha</p>
                     </div>
+                    <div class="erro">
+                        <% if(typeof erro !=='undefined' ){ %>
+                            <p>
+                                <%= erro %>
+                            </p>
+                            <% } %>
+                    </div>
                         <button type="submit">Cadastrar</button>
                         <div class="link">
-                            <% if(typeof error !== 'undefined'){ %>
-                                <p><%= error %></p>
-                            <% } %>
                             <p> Já tem uma conta?</p>   
                             <a href="/login"> Ir para login</a>
                         </div>
