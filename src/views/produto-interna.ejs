@@ -14,15 +14,15 @@
     <%- include('./partials/header') %>
         <main>
             <div class="produto">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwgkm1Eh18MZqtTl7dV2G-8mMWqCF6f9a7hw&usqp=CAU"
+                <img src="('/produtos/<%= produto.imageUrl %>')"
                     alt="produto">
 
                 <div class="title">
-                    <h1>Nome do produto</h1>
-                    <h3>by UrbanTech</h3>
+                    <h1><%= produto.nome %></h1>
+                    <h3>by <%= produto.artista %></h3>
                 </div>
                 <div class="price">
-                    <span>R$99999,99</span>
+                    <span><%= formatarPreco(produto.preco) %></span>
                 </div>
 
                 <button id="btn-carrinho">Adicionar ao carrinho</button>
