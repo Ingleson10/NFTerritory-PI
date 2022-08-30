@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,26 @@
     <link rel="stylesheet" href="/css/produto-interna.css">
     <title>Detalhes</title>
 </head>
+
 <body>
     <%- include('./partials/header') %>
-       <div class="produto">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwgkm1Eh18MZqtTl7dV2G-8mMWqCF6f9a7hw&usqp=CAU" alt="produto">
-    
-        <div class="title">
-            <h1>Nome do produto</h1>
-        </div>
-        <div class="price">
-            <span>R$99999,99</span>
-        </div>
-        <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, fuga quod, vel doloribus laborum sit pariatur ex ipsum corrupti, dignissimos iure iusto? At sunt rerum adipisci id. Quis, ea officia.</span>
+        <main>
+            <div class="produto">
+                <img src="('/produtos/<%= produto.imageUrl %>')"
+                    alt="produto">
 
-        <span id="btn-carrinho">Adicionar ao carrinho</span>
-       </div>
-       <%- include('./partials/footer') %>
+                <div class="title">
+                    <h1><%= produto.nome %></h1>
+                    <h3>by <%= produto.artista %></h3>
+                </div>
+                <div class="price">
+                    <span><%= formatarPreco(produto.preco) %></span>
+                </div>
+
+                <button id="btn-carrinho">Adicionar ao carrinho</button>
+            </div>
+        </main>
+        <%- include('./partials/footer') %>
 </body>
+
 </html>
