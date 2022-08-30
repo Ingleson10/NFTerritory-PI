@@ -4,7 +4,9 @@ const formatarPreco = require('../utils/formatarPreco')
 const carrinhoController = {
     view: (req, res) =>{
         Produto.findAll({ limit: 3 }).then((resultado)=>{
-            res.render('carrinho', { produtos: resultado, formatarPreco })
+            res.render('carrinho', { produto: resultado, formatarPreco })
+        }).then({
+
         }).catch(error => console.log(error))
     }
 }
