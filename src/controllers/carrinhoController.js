@@ -1,41 +1,26 @@
-const { sequelize } = require("../database/models")
-const { create, store } = require('../database/models/PedidoFinalizado')
+const { PedidoFinalizado } = require("../models")
 
 const carrinhoController = {
-    view: (req,res) =>{
-        res.render('carrinho');
+    renderFinalizacao: (req, res) =>{
+        res.render('finalizacao-compra')
     },
 
-    create:(req, res)=>{
-        return res.render('../database/models/');
-    },
+finalizar: async (req, res)=>{
+    const { total, dataCompra, pagamento, produto} = req.body;
 
-    store: async (req, res)=>{
-
-    const {tipoPagamento, banco, bandeira, conta, cvv, validade, usuario} = req.body;
-    
-    
-    const dadosCartao = await Cartao.create({
-
-        tipoPagamento: tipoPagamento.Cartao,
-        banco: banco.Cartao,
-        bandeira: bandeira.Cartao,
-        conta: conta.Cartao,
-        cvv: cvv.Cartao,
-        validade: validade.Cartao,
-        usuario: usuario.Cartao,
-        
+    const dados = await PedidoFinalizado.create({
+        total,
+        dataCompra,
+        pagamento,
+        produto
     })
 
-    await Cartao.update(
-        {banco: banco.dataValues.id},
-        {bandeira: bandeira.dataValues.id},
-        {conta: conta.dataValues.id},
-        {cvv: cvv.dataValues.id},
-        {validade: validade.dataValues.id},
-        {usuario: usuario.dataValues.id}
-    )
-
+try {
+    await dados.authenticate();
+    console.log('Conexão bem sucedida!')
+} catch (error){
+    console.log('Conexão não sucedida!!', error);
+}
 }
 
 }

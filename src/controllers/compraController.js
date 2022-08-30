@@ -1,47 +1,42 @@
-const { sequelize } = require("../database/models")
-const { create, store } = require('../database/models/PedidoFinalizado')
+const { where } = require('sequelize/types');
+const { PagamentoFinalizado } = require ('../models');
+
+(async () =>{
+
+    const pagamento = require ('../models');
+    await pagamento.sync();
+})
 
 const compraController = {
     sucesso: (req, res)=>{
         res.render('pagina-de-sucesso')
     },
-    
-    adicionarCartao: (req, res)=>{
-        res.render('finalizacao-compra')
-    },
+    //Create
+pagamento: async (req, res)=>{
+    const { tipoPagamento, banco, bandeira, conta, cvv, validade } = red.body;
 
-    create: (req, res)=>{
-        return res.render('../database/models');
-    },
-
-    store: async (req, res)=>{
-        const {total, dataCompra, usuario, pagamento, produto} = req.body
-    
-
-    if (!req.file) dadosPath = this.dadosPath.join(__dirname, '..')
-    else dadosPath = req.file.dadosPath
-
-    if (!dados) throw new Error('dados inválidos para a compra')
-
-    const newDados = await Dados.create({
-
-        total: total.Dados,
-        dataCompra: dataCompra.Dados,
-        usuario: usuario.Dados,
-        pagamento: pagamento.Dados,
-        produto: produto.Dados,
-
+    const dadosCartao = await PagamentoFinalizado.create({
+        tipoPagamento,
+        banco,
+        bandeira,
+        conta,
+        cvv,
+        validade
     })
+    console.log(dadosCartao);
 
-    if (permissions && permissions.length > 0) dados.setPermissions(permissions)
-    else dados.setPermissions([3])
+    const cartaoDados = await PagamentoFinalizado.findAll();
+    console.log(cartaoDados);
 
-    return res.status(201).json(dados)
+    //Update
+    dadosCartao.descricao = 'fazer alteração';
+    await dadosCartao.save();
 
-    },
+
+    //Delete
+    await dadosCartao.destroy();
+}
 
 }
 
-
-
-module.exports = compraController
+module.exports = compraController;

@@ -32,13 +32,5 @@ module.exports = (sequelize, DataTypes) => {
 
   const Produto = sequelize.define(alias, columns, config);
 
-  // Ver o pq não tem esse model de CategoriaProduto. Deveria ter?
-//   Produto.associate = (models) => {
-//     Produto.hasMany(models.CategoriaProduto, {
-//       foreignKey: "categoria_id",
-//       as: "produto ",
-//     });
-//   };
-
   return Produto;
 };

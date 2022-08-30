@@ -9,6 +9,7 @@
     <title>Carrinho</title>
 </head>
 <body>
+    
     <%- include('./partials/header') %>
        <div class="sugerir">
            <span>Talvez você também goste:</span>
@@ -48,6 +49,7 @@
        <section class="carrinho">
            <div class="sugerir">
                 <span>Você se interessou em:</span>
+                <form action="/" method="POST"></form>
            </div>
            <div class="produtos">
               <div class="imagem-produto">
@@ -73,11 +75,13 @@
                             <span>ou em 12x de R$???</span>
                       </div>
                       <div class="buttons">
-                          <div id="finalizar" class ='btn' >
+                          <div id="finalizar" class ='btn' > 
+                            <a href = "/pagina-de-sucesso">
                               Finalizar
+                            </a>
                           </div>
                           <div id="remover" class ='btn' >
-                              remover
+                              remover    
                           </div>
                       </div>
                   </div>

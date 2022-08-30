@@ -34,23 +34,6 @@ const crudController = {
         return res.send('Informacoes erradas!')
     }
 
-     //bulkCreate: async (req, res)=>{
-
-    //    const listaDeProdutos = [
-            
-    //        {NomeDoProduto: 'teste 1', DescricaoDoProduto: 'teste 2', Preco: 'teste 3', Categoria: 'teste 4', Imagem: 'teste 5'},
-    //        {NomeDoProduto: 'teste 1', DescricaoDoProduto: 'teste 2', Preco: 'teste 3', Categoria: 'teste 4', Imagem: 'teste 5'},
-    //       {NomeDoProduto: 'teste 1', DescricaoDoProduto: 'teste 2', Preco: 'teste 3', Categoria: 'teste 4', Imagem: 'teste 5'},
-    //        {NomeDoProduto: 'teste 1', DescricaoDoProduto: 'teste 2', Preco: 'teste 3', Categoria: 'teste 4', Imagem: 'teste 5'},
-    //   ]
-
-    //    const resultado = cadastro.bulkCreate(listaDeProdutos)
-    //    console.log(resultado)
-
-    //    res.send('criados')
-
-
-//    }
 }
 
 module.exports = crudController
