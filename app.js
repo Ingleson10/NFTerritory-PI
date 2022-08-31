@@ -13,6 +13,7 @@ const cadastroRouter = require('./src/routes/cadastroRouter');
 const produtoRouter = require('./src/routes/produtoRouter');
 const crudRouter = require('./src/routes/crudRouter')
 const sairRouter = require('./src/routes/sairRouter')
+const finalizarRouter = require('./src/routes/compraRouter')
 const app = express();
 
 app.use(sessionParser({ secret: 'nfterritory', resave: false, saveUninitialized: false }));
@@ -30,6 +31,7 @@ app.use('/login', loginRouter);
 app.use('/carrinho', carrinhoRouter);
 app.use('/cadastrar', cadastroRouter);
 app.use('/produtos', produtoRouter);
+app.use('/finalizar', finalizarRouter)
 app.use(crudRouter)
 app.use(sairRouter)
 
