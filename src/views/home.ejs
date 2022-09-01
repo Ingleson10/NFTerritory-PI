@@ -16,7 +16,7 @@
                 <i class='bx bxs-left-arrow'></i>
             </span>
             <div class="carrosel-img">
-                <img src="https://media.istockphoto.com/photos/non-fungible-token-golden-coins-falling-trendy-cryptocurrencies-and-picture-id1367699775?s=612x612" class="currentimage" id="currentimage">
+                <img src="https://www.analyticsinsight.net/wp-content/uploads/2022/02/Crypto-Fall-is-Pulling-NFTs-by-Leg-Will-they-Sustain-the-Blow.jpg" class="currentimage" id="currentimage">
             </div>
             <span type="button" onclick="Chevright()" class="btn-carrossel">
                 <i class='bx bxs-right-arrow'></i>
@@ -29,7 +29,7 @@
            
             <div class="product">
                 <div class="produto-details">
-                    <img src='/produtos/<%= produto.imageUrl %>') center no-repeat;"> 
+                    <img src='/produtos/<%= produto.imageUrl %>' center no-repeat;> 
                     <div class="informations">
                         <p><strong><%= produto.nome.toUpperCase() %></strong></p >
                             <p class="valor"><%= formatarPreco(produto.preco) %></p>
@@ -41,15 +41,17 @@
             </div>
             <div class="details2">
                 <div class="artista"><p> Feito por: <strong></strong><%= produto.artista.toUpperCase() %></p></div>
+                <div class="description-container">
                 <div class="description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur iure eveniet ad ea temporibus perspiciatis iste delectus, soluta nisi, 
                 </div>
                 <div class="rotas">
                     <ul>
-                        <li><a href="#"><i class='bx bx-info-circle' ></i></a></li>
+                        <li class="info-button"><a href="/produtos/detalhes/:id"><i class='bx bx-info-circle' ></i></a></li>
                         <li id="compre" ><a href="/finalizar" >Compre já</a></li>
                     </ul>
                 </div>
+            </div>
             </div>
             
         </section>

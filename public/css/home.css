@@ -212,6 +212,7 @@ header .nav ul li a:hover{
 
 main{
   display: flex;
+  align-items: center;
   height: 50%;
   flex-direction: column;
   background-image: url(../../img/back.png);
@@ -221,18 +222,22 @@ main{
 {
   align-items: center;
   margin: 20px;
-  width: 100%;
+  width: 80%;
   height: 50%;
   display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid black;
+  justify-content: space-evenly;
+  border-bottom: 1px solid gray;
   padding-bottom: 10px;
 }
+
+.product{
+  margin: 5%;
+}
+
 .produto-details
 {
-  width: 30vw;
+  width: 25vw;
   border-radius: 15px;
-  color: white;
   background-color: #01DB96;
 }
 .produto-details img
@@ -246,12 +251,19 @@ main{
 {
   display: flex;
   justify-content: space-between;
-  padding: 2px 20px;
+  padding: 3% 4%;
 }
 .details2
 {
-  width: 20%;
+  width: 30%;
 }
+
+.description-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .artista
 {
   font-size: 2vw;
@@ -261,26 +273,58 @@ main{
 {
   display: flex;
 }
-.rotas li
-{
+
+.info-button{
   background-color: #00A873;
   color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   list-style-type: none;
-  padding: 2px 20px;
+  width: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
   margin-right: 10px;
   margin-top: 10px;
 }
+
+.info-button i{
+  font-size: 1.5vw;
+}
+
+#compre{
+  background-color: #00A873;
+  color: white;
+  border-radius: 15px;
+  list-style-type: none;
+  width: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.rotas li
+{
+  transition: 0.3s;
+}
+
 .rotas li:hover
 {
   cursor: pointer;
   background-color: #1C5C47;
 }
+#compre:hover{
+  cursor: pointer;
+  background-color: #1C5C47;
+}
+
 .rotas li a
 {
   color: white;
   text-decoration: none;
-
 }
 
 
