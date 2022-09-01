@@ -9,6 +9,7 @@
 </head>
 <body>
     <%- include('./partials/header') %>
+    
     <section class="car">
         <div class="carrossel" id="carrossel">
             <span type="button" onclick="Chevleft()" class="btn-carrossel">
@@ -22,63 +23,37 @@
             </span>
         </div>
     </section>
-    <main>
+    <main> 
+        <% produtos.forEach(produto=> { %>
         <section class="buy">
+           
             <div class="product">
-                <img src="https://s.yimg.com/ny/api/res/1.2/9DAc6O6xzhlQEVlYN9cS7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/R6KWAKublTWZT77J1Cm7yw--~B/aD00MDA7dz00MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/cnwgroup.com/79b37c993b3fa9c472c4c6a1e0c9942e" alt="">
-                <div class="details">
-                    <p>Name of picture</p>
-                    <p>value: R$?????</p>
+                <div class="produto-details">
+                    <img src='/produtos/<%= produto.imageUrl %>') center no-repeat;"> 
+                    <div class="informations">
+                        <p><strong><%= produto.nome.toUpperCase() %></strong></p >
+                            <p class="valor"><%= formatarPreco(produto.preco) %></p>
+                    </div>
+                    
                 </div>
-            </div>
-            <div class="details2">
-                <div class="description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo labore dolores nam quis veritatis, placeat dicta modi !</p></div>
-                <div class="rotas">
-                    <ul>
-                        <li><a href="#"><i class='bx bx-info-circle' ></i></a></li>
-                        <li id="compre" ><a href="#" >Compre já</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="buy2">
-            <div class="details2">
-                <div class="rotas">
-                    <div class="description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo labore dolores nam quis veritatis, placeat dicta modi !</p></div>
-                    <ul>
-                        <li><a href="#"><i class='bx bx-info-circle' ></i></a></li>
-                        <li id="compre" ><a href="#" >Compre já</a></li>
-                    </ul>
                    
-                </div>
+                
             </div>
-            <div class="product">
-                <img src="https://img.ibxk.com.br/2021/03/13/13113544243000.jpg" alt="">
-                <div class="details">
-                    <p>Name of picture</p>
-                    <p>value: R$?????</p>
+            <div class="details2">
+                <div class="artista"><p> Feito por: <strong></strong><%= produto.artista.toUpperCase() %></p></div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur iure eveniet ad ea temporibus perspiciatis iste delectus, soluta nisi, 
+                </div>
+                <div class="rotas">
+                    <ul>
+                        <li><a href="#"><i class='bx bx-info-circle' ></i></a></li>
+                        <li id="compre" ><a href="/finalizar" >Compre já</a></li>
+                    </ul>
                 </div>
             </div>
             
         </section>
-        <section class="buy">
-            <div class="product">
-                <img src="https://mandee.com.br/blog/wp-content/uploads/2020/11/printable-architect.png" alt="" >
-                <div class="details">
-                    <p>Name of picture</p>
-                    <p>value: R$?????</p>
-                </div>
-            </div>
-            <div class="details2">
-                <div class="description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo labore dolores nam quis veritatis, placeat dicta modi !</p></div>
-                <div class="rotas">
-                    <ul>
-                        <li><a href="#"><i class='bx bx-info-circle' ></i></a></li>
-                        <li id="compre" ><a href="#" >Compre já</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <% }) %>
     </main>
     <%- include('./partials/footer') %>
         <script src="/utils/carrossel.js"></script>

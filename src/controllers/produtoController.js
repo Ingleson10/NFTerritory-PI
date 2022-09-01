@@ -1,7 +1,7 @@
 const { Produto } = require('../database/models')
 const formatarPreco = require('../utils/formatarPreco')
 
-const produtoController = {
+const produtoController = { 
     produtos: (req, res) => {
         Produto.findAll({}).then((resultado)=>{
             res.render('listagem-produto', { produtos: resultado, formatarPreco })

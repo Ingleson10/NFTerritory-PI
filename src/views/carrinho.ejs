@@ -12,33 +12,41 @@
 
 <body>
   <%- include('./partials/header') %>
+
     <div class="sugerir">
       <span>Talvez você também goste:</span>
     </div>
+   
     <section class="cards-sugeridos">
+   
       <div class="cards">
-        <div class="arrow" id="left">
-          <i class='bx bxs-left-arrow'></i>
-        </div>
-        <div class="products">
-          <% produtos.forEach(produto=> { %>
-            <div class="product-card">
-              <img src="/produtos/<%= produto.imageUrl %>" alt="NFT">
-              <div class="details">
-                <p>
-                  <%= produto.nome %>
-                </p>
-                <p>
-                  <%= formatarPreco(produto.preco) %>
-                </p>
-              </div>
+        <% produtos.forEach(produto=> { %>
+            <div class="card" style="background:url('/produtos/<%= produto.imageUrl %>') center no-repeat;">
+                <div class="card_content">
+                    <div class="card_title">
+                        <h3><%= produto.nome %></h3>
+
+                        <span>30 <i class='bx bxs-heart'></i></span>
+
+                    </div>
+                    <span class="card_subtitle">
+                        <strong> by <%= produto.artista %> </strong>
+                    </span>
+                    <div class="payment">
+                        <span class="preco">
+                            <%= formatarPreco(produto.preco) %>
+                        </span>
+                        <span class="carrinho_comprar">
+                            <i class='bx bxs-cart-add'></i>
+                            <span class="comprar">
+                                <strong>comprar</strong>
+                            </span>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <% }) %>
-        </div>
-        <div class="arrow" id="right">
-          <i class='bx bxs-right-arrow'></i>
-        </div>
-      </div>
+    <% }) %>
+      
     </section>
 
     <section class="carrinho">

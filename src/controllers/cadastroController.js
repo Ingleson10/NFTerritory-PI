@@ -34,3 +34,4 @@ const cadastroController = {
 }
 
 module.exports = cadastroController;
+console.log()
