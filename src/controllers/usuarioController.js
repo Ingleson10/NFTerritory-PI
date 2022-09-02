@@ -38,7 +38,7 @@ const usuarioController = {
                 },{
                     where: { id }
                 })
-            res.redirect('/usuario/perfil', { user });
+            res.render('painel-do-usuario', { user });
         } catch (error) {
             console.log(error);
             res.render('painel-do-usuario-detalhado', { user, error: 'Não foi possível atualizar seus dados' })

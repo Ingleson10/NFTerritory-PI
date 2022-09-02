@@ -46,15 +46,14 @@ const produtoController = {
         }).catch(error => console.log(error))
     },
     detalhes: (req, res) => {
-        const idUrl = req.params.id;
-        const { id } = JSON.parse(req.cookies.usuario)
+        const { id } = req.params;
 
         Produto.findOne({
             where: {
-                id: idUrl
+                id
             }
         }).then((resultado) => {
-            res.render('produto-interna', { produto: resultado, formatarPreco, id, adicionarNoCarrinho })
+            res.render('produto-interna', { produto: resultado, formatarPreco })
         }).catch(error => console.log(error))
     },
 }
