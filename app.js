@@ -31,7 +31,6 @@ app.use('/login', loginRouter);
 app.use('/carrinho', carrinhoRouter);
 app.use('/cadastrar', cadastroRouter);
 app.use('/produtos', produtoRouter);
-app.use('/finalizar', finalizarRouter)
 app.use(crudRouter)
 app.use(sairRouter)
 
