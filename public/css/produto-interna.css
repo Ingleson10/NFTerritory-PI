@@ -162,10 +162,15 @@ main{
   display: flex;
   justify-content: center;
   margin: 3% 0;
+  
 }
 
 .produto
 {
+  border-radius: 45px;
+  background: #e0e0e0;
+box-shadow:  -27px 27px 60px #929292,
+             27px -27px 60px #ffffff;
   width: 35vw;
   display: flex;
   justify-content: center;
@@ -216,16 +221,21 @@ main{
 
   #btn-carrinho
   {
-    background: linear-gradient(180deg, rgba(67, 223, 171, 0.8) 0%, rgba(55, 170, 149, 0) 100%),
-    linear-gradient(0deg, rgba(0, 89, 59, 0.75), rgba(0, 89, 59, 0.3));
+    
     display: flex;
     align-self: center;
     padding: 3%;
     margin: 10px 0px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
     font-size: large;
     cursor: pointer;
+    background-color: #01DB96;
+    color: white;
+  }
+  #btn-carrinho:hover
+  {
+    background-color: #1C5C47;
   }
   footer{
     display: flex;
