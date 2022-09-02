@@ -1,5 +1,6 @@
 const { Produto } = require('../database/models')
 const formatarPreco = require('../utils/formatarPreco')
+const adicionarNoCarrinho = require('../utils/carrinho')
 
 const produtoController = { 
     produtos: (req, res) => {
@@ -45,14 +46,15 @@ const produtoController = {
         }).catch(error => console.log(error))
     },
     detalhes: (req, res) => {
-        const { id } = req.params;
+        const idUrl = req.params.id;
+        const { id } = JSON.parse(req.cookies.usuario)
 
         Produto.findOne({
             where: {
-                id
+                id: idUrl
             }
         }).then((resultado) => {
-            res.render('produto-interna', { produto: resultado, formatarPreco })
+            res.render('produto-interna', { produto: resultado, formatarPreco, id, adicionarNoCarrinho })
         }).catch(error => console.log(error))
     },
 }

@@ -24,7 +24,7 @@
             <div class="card" style="background:url('/produtos/<%= produto.imageUrl %>') center no-repeat;">
                 <div class="card_content">
                     <div class="card_title">
-                        <h3><%= produto.nome %></h3>
+                        <h3><a href="/produtos/detalhes/<%= produto.id %>"><%= produto.nome %></a></h3>
 
                         <span>30 <i class='bx bxs-heart'></i></span>
 
@@ -80,7 +80,7 @@
             </div>
             <div class="buttons">
               <button id="finalizar" class='btn'>
-                <a href="compra/finalizar">Finalizar</a>
+                <a href="/error">Finalizar</a>
               </button>
               <button id="remover" class='btn'>
                 remover

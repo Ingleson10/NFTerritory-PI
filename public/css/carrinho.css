@@ -446,6 +446,11 @@ justify-content: space-between;
   linear-gradient(0deg, rgba(0, 89, 59, 0.75), rgba(0, 89, 59, 0.3));
   cursor: pointer;
 }
+
+.card_title a{
+  text-decoration: none;
+  color: black;
+}
       
 footer{
   display: flex;

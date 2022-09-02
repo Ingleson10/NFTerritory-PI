@@ -18,7 +18,7 @@
                     <div class="card" style="background:url('/produtos/<%= produto.imageUrl %>') center no-repeat;">
                         <div class="card_content">
                             <div class="card_title">
-                                <h3><%= produto.nome %></h3>
+                                <h3><a href="/produtos/detalhes/<%= produto.id %>"><%= produto.nome %></a></h3>
 
                                 <span>30 <i class='bx bxs-heart'></i></span>
 
@@ -33,13 +33,14 @@
                                 <span class="carrinho_comprar">
                                     <i class='bx bxs-cart-add'></i>
                                     <span class="comprar">
-                                        <strong>comprar</strong>
+                                        <strong><a href="/compra/<%= produto.id %>">comprar</a></strong>
                                     </span>
                                 </span>
                             </div>
                         </div>
                     </div>
-            <% }) %>
+                <% }) %>
+            </div>
 
         </main>
         <%- include('./partials/footer') %>
