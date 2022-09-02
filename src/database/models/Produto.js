@@ -48,7 +48,11 @@ module.exports = (sequelize, dataTypes) => {
 
     Produto.associate = (models) => {
         Produto.hasMany(models.PedidoFinalizado, { foreignKey: 'produto_id' })
-      }
+    }
+
+    Produto.associate = (models) => {
+        Produto.hasMany(models.Carrinho, { foreignKey: 'produto_id' })
+    }
 
     return Produto
 }
