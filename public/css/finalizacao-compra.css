@@ -224,14 +224,24 @@ header .nav ul li a:hover{
   width: 20vw;
 }
 
+.nomeTitulo, #value{
+  font-style: italic;
+}
+
+.detalhes{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
 .detalhes .valor span
 {
   margin-right: 10px;
-  font-weight: 800;
 }
 
 .detalhes-do-item .card .imagem img{
   width: 100%;
+  border-radius: 20px;
 }
 
 .detalhes-do-item .card .detalhes div{
@@ -249,7 +259,7 @@ header .nav ul li a:hover{
   transition: all .2s ease-in-out;
   letter-spacing: 1px;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   border-radius: 40px;
   text-decoration: none;
   color: black;

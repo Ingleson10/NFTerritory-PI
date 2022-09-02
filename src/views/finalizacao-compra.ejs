@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="/css/finalizacao-compra.css">
     <title>Finalização de Compra</title>
 
-    
-
 </head>
 <body>
     <%- include('./partials/header') %>
@@ -24,15 +22,15 @@
             </div>
             <div class="detalhes">
               
-              <div class="titulo">
-                  <span>Titulo:</span>
+              <div class="titulo-container">
+                  <span class="nomeTitulo">Titulo:</span>
                   <span id="titulo">
                      <strong><%= produto.nome %></strong>
                   </span>
               </div>
               <div class="valor">
-                  <span>Valor: </span>
-                  <span> <%= formatarPreco(produto.preco) %></span>
+                  <span id="value">Valor: </span>
+                  <strong> <%= formatarPreco(produto.preco) %></strong>
               </div>
               
             </div>

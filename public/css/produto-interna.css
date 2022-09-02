@@ -232,6 +232,7 @@ box-shadow:  -27px 27px 60px #929292,
     cursor: pointer;
     background-color: #01DB96;
     color: white;
+    transition: 0.3s;
   }
   #btn-carrinho:hover
   {
