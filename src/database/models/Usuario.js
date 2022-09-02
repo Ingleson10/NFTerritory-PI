@@ -60,9 +60,13 @@ module.exports = (sequelize, dataTypes) => {
         Usuario.hasMany(models.PagamentoUsuario, { foreignKey: 'usuario_id', as: 'usuario' });
       }
 
-      Usuario.associate = (models) => {
+    Usuario.associate = (models) => {
         Usuario.hasMany(models.PedidoFinalizado, { foreignKey: 'usuario_id', as: 'usuario' });
       }
+
+    Usuario.associate = (models) => {
+        Usuario.hasMany(models.Carrinho, { foreignKey: 'usuario_id' })
+    }
     
       return Usuario
 }
