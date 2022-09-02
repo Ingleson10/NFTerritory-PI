@@ -13,6 +13,33 @@
 </head>
 <body>
     <%- include('./partials/header') %>
+
+    <section class="detalhes-do-item">
+        <div class="title">
+            <h1>Detalhes do item:</h1>
+        </div>
+        <div class="card">
+            <div class="imagem">
+                <img src="/produtos/<%= produto.imageUrl %>" alt="produto">
+            </div>
+            <div class="detalhes">
+              
+              <div class="titulo">
+                  <span>Titulo:</span>
+                  <span id="titulo">
+                     <strong><%= produto.nome %></strong>
+                  </span>
+              </div>
+              <div class="valor">
+                  <span>Valor: </span>
+                  <span> <%= formatarPreco(produto.preco) %></span>
+              </div>
+              
+            </div>
+        </div>
+        
+    </section>
+    
       <section class="forma-de-pagamento">
           <div class="metodos">
               <div class="cartao">
@@ -48,36 +75,10 @@
                   </div>
               </div>
           </div>
+          <a href="/compra/sucesso">Finalizar Pedido</a>
       </section>
 
-      <section class="detalhes-do-item">
-          <div class="title">
-              <h1>Detalhes do item:</h1>
-          </div>
-          <div class="card">
-              <div class="imagem">
-                  <img src="/img/NFT-4.png" alt="produto">
-              </div>
-              <div class="detalhes">
-                <div class="categoria">
-                    <span>Categoria:</span>
-                    <span>Artes 2d</span>
-                </div>
-                <div class="titulo">
-                    <span>Titulo:</span>
-                    <span id="titulo">
-                        CLOWN MONKEY TM - BY Adriana Palma
-                    </span>
-                </div>
-                <div class="valor">
-                    <span>Valor:</span>
-                    <span>R$????????</span>
-                </div>
-                
-              </div>
-          </div>
-          <a href="/compra/sucesso"><button>Finalizar Pedido</a></button>
-      </section>
+     
       <%- include('./partials/footer') %>
 </body>
 </html>

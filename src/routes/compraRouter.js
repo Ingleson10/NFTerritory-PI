@@ -3,6 +3,6 @@ const router = express.Router();
 const compraController = require('../controllers/compraController');
 
 router.get('/sucesso', compraController.sucesso);
-router.get('/', compraController.adicionarCartao);
+router.get('/:id', compraController.finalizar);
 
 module.exports = router
